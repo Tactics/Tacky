@@ -11,6 +11,7 @@ import { LookupAdditionalColor } from "./src/colors/functions/additional";
 import { BuildProvidersTree } from "./src/tooling/build-provider-tree";
 import { ThemeCtx } from "./src/contexts/theme-context";
 import { ThemeModeCtx } from "./src/contexts/theme-mode-context";
+import { ThemeVariantsI } from "./src/theme/contracts/theme-variant";
 
 export {
     AnimationStyleProvider,
@@ -31,6 +32,7 @@ export type {
     HexColor,
     ThemeI,
     ThemeConfigI,
+    ThemeVariantsI,
     ColorsI,
     ThemeModeOptionKey,
     ThemeModeOptions,
