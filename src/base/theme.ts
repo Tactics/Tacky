@@ -30,7 +30,7 @@ export const baseThemeConfigRadiusXl: string = "0.75rem";
 export const baseThemeConfigRadius2Xl: string = "1rem";
 export const baseThemeConfigRadius3Xl: string = "1.5rem";
 
-const BaseTheme : ThemeI = {
+export const BaseTheme : ThemeI = {
   alternate: [],
   typography: {
     resources: [],
@@ -381,6 +381,3 @@ const BaseTheme : ThemeI = {
   },
 };
 
-export {
-  BaseTheme
-};
