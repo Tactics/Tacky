@@ -12,6 +12,7 @@ import { BuildProvidersTree } from "./src/tooling/build-provider-tree";
 import { ThemeCtx } from "./src/contexts/theme-context";
 import { ThemeModeCtx } from "./src/contexts/theme-mode-context";
 import { ThemeVariantsI } from "./src/theme/contracts/theme-variant";
+import { BaseTheme } from "./src/base/theme";
 
 export {
     AnimationStyleProvider,
@@ -24,6 +25,7 @@ export {
     LookupAdditionalColor,
     ThemeModeCtx,
     ThemeCtx,
+    BaseTheme,
     /** Add your components here for short imports in the project using this component library **/
 
 };

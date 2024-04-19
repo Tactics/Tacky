@@ -7,7 +7,7 @@ import { BaseTheme } from "../../base/theme";
 
 const ThemeBuilder = ({
   config,
-}: {
+} : {
   config: ThemeConfigI;
 }): ThemeI => {
   return {
