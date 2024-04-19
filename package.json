@@ -1,0 +1,25 @@
+{
+  "name": "@tactics/tacky",
+  "version": "1.0.0",
+  "description": "Tooling library for all styling related projects",
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "repository": "git@github.com:Tactics/Tacky.git",
+  "author": "Gert van den Buijs <gertvandenbuijs@hotmail.com>",
+  "license": "MIT",
+  "prepublish": "tsc",
+  "scripts": {
+    "format": "./node_modules/.bin/prettier --write src/.",
+    "types": "./node_modules/.bin/tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "prettier": "2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

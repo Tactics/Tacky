@@ -1,0 +1,54 @@
+name: Build Types
+
+on:
+  pull_request: null
+  push:
+    branches:
+      - main
+
+jobs:
+  build-types:
+    runs-on: ubuntu-latest
+    name: Build Types
+    steps:
+      -   if: github.event.pull_request.head.repo.full_name == github.repository
+          uses: actions/checkout@v3
+          with:
+            # Must be used to trigger workflow after push
+            token: ${{ secrets.GITHUB_TOKEN }}
+
+      # in forks, the token is not available - so we cannot us eit
+      -   if: github.event.pull_request.head.repo.full_name != github.repository
+          uses: actions/checkout@v3
+          with:
+            persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Yarn install
+        run: npm install
+
+      - name: Format code
+        run: npm format
+
+      - name: Build types
+        run: npm types
+
+      # see https://github.com/EndBug/add-and-commit
+      - # commit only to core contributors who have repository access
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        uses: EndBug/add-and-commit@v5.1.0
+        with:
+          # The arguments for the `git add` command (see the paragraph below for more info)
+          add: .
+          message: "Build types"
+          # see https://github.community/t/github-actions-bot-email-address/17204
+          author_name: "GitHub Action"
+          author_email: "action@github.com"
+
+        env:
+          # to get push access
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
