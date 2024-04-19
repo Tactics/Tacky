@@ -3,7 +3,7 @@ import {ColorsI} from "./src/colors/contracts/colors";
 import { AnimationStyleProvider } from "./src/providers/animation-style-provider";
 import { TypographyStyleProvider } from "./src/providers/typography-style-provider";
 import { ThemeBuilder } from "./src/theme/builders/theme";
-import { ThemeI } from "./src/theme/contracts/theme";
+import {ThemeConfigI, ThemeI } from "./src/theme/contracts/theme";
 import { ThemeMode, ThemeModeOptionKey, ThemeModeOptions } from "./src/theme/enums/theme-mode";
 import { orDefault } from "./src/tooling/or-default";
 import { LookupAlternate } from "./src/alternate/functions/alternate";
@@ -22,7 +22,7 @@ export {
     LookupAlternate,
     LookupAdditionalColor,
     ThemeModeCtx,
-    ThemeCtx
+    ThemeCtx,
     /** Add your components here for short imports in the project using this component library **/
 
 };
@@ -30,6 +30,7 @@ export {
 export type {
     HexColor,
     ThemeI,
+    ThemeConfigI,
     ColorsI,
     ThemeModeOptionKey,
     ThemeModeOptions,
