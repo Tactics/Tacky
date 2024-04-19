@@ -2,7 +2,7 @@ import { HexColor } from "./hex";
 
 // Every color in a color scheme will need different tints of the same color.
 // This makes the theme more vibrant and helps us create contrast and depth.
-interface ColorVariantI {
+export interface ColorVariantI {
   tint_50: HexColor;
   tint_100: HexColor;
   tint_200: HexColor;
@@ -16,7 +16,7 @@ interface ColorVariantI {
   tint_950: HexColor;
 }
 
-interface ColorVariantConfigI {
+export interface ColorVariantConfigI {
   tint_50?: HexColor;
   tint_100?: HexColor;
   tint_200?: HexColor;
@@ -29,5 +29,3 @@ interface ColorVariantConfigI {
   tint_900?: HexColor;
   tint_950?: HexColor;
 }
-
-export type { ColorVariantI, ColorVariantConfigI };

@@ -1,4 +1,4 @@
-interface TypographyFontsScaleLineHeightConfigI {
+export interface TypographyFontsScaleLineHeightConfigI {
   xs?: string | number;
   sm?: string | number;
   md?: string | number;
@@ -13,5 +13,3 @@ interface TypographyFontsScaleLineHeightConfigI {
   "8xl"?: string | number;
   "9xl"?: string | number;
 }
-
-export type { TypographyFontsScaleLineHeightConfigI };

@@ -1,7 +1,5 @@
-interface TypographyFontsFamilyConfigI {
+export interface TypographyFontsFamilyConfigI {
   primary?: string;
   accent?: string;
   supporting?: string;
 }
-
-export type { TypographyFontsFamilyConfigI };

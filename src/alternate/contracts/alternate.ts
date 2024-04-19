@@ -1,14 +1,13 @@
-interface AlternateItem {
+export interface AlternateItem {
   name: string;
   style: object;
 }
 
-interface AlternateI {
+export interface AlternateI {
   components: Array<AlternateItem>;
 }
 
-interface AlternateConfigI {
+export interface AlternateConfigI {
   components?: Array<AlternateItem>;
 }
 
-export type { AlternateItem, AlternateI, AlternateConfigI };

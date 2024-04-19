@@ -1,4 +1,4 @@
-interface TypographyFontsScaleSizeConfigI {
+export interface TypographyFontsScaleSizeConfigI {
   xs?: string;
   sm?: string;
   md?: string;
@@ -13,5 +13,3 @@ interface TypographyFontsScaleSizeConfigI {
   "8xl"?: string;
   "9xl"?: string;
 }
-
-export type { TypographyFontsScaleSizeConfigI };

@@ -8,7 +8,6 @@ import { LookupAdditionalColor } from "./src/colors/functions/additional";
 import { BuildProvidersTree } from "./src/tooling/build-provider-tree";
 import { ThemeCtx } from "./src/contexts/theme-context";
 import { ThemeModeCtx } from "./src/contexts/theme-mode-context";
-import { BaseTheme } from "./src/base/theme";
 
 export {
     AnimationStyleProvider,
@@ -20,6 +19,5 @@ export {
     LookupAlternate,
     LookupAdditionalColor,
     ThemeModeCtx,
-    ThemeCtx,
-    BaseTheme,
+    ThemeCtx
 };

@@ -1,7 +1,5 @@
 import { TypographyFontsScaleSizeConfigI } from "./size";
 
-interface TypographyFontsScaleConfigI {
+export interface TypographyFontsScaleConfigI {
   size?: TypographyFontsScaleSizeConfigI;
 }
-
-export type { TypographyFontsScaleConfigI };

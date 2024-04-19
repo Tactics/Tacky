@@ -7,7 +7,7 @@ import { RadiusConfigI, RadiusI } from "../../radius/contracts/radius";
 import { AlternateItem } from "../../alternate/contracts/alternate";
 import { UtilityI } from "../../utility/contracts/utility";
 
-interface ThemeI {
+export interface ThemeI {
   alternate: Array<AlternateItem>;
   colors: ColorsI;
   typography: TypographyI;
@@ -15,11 +15,9 @@ interface ThemeI {
   utility: UtilityI;
 }
 
-interface ThemeConfigI {
+export interface ThemeConfigI {
   alternate?: Array<AlternateItem>;
   colors?: ColorsConfigI;
   typography?: TypographyConfigI;
   radius?: RadiusConfigI;
 }
-
-export type { ThemeI, ThemeConfigI };

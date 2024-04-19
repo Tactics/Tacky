@@ -1,9 +1,13 @@
-import { ThemeI } from "./theme";
+import {ThemeConfigI, ThemeI} from "./theme";
 
-interface ThemeVariantsI {
+export interface ThemeVariantsI {
   standard: ThemeI;
   inverted: ThemeI;
   contrast: ThemeI;
 }
 
-export type { ThemeVariantsI };
+export interface ThemeVariantsConfigI {
+  standard?: ThemeConfigI;
+  inverted?: ThemeConfigI;
+  contrast?: ThemeConfigI;
+}

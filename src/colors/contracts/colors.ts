@@ -2,7 +2,7 @@ import { ColorVariantConfigI, ColorVariantI } from "./color-variant";
 import { AdditionalColorItem } from "./color-additional";
 
 // A common interface for defining a color scheme for a theme.
-interface ColorsI {
+export interface ColorsI {
   danger: ColorVariantI;
   warning: ColorVariantI;
   success: ColorVariantI;
@@ -14,7 +14,7 @@ interface ColorsI {
   additional: AdditionalColorItem[];
 }
 
-interface ColorsConfigI {
+export interface ColorsConfigI {
   danger?: ColorVariantConfigI;
   warning?: ColorVariantConfigI;
   success?: ColorVariantConfigI;
@@ -25,5 +25,3 @@ interface ColorsConfigI {
   supporting?: ColorVariantConfigI;
   additional?: AdditionalColorItem[];
 }
-
-export type { ColorsI, ColorsConfigI };

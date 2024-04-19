@@ -1,4 +1,4 @@
-interface TypographyFontI {
+export interface TypographyFontI {
   xs: string;
   sm: string;
   md: string;
@@ -13,5 +13,3 @@ interface TypographyFontI {
   "8xl": string;
   "9xl": string;
 }
-
-export type { TypographyFontI };
