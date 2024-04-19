@@ -32,10 +32,10 @@ jobs:
         run: npm install
 
       - name: Format code
-        run: npm format
+        run: npm run format
 
       - name: Build types
-        run: npm types
+        run: npm run types
 
       # see https://github.com/EndBug/add-and-commit
       - # commit only to core contributors who have repository access
