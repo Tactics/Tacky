@@ -3,21 +3,22 @@ import { ThemeConfigI, ThemeI } from "../contracts/theme";
 import { TypographyBuilder } from "../../typography/builder/typography";
 import { ColorBuilder } from "../../colors/builders/colors";
 import { RadiusBuilder } from "../../radius/builders/radius";
-import { BaseTheme } from "../../base/theme";
 
 const ThemeBuilder = ({
+  base,  
   config,
 } : {
+  base: ThemeI,  
   config: ThemeConfigI;
 }): ThemeI => {
   return {
     alternate: AlternateBuilder({
-      base: BaseTheme.alternate,
+      base: base.alternate,
       config: config?.alternate ? config.alternate : [],
     }),
     typography: config?.typography
       ? TypographyBuilder({
-          base: BaseTheme.typography,
+          base: base.typography,
           config: {
             resources: config.typography?.resources
               ? config.typography.resources
@@ -25,16 +26,16 @@ const ThemeBuilder = ({
             fonts: config.typography?.fonts ? config.typography.fonts : {},
           },
         })
-      : BaseTheme.typography,
+      : base.typography,
     colors: config?.colors
       ? ColorBuilder({
-          base: BaseTheme.colors,
+          base: base.colors,
           config: config.colors ? config.colors : {},
         })
-      : BaseTheme.colors,
-    utility: BaseTheme.utility,
+      : base.colors,
+    utility: base.utility,
     radius: RadiusBuilder({
-      base: BaseTheme.radius,
+      base: base.radius,
       config: config.radius,
     }),
   };
