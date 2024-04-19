@@ -3,14 +3,14 @@ import { ThemeConfigI, ThemeI } from "../contracts/theme";
 import { TypographyBuilder } from "../../typography/builder/typography";
 import { ColorBuilder } from "../../colors/builders/colors";
 import { RadiusBuilder } from "../../radius/builders/radius";
+import {BaseTheme} from "../../base/theme";
 
 const ThemeBuilder = ({
-  base,
   config,
 }: {
-  base: ThemeI;
   config: ThemeConfigI;
 }): ThemeI => {
+  const base = BaseTheme;
   return {
     alternate: AlternateBuilder({
       base: base.alternate,
