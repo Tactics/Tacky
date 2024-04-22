@@ -1,8 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.RadiusBuilder = void 0;
-var RadiusBuilder = function (_a) {
-    var base = _a.base, config = _a.config;
+const RadiusBuilder = ({ base, config, }) => {
     return {
         none: base.none,
         xs: config ? config.xs : base.xs,
@@ -12,7 +11,7 @@ var RadiusBuilder = function (_a) {
         xl: config ? config.xl : base.xl,
         "2xl": config ? config["2xl"] : base["2xl"],
         "3xl": config ? config["3xl"] : base["3xl"],
-        full: "9999px"
+        full: "9999px",
     };
 };
 exports.RadiusBuilder = RadiusBuilder;

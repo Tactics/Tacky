@@ -1,8 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.FontBuilder = void 0;
-var FontBuilder = function (_a) {
-    var family = _a.family, scale = _a.scale;
+const FontBuilder = ({ family, scale, }) => {
     return scale + " " + family;
 };
 exports.FontBuilder = FontBuilder;

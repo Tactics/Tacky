@@ -1,8 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.TypographyResourcesBuilder = void 0;
-var TypographyResourcesBuilder = function (_a) {
-    var base = _a.base, config = _a.config;
+const TypographyResourcesBuilder = ({ base, config, }) => {
     return config ? config : base;
 };
 exports.TypographyResourcesBuilder = TypographyResourcesBuilder;

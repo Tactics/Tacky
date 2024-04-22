@@ -1,7 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.BaseTheme = exports.baseThemeConfigRadius3Xl = exports.baseThemeConfigRadius2Xl = exports.baseThemeConfigRadiusXl = exports.baseThemeConfigRadiusLg = exports.baseThemeConfigRadiusMd = exports.baseThemeConfigRadiusSm = exports.baseThemeConfigRadiusXs = exports.baseThemeConfigScale9Xl = exports.baseThemeConfigScale8Xl = exports.baseThemeConfigScale7Xl = exports.baseThemeConfigScale6Xl = exports.baseThemeConfigScale5Xl = exports.baseThemeConfigScale4Xl = exports.baseThemeConfigScale3Xl = exports.baseThemeConfigScale2Xl = exports.baseThemeConfigScaleXl = exports.baseThemeConfigScaleLg = exports.baseThemeConfigScaleMd = exports.baseThemeConfigScaleSm = exports.baseThemeConfigScaleXs = exports.baseThemeConfigSupportingFont = exports.baseThemeConfigAccentFont = exports.baseThemeConfigPrimaryFont = void 0;
-var font_1 = require("../typography/builder/font");
+const font_1 = require("../typography/builder/font");
 exports.baseThemeConfigPrimaryFont = 'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"';
 exports.baseThemeConfigAccentFont = 'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif';
 exports.baseThemeConfigSupportingFont = 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
@@ -25,7 +25,7 @@ exports.baseThemeConfigRadiusLg = "0.5rem";
 exports.baseThemeConfigRadiusXl = "0.75rem";
 exports.baseThemeConfigRadius2Xl = "1rem";
 exports.baseThemeConfigRadius3Xl = "1.5rem";
-var BaseTheme = {
+exports.BaseTheme = {
     alternate: [],
     typography: {
         resources: [],
@@ -33,206 +33,206 @@ var BaseTheme = {
             primary: {
                 xs: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXs,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 sm: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleSm,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 md: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleMd,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 lg: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleLg,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 xl: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "2xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale2Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "3xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale3Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "4xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale4Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "5xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale5Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "6xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale6Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "7xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale7Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "8xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale8Xl,
-                    family: exports.baseThemeConfigPrimaryFont
+                    family: exports.baseThemeConfigPrimaryFont,
                 }),
                 "9xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale9Xl,
-                    family: exports.baseThemeConfigPrimaryFont
-                })
+                    family: exports.baseThemeConfigPrimaryFont,
+                }),
             },
             accent: {
                 xs: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXs,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 sm: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleSm,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 md: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleMd,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 lg: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleLg,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 xl: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "2xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale2Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "3xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale3Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "4xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale4Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "5xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale5Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "6xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale6Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "7xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale7Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "8xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale8Xl,
-                    family: exports.baseThemeConfigAccentFont
+                    family: exports.baseThemeConfigAccentFont,
                 }),
                 "9xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale9Xl,
-                    family: exports.baseThemeConfigAccentFont
-                })
+                    family: exports.baseThemeConfigAccentFont,
+                }),
             },
             supporting: {
                 xs: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXs,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 sm: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleSm,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 md: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleMd,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 lg: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleLg,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 xl: (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScaleXl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "2xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale2Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "3xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale3Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "4xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale4Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "5xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale5Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "6xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale6Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "7xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale7Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "8xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale8Xl,
-                    family: exports.baseThemeConfigSupportingFont
+                    family: exports.baseThemeConfigSupportingFont,
                 }),
                 "9xl": (0, font_1.FontBuilder)({
                     scale: exports.baseThemeConfigScale9Xl,
-                    family: exports.baseThemeConfigSupportingFont
-                })
-            }
-        }
+                    family: exports.baseThemeConfigSupportingFont,
+                }),
+            },
+        },
     },
     colors: {
         danger: {
-            tint_50: "#FBD9D9",
-            tint_100: "#FBD9D9",
-            tint_200: "#FBD9D9",
-            tint_300: "#FBD9D9",
-            tint_400: "#F99E9E",
-            tint_500: "#F16868",
-            tint_600: "#D25E5E",
-            tint_700: "#D25E5E",
-            tint_800: "#D25E5E",
-            tint_900: "#D25E5E",
-            tint_950: "#D25E5E"
+            tint_50: "#fef2f2",
+            tint_100: "#fee2e2",
+            tint_200: "#fecaca",
+            tint_300: "#fca5a5",
+            tint_400: "#f87171",
+            tint_500: "#ef4444",
+            tint_600: "#dc2626",
+            tint_700: "#b91c1c",
+            tint_800: "#991b1b",
+            tint_900: "#7f1d1d",
+            tint_950: "#450a0a",
         },
         warning: {
-            tint_50: "#FEEFDB",
-            tint_100: "#FEEFDB",
-            tint_200: "#FEEFDB",
-            tint_300: "#FEEFDB",
-            tint_400: "#FFD398",
-            tint_500: "#FCBF6F",
-            tint_600: "#FAAC44",
-            tint_700: "#FAAC44",
-            tint_800: "#FAAC44",
-            tint_900: "#FAAC44",
-            tint_950: "#FAAC44"
+            tint_50: "#fffbeb",
+            tint_100: "#fef3c7",
+            tint_200: "#fde68a",
+            tint_300: "#fcd34d",
+            tint_400: "#fbbf24",
+            tint_500: "#f59e0b",
+            tint_600: "#d97706",
+            tint_700: "#b45309",
+            tint_800: "#92400e",
+            tint_900: "#78350f",
+            tint_950: "#451a03",
         },
         success: {
-            tint_50: "#E0F4DA",
-            tint_100: "#E0F4DA",
-            tint_200: "#E0F4DA",
-            tint_300: "#E0F4DA",
-            tint_400: "#ADE99C",
-            tint_500: "#83D56C",
-            tint_600: "#67C14E",
-            tint_700: "#67C14E",
-            tint_800: "#67C14E",
-            tint_900: "#67C14E",
-            tint_950: "#67C14E"
+            tint_50: "#f7fee7",
+            tint_100: "#ecfccb",
+            tint_200: "#d9f99d",
+            tint_300: "#bef264",
+            tint_400: "#a3e635",
+            tint_500: "#84cc16",
+            tint_600: "#65a30d",
+            tint_700: "#4d7c0f",
+            tint_800: "#3f6212",
+            tint_900: "#365314",
+            tint_950: "#1a2e05",
         },
         info: {
             tint_50: "#f0f9ff",
@@ -245,7 +245,7 @@ var BaseTheme = {
             tint_700: "#0369a1",
             tint_800: "#075985",
             tint_900: "#0c4a6e",
-            tint_950: "#082f49"
+            tint_950: "#082f49",
         },
         neutrals: {
             tint_50: "#FFFFFF",
@@ -258,7 +258,7 @@ var BaseTheme = {
             tint_700: "#E5E8EB",
             tint_800: "#9AA5B1",
             tint_900: "#515F6C",
-            tint_950: "#515F6C"
+            tint_950: "#515F6C",
         },
         primary: {
             tint_50: "#E0FCFF",
@@ -271,7 +271,7 @@ var BaseTheme = {
             tint_700: "#14919B",
             tint_800: "#0E7C86",
             tint_900: "#0A6C74",
-            tint_950: "#044E54"
+            tint_950: "#044E54",
         },
         accent: {
             tint_50: "#fdf3f5",
@@ -284,22 +284,22 @@ var BaseTheme = {
             tint_700: "#bc0a6f",
             tint_800: "#a30664",
             tint_900: "#870557",
-            tint_950: "#620042"
+            tint_950: "#620042",
         },
         supporting: {
-            tint_50: "#FFFFFF",
-            tint_100: "#333333",
-            tint_200: "#333333",
-            tint_300: "#333333",
-            tint_400: "#333333",
-            tint_500: "#333333",
-            tint_600: "#FFFFFF",
-            tint_700: "#FFFFFF",
-            tint_800: "#FFFFFF",
-            tint_900: "#FFFFFF",
-            tint_950: "#FFFFFF"
+            tint_50: "#f1f4fb",
+            tint_100: "#e0e8f9",
+            tint_200: "#bed0f7",
+            tint_300: "#98aeeb",
+            tint_400: "#7b93db",
+            tint_500: "#647acb",
+            tint_600: "#4c63b6",
+            tint_700: "#4055a8",
+            tint_800: "#35469c",
+            tint_900: "#2d3a8c",
+            tint_950: "#19216c",
         },
-        additional: []
+        additional: [],
     },
     utility: {
         spacing: {
@@ -337,7 +337,7 @@ var BaseTheme = {
             64: "16rem",
             72: "18rem",
             80: "20rem",
-            96: "24rem"
+            96: "24rem",
         },
         opacity: {
             0: 0,
@@ -360,8 +360,8 @@ var BaseTheme = {
             85: 0.85,
             90: 0.9,
             95: 0.95,
-            100: 1
-        }
+            100: 1,
+        },
     },
     radius: {
         none: "0px",
@@ -372,13 +372,6 @@ var BaseTheme = {
         xl: exports.baseThemeConfigRadiusXl,
         "2xl": exports.baseThemeConfigRadius2Xl,
         "3xl": exports.baseThemeConfigRadius3Xl,
-        full: "9999px"
-    }
+        full: "9999px",
+    },
 };
-exports.BaseTheme = BaseTheme;
-/*
-• Width
-• Height
-• Box shadows
-• Border width •
- */

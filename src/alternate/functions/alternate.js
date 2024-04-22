@@ -1,8 +1,7 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.LookupAlternate = void 0;
-var LookupAlternate = function (_a) {
-    var name = _a.name, alternates = _a.alternates;
-    return alternates.find(function (item) { return item.name === name; });
+const LookupAlternate = ({ name, alternates, }) => {
+    return alternates.find((item) => item.name === name);
 };
 exports.LookupAlternate = LookupAlternate;
