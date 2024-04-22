@@ -254,7 +254,7 @@ export const BaseTheme : ThemeI = {
     },
     neutrals: {
       tint_50: "#FFFFFF",
-      tint_100: "#FFFFFF",
+      tint_100: "#f8fafb",
       tint_200: "#F5F7FA",
       tint_300: "#E5E8EB",
       tint_400: "#E5E8EB",
@@ -263,7 +263,7 @@ export const BaseTheme : ThemeI = {
       tint_700: "#E5E8EB",
       tint_800: "#9AA5B1",
       tint_900: "#515F6C",
-      tint_950: "#515F6C",
+      tint_950: "#343d45",
     },
     primary: {
       tint_50: "#E0FCFF",
