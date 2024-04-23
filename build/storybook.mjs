@@ -1,4 +1,4 @@
-import { u as u$1, t as t$1 } from './chunk-QD2QVT2G.mjs';
+import { v as v$1, u as u$1 } from './chunk-2YXYRUJM.mjs';
 import r from 'react';
 import s from 'styled-components';
 
@@ -24,7 +24,7 @@ var y=s.div`
   margin-top: 0.25rem;
   font: ${o=>o.font};
   color: ${o=>o.color};
-`;var t=({title:o,color:i})=>{let n=u$1(),e=t$1();return r.createElement(U,null,r.createElement(d,{color:i}),r.createElement(a,null,r.createElement(c,{font:n.primary.sm,color:e.neutrals.tint_800},o),r.createElement(C,{font:n.primary.xs,color:e.neutrals.tint_800},i)))};var T=({colors:o})=>r.createElement(y,null,o.map(function(i){return r.createElement(t,{color:i.color,title:i.name})}));var D=({colors:o})=>r.createElement(y,null,r.createElement(t,{color:o.tint_50,title:"50"}),r.createElement(t,{color:o.tint_100,title:"100"}),r.createElement(t,{color:o.tint_200,title:"200"}),r.createElement(t,{color:o.tint_300,title:"300"}),r.createElement(t,{color:o.tint_400,title:"400"}),r.createElement(t,{color:o.tint_500,title:"500"}),r.createElement(t,{color:o.tint_600,title:"600"}),r.createElement(t,{color:o.tint_700,title:"700"}),r.createElement(t,{color:o.tint_800,title:"800"}),r.createElement(t,{color:o.tint_900,title:"900"}),r.createElement(t,{color:o.tint_950,title:"950"}));var v=s.div`
+`;var t=({title:o,color:i})=>{let n=v$1(),e=u$1();return r.createElement(U,null,r.createElement(d,{color:i}),r.createElement(a,null,r.createElement(c,{font:n.primary.sm,color:e.neutrals.tint_800},o),r.createElement(C,{font:n.primary.xs,color:e.neutrals.tint_800},i)))};var T=({colors:o})=>r.createElement(y,null,o.map(function(i){return r.createElement(t,{color:i.color,title:i.name})}));var D=({colors:o})=>r.createElement(y,null,r.createElement(t,{color:o.tint_50,title:"50"}),r.createElement(t,{color:o.tint_100,title:"100"}),r.createElement(t,{color:o.tint_200,title:"200"}),r.createElement(t,{color:o.tint_300,title:"300"}),r.createElement(t,{color:o.tint_400,title:"400"}),r.createElement(t,{color:o.tint_500,title:"500"}),r.createElement(t,{color:o.tint_600,title:"600"}),r.createElement(t,{color:o.tint_700,title:"700"}),r.createElement(t,{color:o.tint_800,title:"800"}),r.createElement(t,{color:o.tint_900,title:"900"}),r.createElement(t,{color:o.tint_950,title:"950"}));var v=s.div`
   display: flex;
   flex-direction: column;
 `,g=s.div`
@@ -38,7 +38,7 @@ var y=s.div`
   color: ${o=>o.color};
 `,u=s.div`
   margin-bottom: 5rem;
-`;var $=({title:o,children:i})=>{let n=u$1(),e=t$1();return r.createElement(v,null,r.createElement(g,{color:e.neutrals.tint_500},r.createElement(w,{font:n.primary.xl,color:e.neutrals.tint_950},o)),r.createElement(u,null,i))};var P=s.div`
+`;var $=({title:o,children:i})=>{let n=v$1(),e=u$1();return r.createElement(v,null,r.createElement(g,{color:e.neutrals.tint_500},r.createElement(w,{font:n.primary.xl,color:e.neutrals.tint_950},o)),r.createElement(u,null,i))};var P=s.div`
   display: flex;
   flex-direction: column;
 `,h=s.div`
@@ -47,7 +47,7 @@ var y=s.div`
   color: ${o=>o.color};
 `,I=s.div`
   margin-bottom: 1rem;
-`;var L=({caption:o,children:i})=>{let n=u$1(),e=t$1();return r.createElement(P,null,r.createElement(h,{font:n.primary.sm,color:e.neutrals.tint_900},o),r.createElement(I,null,i))};var _=s.div`
+`;var L=({caption:o,children:i})=>{let n=v$1(),e=u$1();return r.createElement(P,null,r.createElement(h,{font:n.primary.sm,color:e.neutrals.tint_900},o),r.createElement(I,null,i))};var _=s.div`
   font: ${o=>o.font};
 `;var A=({text:o,font:i})=>r.createElement(_,{font:i},o);
 
