@@ -9,7 +9,7 @@ export default defineConfig([
         treeshake: true, // Remove unused code
         splitting: true, // Split output into chunks
         clean: true, // Clean output directory before building
-        outDir: "dist", // Output directory
+        outDir: "build", // Output directory
         entry: [
             'src/index.ts',
             'src/storybook.ts',

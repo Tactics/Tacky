@@ -1,24 +1,24 @@
 {
   "name": "@tactics/tacky",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Tooling library for all styling related projects",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./build/index.js",
+      "import": "./build/index.js",
+      "types": "./build/index.d.ts"
     },
     "./storybook": {
-      "require": "./dist/storybook.js",
-      "import": "./dist/storybook.js",
-      "types": "./dist/storybook.d.ts"
+      "require": "./build/storybook.js",
+      "import": "./build/storybook.js",
+      "types": "./build/storybook.d.ts"
     },
     "./tool": {
-      "require": "./dist/tool.js",
-      "import": "./dist/tool.js",
-      "types": "./dist/tool.d.ts"
+      "require": "./build/tool.js",
+      "import": "./build/tool.js",
+      "types": "./build/tool.d.ts"
     }
   },
   "repository": {
