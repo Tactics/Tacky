@@ -9,6 +9,8 @@ import { LookupAdditionalColor } from "./src/colors/functions/additional";
 import { BuildProvidersTree } from "./src/tooling/build-provider-tree";
 import { ThemeCtx } from "./src/contexts/theme-context";
 import { ThemeModeCtx } from "./src/contexts/theme-mode-context";
+import { StorybookUiElement } from "./src/storybook/ui-element/ui-element";
+import { StorybookUiItem } from "./src/storybook/ui-item/ui-item";
 
 export {
     StyleProviderAnimation,
@@ -21,5 +23,7 @@ export {
     LookupAlternate,
     LookupAdditionalColor,
     ThemeModeCtx,
-    ThemeCtx
+    ThemeCtx,
+    StorybookUiElement,
+    StorybookUiItem,
 };

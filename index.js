@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ThemeCtx = exports.ThemeModeCtx = exports.LookupAdditionalColor = exports.LookupAlternate = exports.orDefault = exports.ThemeMode = exports.ThemeBuilder = exports.BuildProvidersTree = exports.StyleProviderReset = exports.StyleProviderFontFace = exports.StyleProviderAnimation = void 0;
+exports.ThemeCtx = exports.ThemeModeCtx = exports.LookupAdditionalColor = exports.LookupAlternate = exports.orDefault = exports.ThemeMode = exports.ThemeBuilder = exports.BuildProvidersTree = exports.StyleProviderPreFlight = exports.StyleProviderFontFace = exports.StyleProviderAnimation = void 0;
 const animation_1 = require("./src/providers/animation");
 Object.defineProperty(exports, "StyleProviderAnimation", { enumerable: true, get: function () { return animation_1.StyleProviderAnimation; } });
 const font_face_1 = require("./src/providers/font-face");
 Object.defineProperty(exports, "StyleProviderFontFace", { enumerable: true, get: function () { return font_face_1.StyleProviderFontFace; } });
-const reset_1 = require("./src/providers/reset");
-Object.defineProperty(exports, "StyleProviderReset", { enumerable: true, get: function () { return reset_1.StyleProviderReset; } });
+const preflight_1 = require("./src/providers/preflight");
+Object.defineProperty(exports, "StyleProviderPreFlight", { enumerable: true, get: function () { return preflight_1.StyleProviderPreFlight; } });
 const theme_1 = require("./src/theme/builders/theme");
 Object.defineProperty(exports, "ThemeBuilder", { enumerable: true, get: function () { return theme_1.ThemeBuilder; } });
 const theme_mode_1 = require("./src/theme/enums/theme-mode");
