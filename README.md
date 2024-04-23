@@ -6,6 +6,11 @@
   </a>
 </p>
 
+
+<p align="center">
+    <a href="https://github.com/Tactics/Tacky/releases"><img src="https://img.shields.io/npm/v/%40tactics%2Ftacky" alt="Latest Release"></a>
+</p>
+
 ---
 
 ## Documentation
