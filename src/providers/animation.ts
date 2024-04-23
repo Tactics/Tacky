@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const AnimationStyleProvider = createGlobalStyle<{ animations?: string[] }>`
+const StyleProviderAnimation = createGlobalStyle<{ animations?: string[] }>`
       ${(props) => {
         return props.animations?.map(function (animation) {
           return animation;
@@ -44,4 +44,4 @@ const AnimationStyleProvider = createGlobalStyle<{ animations?: string[] }>`
       }
 `;
 
-export { AnimationStyleProvider };
+export { StyleProviderAnimation };

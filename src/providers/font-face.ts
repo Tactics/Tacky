@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const TypographyStyleProvider = createGlobalStyle<{ resources?: string[] }>`
+const StyleProviderFontFace = createGlobalStyle<{ resources?: string[] }>`
       ${(props) => {
         return props.resources?.map(function (resource) {
           return resource;
@@ -8,4 +8,4 @@ const TypographyStyleProvider = createGlobalStyle<{ resources?: string[] }>`
       }}
     `;
 
-export { TypographyStyleProvider };
+export { StyleProviderFontFace };

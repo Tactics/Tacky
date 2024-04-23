@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AnimationStyleProvider = void 0;
+exports.StyleProviderAnimation = void 0;
 const styled_components_1 = require("styled-components");
-const AnimationStyleProvider = (0, styled_components_1.createGlobalStyle) `
+const StyleProviderAnimation = (0, styled_components_1.createGlobalStyle) `
       ${(props) => {
     var _a;
     return (_a = props.animations) === null || _a === void 0 ? void 0 : _a.map(function (animation) {
@@ -46,4 +46,4 @@ const AnimationStyleProvider = (0, styled_components_1.createGlobalStyle) `
           }
       }
 `;
-exports.AnimationStyleProvider = AnimationStyleProvider;
+exports.StyleProviderAnimation = StyleProviderAnimation;

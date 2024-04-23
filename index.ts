@@ -1,5 +1,6 @@
-import { AnimationStyleProvider } from "./src/providers/animation-style-provider";
-import { TypographyStyleProvider } from "./src/providers/typography-style-provider";
+import { StyleProviderAnimation } from "./src/providers/animation";
+import { StyleProviderFontFace } from "./src/providers/font-face";
+import { StyleProviderReset } from "./src/providers/reset";
 import { ThemeBuilder } from "./src/theme/builders/theme";
 import { ThemeMode } from "./src/theme/enums/theme-mode";
 import { orDefault } from "./src/tooling/or-default";
@@ -10,8 +11,9 @@ import { ThemeCtx } from "./src/contexts/theme-context";
 import { ThemeModeCtx } from "./src/contexts/theme-mode-context";
 
 export {
-    AnimationStyleProvider,
-    TypographyStyleProvider,
+    StyleProviderAnimation,
+    StyleProviderFontFace,
+    StyleProviderReset,
     BuildProvidersTree,
     ThemeBuilder,
     ThemeMode,
