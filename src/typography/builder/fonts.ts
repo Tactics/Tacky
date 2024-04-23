@@ -17,8 +17,8 @@ import {
   baseThemeConfigScaleXs,
   baseThemeConfigSupportingFont,
 } from "../../base/theme";
-import {orDefault} from "../../tooling/or-default";
-import {FontBuilder} from "./font";
+import { orDefault } from "../../tooling/or-default";
+import { FontBuilder } from "./font";
 
 const TypographyFontsBuilder = ({
   base,

@@ -5,10 +5,10 @@ import { ColorBuilder } from "../../colors/builders/colors";
 import { RadiusBuilder } from "../../radius/builders/radius";
 
 const ThemeBuilder = ({
-  base,  
+  base,
   config,
-} : {
-  base: ThemeI,  
+}: {
+  base: ThemeI;
   config: ThemeConfigI;
 }): ThemeI => {
   return {

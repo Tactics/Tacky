@@ -1,32 +1,34 @@
-import React from 'react';
+import React from "react";
 import {
-    StorybookUiContainer,
-    StorybookUiContent, StorybookUiHead, StorybookUiHeadTitle,
+  StorybookUiContainer,
+  StorybookUiContent,
+  StorybookUiHead,
+  StorybookUiHeadTitle,
 } from "./../ui-element/ui-element.style";
-import {useThemeFonts} from "./../../hooks/use-theme-fonts";
-import {useThemeColor} from "./../../hooks/use-theme-colors";
+import { useThemeFonts } from "./../../hooks/use-theme-fonts";
+import { useThemeColor } from "./../../hooks/use-theme-colors";
 
-export const StorybookUiElement = (
-    { title, children } : { title : string, children : React.ReactNode }
-) => {
+export const StorybookUiElement = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => {
+  const typography = useThemeFonts();
+  const color = useThemeColor();
 
-    const typography = useThemeFonts();
-    const color = useThemeColor();
-
-    return (
-        <StorybookUiContainer>
-            <StorybookUiHead color={color.neutrals.tint_500}>
-                <StorybookUiHeadTitle
-                    font={typography.primary.xl}
-                    color={color.neutrals.tint_950}
-                >
-                        { title }
-                </StorybookUiHeadTitle>
-            </StorybookUiHead>
-            <StorybookUiContent>
-                { children }
-            </StorybookUiContent>
-        </StorybookUiContainer>
-    );
+  return (
+    <StorybookUiContainer>
+      <StorybookUiHead color={color.neutrals.tint_500}>
+        <StorybookUiHeadTitle
+          font={typography.primary.xl}
+          color={color.neutrals.tint_950}
+        >
+          {title}
+        </StorybookUiHeadTitle>
+      </StorybookUiHead>
+      <StorybookUiContent>{children}</StorybookUiContent>
+    </StorybookUiContainer>
+  );
 };
-

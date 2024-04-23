@@ -1,4 +1,4 @@
-import {ThemeConfigI, ThemeI} from "./theme";
+import { ThemeConfigI, ThemeI } from "./theme";
 
 export interface ThemeVariantsI {
   standard: ThemeI;

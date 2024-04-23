@@ -10,4 +10,3 @@ export interface AlternateI {
 export interface AlternateConfigI {
   components?: Array<AlternateItem>;
 }
-

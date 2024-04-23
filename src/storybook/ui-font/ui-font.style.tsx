@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StorybookUiFontPreview = styled.div<{ font: string }>`
-    font: ${(props) => props.font};
-`
+  font: ${(props) => props.font};
+`;
