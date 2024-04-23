@@ -190,4 +190,12 @@ declare const ThemeCtx: React.Context<ThemeI>;
 
 declare const ThemeModeCtx: React.Context<ThemeMode>;
 
-export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx };
+declare const useTheme: () => ThemeI;
+
+declare const useThemeColor: () => ColorsI;
+
+declare const useThemeFonts: () => TypographyFontsI;
+
+declare const useThemeAlternate: () => Array<AlternateItem>;
+
+export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, useTheme, useThemeAlternate, useThemeColor, useThemeFonts };
