@@ -13,7 +13,6 @@
   "prepublish": "tsc",
   "scripts": {
     "format": "prettier --write src/.",
-    "types": "tsc"
   },
   "devDependencies": {
     "@types/react": "^18.2.79",

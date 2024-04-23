@@ -31,11 +31,14 @@ jobs:
       - name: Npm install
         run: npm install
 
+      - name: Typescript install
+        run: npm install typescript
+
       - name: Format code
         run: npm run format
 
       - name: Build types
-        run: npm run types
+        run: tsc
 
       # see https://github.com/EndBug/add-and-commit
       - # commit only to core contributors who have repository access
