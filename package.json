@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -35,7 +35,7 @@
   "prepublish": "tsc",
   "scripts": {
     "format": "prettier --write src/.",
-    "build" : "prettier --write src/. && ./node_modules/.bin/tsup"
+    "build": "prettier --write src/. && ./node_modules/.bin/tsup"
   },
   "devDependencies": {
     "@types/react": "^18.2.79",
@@ -49,5 +49,6 @@
     "styled-components": "^6.1.8",
     "ts-node": "^10.9.2",
     "tsc": "^2.0.4"
-  }
+  },
+  "packageManager": "pnpm@9.1.1+sha512.14e915759c11f77eac07faba4d019c193ec8637229e62ec99eefb7cf3c3b75c64447882b7c485142451ee3a6b408059cdfb7b7fa0341b975f12d0f7629c71195"
 }

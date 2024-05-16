@@ -7,13 +7,11 @@ var y=s.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
 `,U=s.div`
   flex-grow: 1;
+  min-width: 80px;
 `,d=s.div`
   background: ${o=>o.color};
-  box-shadow: rgba(39, 51, 68, 0.1) 0 4px 7px;
-  border-radius: 8px;
   width: 100%;
   height: 2.5rem;
   margin-bottom: 0.5rem;
