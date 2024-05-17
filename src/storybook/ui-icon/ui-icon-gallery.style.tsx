@@ -25,8 +25,7 @@ export const StyledUiIconGalleryItemSpecimen = styled.div`
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
   border: 1px solid hsla(203, 50%, 30%, 0.15);
   overflow: hidden;
-  height: 40px;
-  width: 40px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,4 +35,6 @@ export const StyledUiIconGalleryItemSpecimen = styled.div`
 export const StyledUiIconGalleryItemLabel = styled.div`
   margin-left: 10px;
   line-height: 1.2;
+  text-transform: lowercase;
+  color: #2e3438;
 `;
