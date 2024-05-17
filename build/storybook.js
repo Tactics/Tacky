@@ -1,53 +1,83 @@
 'use strict';
 
 var chunkX3P3LASA_js = require('./chunk-X3P3LASA.js');
-var r = require('react');
-var l = require('styled-components');
+var i = require('react');
+var n = require('styled-components');
 
 function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
 
-var r__default = /*#__PURE__*/_interopDefault(r);
-var l__default = /*#__PURE__*/_interopDefault(l);
+var i__default = /*#__PURE__*/_interopDefault(i);
+var n__default = /*#__PURE__*/_interopDefault(n);
 
-var y=l__default.default.div`
+var a=n__default.default.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-`,f=l__default.default.div`
+`,d=n__default.default.div`
   flex-grow: 1;
   min-width: 80px;
-`,b=l__default.default.div`
+`,f=n__default.default.div`
   background: ${o=>o.color};
   width: 100%;
   height: 2.5rem;
   margin-bottom: 0.5rem;
-`,k=l__default.default.div``,S=l__default.default.div`
+`,S=n__default.default.div``,b=n__default.default.div`
   font: ${o=>o.font};
   color: ${o=>o.color};
-`,U=l__default.default.div`
+`,U=n__default.default.div`
   margin-top: 0.25rem;
   font: ${o=>o.font};
   color: ${o=>o.color};
-`;var t=({title:o,color:i})=>{let p=chunkX3P3LASA_js.v(),s=chunkX3P3LASA_js.u();return r__default.default.createElement(f,null,r__default.default.createElement(b,{color:i}),r__default.default.createElement(k,null,r__default.default.createElement(S,{font:p.primary.sm,color:s.neutrals.tint_800},o),r__default.default.createElement(U,{font:p.primary.xs,color:s.neutrals.tint_800},i)))};var h=({colors:o})=>r__default.default.createElement(y,null,o.map(function(i){return r__default.default.createElement(t,{color:i.color,title:i.name})}));var I=({colors:o})=>r__default.default.createElement(y,null,r__default.default.createElement(t,{color:o.tint_50,title:"50"}),r__default.default.createElement(t,{color:o.tint_100,title:"100"}),r__default.default.createElement(t,{color:o.tint_200,title:"200"}),r__default.default.createElement(t,{color:o.tint_300,title:"300"}),r__default.default.createElement(t,{color:o.tint_400,title:"400"}),r__default.default.createElement(t,{color:o.tint_500,title:"500"}),r__default.default.createElement(t,{color:o.tint_600,title:"600"}),r__default.default.createElement(t,{color:o.tint_700,title:"700"}),r__default.default.createElement(t,{color:o.tint_800,title:"800"}),r__default.default.createElement(t,{color:o.tint_900,title:"900"}),r__default.default.createElement(t,{color:o.tint_950,title:"950"}));var d=l__default.default.div`
+`;var r=({title:o,color:t})=>{let s=chunkX3P3LASA_js.v(),c=chunkX3P3LASA_js.u();return i__default.default.createElement(d,null,i__default.default.createElement(f,{color:t}),i__default.default.createElement(S,null,i__default.default.createElement(b,{font:s.primary.sm,color:c.neutrals.tint_800},o),i__default.default.createElement(U,{font:s.primary.xs,color:c.neutrals.tint_800},t)))};var T=({colors:o})=>i__default.default.createElement(a,null,o.map(function(t){return i__default.default.createElement(r,{color:t.color,title:t.name})}));var $=({colors:o})=>i__default.default.createElement(a,null,i__default.default.createElement(r,{color:o.tint_50,title:"50"}),i__default.default.createElement(r,{color:o.tint_100,title:"100"}),i__default.default.createElement(r,{color:o.tint_200,title:"200"}),i__default.default.createElement(r,{color:o.tint_300,title:"300"}),i__default.default.createElement(r,{color:o.tint_400,title:"400"}),i__default.default.createElement(r,{color:o.tint_500,title:"500"}),i__default.default.createElement(r,{color:o.tint_600,title:"600"}),i__default.default.createElement(r,{color:o.tint_700,title:"700"}),i__default.default.createElement(r,{color:o.tint_800,title:"800"}),i__default.default.createElement(r,{color:o.tint_900,title:"900"}),i__default.default.createElement(r,{color:o.tint_950,title:"950"}));var C=n__default.default.div`
   display: flex;
   flex-direction: column;
-`,a=l__default.default.div`
+`,I=n__default.default.div`
   margin-bottom: 5rem;
-`;var _=({title:o,children:i})=>{chunkX3P3LASA_js.v();chunkX3P3LASA_js.u();return r__default.default.createElement(d,null,r__default.default.createElement(a,null,i))};var w=l__default.default.div`
+`;var A=({title:o,children:t})=>{chunkX3P3LASA_js.v();chunkX3P3LASA_js.u();return i__default.default.createElement(C,null,i__default.default.createElement(I,null,t))};var g=n__default.default.div`
   display: flex;
   flex-direction: column;
-`,P=l__default.default.div`
+`,h=n__default.default.div`
   margin-bottom: 1rem;
-`;var D=({caption:o,children:i})=>{chunkX3P3LASA_js.v();chunkX3P3LASA_js.u();return r__default.default.createElement(w,null,r__default.default.createElement(P,null,i))};var u=l__default.default.div`
+`;var N=({caption:o,children:t})=>{chunkX3P3LASA_js.v();chunkX3P3LASA_js.u();return i__default.default.createElement(g,null,i__default.default.createElement(h,null,t))};var P=n__default.default.div`
   font: ${o=>o.font};
-`;var F=({text:o,font:i})=>r__default.default.createElement(u,{font:i},o);
+`;var j=({text:o,font:t})=>i__default.default.createElement(P,{font:t},o);var G=n__default.default.div`
+  display: flex;
+  flex-flow: row wrap;
+`,L=n__default.default.div`
+  display: flex;
+  flex-flow: row wrap;
+`,_=n__default.default.div`
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 1 calc(20% - 10px);
+  min-width: 300px;
+  margin: 0 10px 30px 0;
+`,D=n__default.default.div`
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+  border: 1px solid hsla(203, 50%, 30%, 0.15);
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+`,F=n__default.default.div`
+  margin-left: 10px;
+  line-height: 1.2;
+`;var q=({children:o,...t})=>i__default.default.createElement(G,null,i__default.default.createElement(L,{...t,className:"docblock-icongallery sb-unstyled"},o)),z=({name:o,children:t})=>i__default.default.createElement(_,null,i__default.default.createElement(D,null,t),i__default.default.createElement(F,null,o));
 
-exports.StorybookUiAdditionalColorList = h;
-exports.StorybookUiColor = t;
-exports.StorybookUiElement = _;
-exports.StorybookUiFont = F;
-exports.StorybookUiItem = D;
-exports.StorybookUiThemeColorList = I;
+exports.StorybookUiAdditionalColorList = T;
+exports.StorybookUiColor = r;
+exports.StorybookUiElement = A;
+exports.StorybookUiFont = j;
+exports.StorybookUiIconGallery = q;
+exports.StorybookUiIconGalleryItem = z;
+exports.StorybookUiItem = N;
+exports.StorybookUiThemeColorList = $;
 //# sourceMappingURL=out.js.map
 //# sourceMappingURL=storybook.js.map
