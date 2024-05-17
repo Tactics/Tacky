@@ -2,7 +2,6 @@ import React from "react";
 import { useThemeFonts } from "./../../hooks/use-theme-fonts";
 import { useThemeColor } from "./../../hooks/use-theme-colors";
 import {
-  StorybookUiItemCaption,
   StorybookUiItemContainer,
   StorybookUiItemContent,
 } from "./../ui-item/ui-item.style";
