@@ -19,12 +19,6 @@ export const StorybookUiItem = ({
 
   return (
     <StorybookUiItemContainer>
-      <StorybookUiItemCaption
-        font={typography.primary.sm}
-        color={color.neutrals.tint_900}
-      >
-        {caption}
-      </StorybookUiItemCaption>
       <StorybookUiItemContent>{children}</StorybookUiItemContent>
     </StorybookUiItemContainer>
   );
