@@ -7,22 +7,22 @@ var a=n.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-`,d=n.div`
+`,f=n.div`
   flex-grow: 1;
   min-width: 80px;
-`,f=n.div`
+`,S=n.div`
   background: ${o=>o.color};
   width: 100%;
   height: 2.5rem;
   margin-bottom: 0.5rem;
-`,S=n.div``,b=n.div`
+`,b=n.div``,U=n.div`
   font: ${o=>o.font};
   color: ${o=>o.color};
-`,U=n.div`
+`,x=n.div`
   margin-top: 0.25rem;
   font: ${o=>o.font};
   color: ${o=>o.color};
-`;var r=({title:o,color:t})=>{let s=v(),c=u$1();return e.createElement(d,null,e.createElement(f,{color:t}),e.createElement(S,null,e.createElement(b,{font:s.primary.sm,color:c.neutrals.tint_800},o),e.createElement(U,{font:s.primary.xs,color:c.neutrals.tint_800},t)))};var T=({colors:o})=>e.createElement(a,null,o.map(function(t){return e.createElement(r,{color:t.color,title:t.name})}));var $=({colors:o})=>e.createElement(a,null,e.createElement(r,{color:o.tint_50,title:"50"}),e.createElement(r,{color:o.tint_100,title:"100"}),e.createElement(r,{color:o.tint_200,title:"200"}),e.createElement(r,{color:o.tint_300,title:"300"}),e.createElement(r,{color:o.tint_400,title:"400"}),e.createElement(r,{color:o.tint_500,title:"500"}),e.createElement(r,{color:o.tint_600,title:"600"}),e.createElement(r,{color:o.tint_700,title:"700"}),e.createElement(r,{color:o.tint_800,title:"800"}),e.createElement(r,{color:o.tint_900,title:"900"}),e.createElement(r,{color:o.tint_950,title:"950"}));var C=n.div`
+`;var r=({title:o,color:t})=>{let s=v(),c=u$1();return e.createElement(f,null,e.createElement(S,{color:t}),e.createElement(b,null,e.createElement(U,{font:s.primary.sm,color:c.neutrals.tint_800},o),e.createElement(x,{font:s.primary.xs,color:c.neutrals.tint_800},t)))};var T=({colors:o})=>e.createElement(e.Fragment,null,o.map(function(t){return e.createElement(a,null,e.createElement(r,{color:t.color,title:t.name}))}));var $=({colors:o})=>e.createElement(a,null,e.createElement(r,{color:o.tint_50,title:"50"}),e.createElement(r,{color:o.tint_100,title:"100"}),e.createElement(r,{color:o.tint_200,title:"200"}),e.createElement(r,{color:o.tint_300,title:"300"}),e.createElement(r,{color:o.tint_400,title:"400"}),e.createElement(r,{color:o.tint_500,title:"500"}),e.createElement(r,{color:o.tint_600,title:"600"}),e.createElement(r,{color:o.tint_700,title:"700"}),e.createElement(r,{color:o.tint_800,title:"800"}),e.createElement(r,{color:o.tint_900,title:"900"}),e.createElement(r,{color:o.tint_950,title:"950"}));var C=n.div`
   display: flex;
   flex-direction: column;
 `,I=n.div`

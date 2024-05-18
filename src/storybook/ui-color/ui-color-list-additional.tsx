@@ -9,10 +9,14 @@ export const StorybookUiAdditionalColorList = ({
   colors: AdditionalColorItem[];
 }) => {
   return (
-    <StorybookUiColorPreviewList>
+    <>
       {colors.map(function (item: AdditionalColorItem) {
-        return <StorybookUiColor color={item.color} title={item.name} />;
+        return (
+          <StorybookUiColorPreviewList>
+            <StorybookUiColor color={item.color} title={item.name} />
+          </StorybookUiColorPreviewList>
+        );
       })}
-    </StorybookUiColorPreviewList>
+    </>
   );
 };
