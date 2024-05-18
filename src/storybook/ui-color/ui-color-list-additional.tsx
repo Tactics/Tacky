@@ -1,5 +1,5 @@
 import React from "react";
-import { StorybookUiColorPreviewList } from "./ui-color.style";
+import { StorybookUiColorAdditionalPreviewList } from "./ui-color.style";
 import { StorybookUiColor } from "./ui-color";
 import { AdditionalColorItem } from "../../colors/contracts/color-additional";
 
@@ -12,9 +12,9 @@ export const StorybookUiAdditionalColorList = ({
     <>
       {colors.map(function (item: AdditionalColorItem) {
         return (
-          <StorybookUiColorPreviewList>
+          <StorybookUiColorAdditionalPreviewList>
             <StorybookUiColor color={item.color} title={item.name} />
-          </StorybookUiColorPreviewList>
+          </StorybookUiColorAdditionalPreviewList>
         );
       })}
     </>

@@ -7,6 +7,14 @@ export const StorybookUiColorPreviewList = styled.div`
   flex-wrap: wrap;
 `;
 
+export const StorybookUiColorAdditionalPreviewList = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+`;
+
 export const StorybookUiColorPreview = styled.div`
   flex-grow: 1;
   min-width: 80px;
