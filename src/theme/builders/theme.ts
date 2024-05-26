@@ -1,9 +1,9 @@
-import { AlternateBuilder } from "../../alternate/builders/alternate";
-import { ThemeConfigI, ThemeI } from "../contracts/theme";
-import { TypographyBuilder } from "../../typography/builder/typography";
-import { ColorBuilder } from "../../colors/builders/colors";
-import { RadiusBuilder } from "../../radius/builders/radius";
-import { BaseTheme } from "../../base/theme";
+import { AlternateBuilder } from "@/alternate/builders/alternate";
+import { ThemeConfigI, ThemeI } from "@/theme/contracts/theme";
+import { TypographyBuilder } from "@/typography/builder/typography";
+import { ColorBuilder } from "@/colors/builders/colors";
+import { RadiusBuilder } from "@/radius/builders/radius";
+import { BaseTheme } from "@/base/theme";
 
 const ThemeBuilder = ({ config }: { config: ThemeConfigI }): ThemeI => {
   return {

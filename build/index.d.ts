@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as styled_components from 'styled-components';
-import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI } from './theme-DrLlLQlP.js';
+import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, R as RadiusI, U as UtilityI } from './theme-DrLlLQlP.js';
 import { A as AlternateItem } from './alternate-j1k3Yp03.js';
 import './color-variant-CC91dWNE.js';
 import './color-additional-_M7QfRi_.js';
@@ -37,4 +37,8 @@ declare const useThemeFonts: () => TypographyFontsI;
 
 declare const useThemeAlternate: () => Array<AlternateItem>;
 
-export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, useTheme, useThemeAlternate, useThemeColor, useThemeFonts };
+declare const useThemeRadius: () => RadiusI;
+
+declare const useThemeUtility: () => UtilityI;
+
+export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };

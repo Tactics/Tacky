@@ -1,6 +1,6 @@
-import { ColorsConfigI, ColorsI } from "../contracts/colors";
-import { ColorVariantBuilder } from "./variant";
-import { AdditionalColorBuilder } from "./additional";
+import { ColorsConfigI, ColorsI } from "@/colors/contracts/colors";
+import { ColorVariantBuilder } from "@/colors/builders/variant";
+import { AdditionalColorBuilder } from "@/colors/builders/additional";
 
 const ColorBuilder = ({
   base,

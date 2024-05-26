@@ -1,5 +1,8 @@
-import { ColorVariantConfigI, ColorVariantI } from "../contracts/color-variant";
-import { orDefault } from "../../tooling/or-default";
+import {
+  ColorVariantConfigI,
+  ColorVariantI,
+} from "@/colors/contracts/color-variant";
+import { orDefault } from "@/tooling/or-default";
 
 const ColorVariantBuilder = ({
   base,

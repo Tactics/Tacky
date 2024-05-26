@@ -1,4 +1,4 @@
-import { AlternateItem } from "../contracts/alternate";
+import { AlternateItem } from "@/alternate/contracts/alternate";
 
 export const LookupAlternate = ({
   name,

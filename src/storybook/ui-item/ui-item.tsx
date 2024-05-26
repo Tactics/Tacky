@@ -1,10 +1,10 @@
 import React from "react";
-import { useThemeFonts } from "./../../hooks/use-theme-fonts";
-import { useThemeColor } from "./../../hooks/use-theme-colors";
+import { useThemeFonts } from "@/hooks/use-theme-fonts";
+import { useThemeColor } from "@/hooks/use-theme-colors";
 import {
   StorybookUiItemContainer,
   StorybookUiItemContent,
-} from "./../ui-item/ui-item.style";
+} from "@/storybook/ui-item/ui-item.style";
 
 export const StorybookUiItem = ({
   caption,

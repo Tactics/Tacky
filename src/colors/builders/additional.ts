@@ -1,4 +1,4 @@
-import { AdditionalColorItem } from "../contracts/color-additional";
+import { AdditionalColorItem } from "@/colors/contracts/color-additional";
 
 const AdditionalColorBuilder = ({
   base,

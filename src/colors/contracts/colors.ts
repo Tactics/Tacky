@@ -1,5 +1,8 @@
-import { ColorVariantConfigI, ColorVariantI } from "./color-variant";
-import { AdditionalColorItem } from "./color-additional";
+import {
+  ColorVariantConfigI,
+  ColorVariantI,
+} from "@/colors/contracts/color-variant";
+import { AdditionalColorItem } from "@/colors/contracts/color-additional";
 
 // A common interface for defining a color scheme for a theme.
 export interface ColorsI {

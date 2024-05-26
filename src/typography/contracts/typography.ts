@@ -1,4 +1,7 @@
-import { TypographyFontsConfigI, TypographyFontsI } from "./fonts";
+import {
+  TypographyFontsConfigI,
+  TypographyFontsI,
+} from "@/typography/contracts/fonts";
 
 export interface TypographyI {
   resources: string[];

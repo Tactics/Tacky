@@ -1,4 +1,4 @@
-import { SpacingI } from "./spacing";
+import { SpacingI } from "@/utility/contracts/spacing";
 
 interface UtilityI {
   spacing: SpacingI;

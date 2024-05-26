@@ -1,7 +1,7 @@
 import React from "react";
-import { StorybookUiColorAdditionalPreviewList } from "./ui-color.style";
-import { StorybookUiColor } from "./ui-color";
-import { AdditionalColorItem } from "../../colors/contracts/color-additional";
+import { StorybookUiColorAdditionalPreviewList } from "@/storybook/ui-color/ui-color.style";
+import { StorybookUiColor } from "@/storybook/ui-color/ui-color";
+import { AdditionalColorItem } from "@/colors/contracts/color-additional";
 
 export const StorybookUiAdditionalColorList = ({
   colors,

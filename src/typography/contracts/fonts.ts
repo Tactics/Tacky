@@ -1,6 +1,6 @@
-import { TypographyFontI } from "./font";
-import { TypographyFontsScaleConfigI } from "./scale";
-import { TypographyFontsFamilyConfigI } from "./family";
+import { TypographyFontI } from "@/typography/contracts/font";
+import { TypographyFontsScaleConfigI } from "@/typography/contracts/scale";
+import { TypographyFontsFamilyConfigI } from "@/typography/contracts/family";
 
 export interface TypographyFontsI {
   primary: TypographyFontI;

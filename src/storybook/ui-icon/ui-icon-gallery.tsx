@@ -5,7 +5,7 @@ import {
   StyledUiIconGalleryItemLabel,
   StyledUiIconGalleryItemSpecimen,
   StyledUiIconGalleryList,
-} from "./ui-icon-gallery.style";
+} from "@/storybook/ui-icon/ui-icon-gallery.style";
 
 interface StorybookIconGalleryProps {
   children?: React.ReactNode;

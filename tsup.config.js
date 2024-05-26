@@ -20,3 +20,4 @@ export default defineConfig([
         target: ['chrome91', 'firefox90', 'edge91', 'safari15', 'ios15', 'opera77'],
     },
 ])
+

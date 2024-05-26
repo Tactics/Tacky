@@ -1,7 +1,7 @@
 import React from "react";
-import { StorybookUiColorPreviewList } from "./ui-color.style";
-import { ColorVariantI } from "../../colors/contracts/color-variant";
-import { StorybookUiColor } from "./ui-color";
+import { StorybookUiColorPreviewList } from "@/storybook/ui-color/ui-color.style";
+import { ColorVariantI } from "@/colors/contracts/color-variant";
+import { StorybookUiColor } from "@/storybook/ui-color/ui-color";
 
 export const StorybookUiThemeColorList = ({
   colors,

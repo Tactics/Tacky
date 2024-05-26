@@ -1,4 +1,4 @@
-import { RadiusConfigI, RadiusI } from "../contracts/radius";
+import { RadiusConfigI, RadiusI } from "@/radius/contracts/radius";
 
 const RadiusBuilder = ({
   base,

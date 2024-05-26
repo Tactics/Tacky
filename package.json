@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "1.1.18",
+  "version": "1.1.19",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -33,7 +33,12 @@
   "author": "Gert van den Buijs <gertvandenbuijs@hotmail.com>",
   "license": "MIT",
   "prepublish": "tsc",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "format": "prettier --write src/.",
     "build": "prettier --write src/. && ./node_modules/.bin/tsup"
   },
@@ -46,7 +51,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.1.8",
+    "styled-components": "^6.1.11",
     "ts-node": "^10.9.2",
     "tsc": "^2.0.4"
   },

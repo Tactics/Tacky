@@ -1,5 +1,5 @@
-import { ThemeI } from "../theme/contracts/theme";
-import { FontBuilder } from "../typography/builder/font";
+import { ThemeI } from "@/theme/contracts/theme";
+import { FontBuilder } from "@/typography/builder/font";
 
 export const baseThemeConfigPrimaryFont: string =
   'ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"';

@@ -2,9 +2,9 @@ import React from "react";
 import {
   StorybookUiContainer,
   StorybookUiContent,
-} from "./../ui-element/ui-element.style";
-import { useThemeFonts } from "./../../hooks/use-theme-fonts";
-import { useThemeColor } from "./../../hooks/use-theme-colors";
+} from "@/storybook/ui-element/ui-element.style";
+import { useThemeFonts } from "@/hooks/use-theme-fonts";
+import { useThemeColor } from "@/hooks/use-theme-colors";
 
 export const StorybookUiElement = ({
   title,

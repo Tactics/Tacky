@@ -1,4 +1,4 @@
-import { HexColor } from "./hex";
+import { HexColor } from "@/colors/contracts/hex";
 
 // interface for defining how additional project-specific colors should be defined.
 export interface AdditionalColorItem {

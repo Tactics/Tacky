@@ -1,6 +1,9 @@
-import { TypographyConfigI, TypographyI } from "../contracts/typography";
-import { TypographyResourcesBuilder } from "./resource";
-import { TypographyFontsBuilder } from "./fonts";
+import {
+  TypographyConfigI,
+  TypographyI,
+} from "@/typography/contracts/typography";
+import { TypographyResourcesBuilder } from "@/typography/builder/resource";
+import { TypographyFontsBuilder } from "@/typography/builder/fonts";
 
 const TypographyBuilder = ({
   base,

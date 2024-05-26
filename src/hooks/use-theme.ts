@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ThemeI } from "../theme/contracts/theme";
-import { ThemeCtx } from "../contexts/theme-context";
-import { BaseTheme } from "../base/theme";
+import { ThemeI } from "@/theme/contracts/theme";
+import { ThemeCtx } from "@/contexts/theme-context";
+import { BaseTheme } from "@/base/theme";
 
 const useTheme = (): ThemeI => {
   try {

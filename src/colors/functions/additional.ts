@@ -1,5 +1,5 @@
-import { HexColor } from "../contracts/hex";
-import { AdditionalColorItem } from "../contracts/color-additional";
+import { HexColor } from "@/colors/contracts/hex";
+import { AdditionalColorItem } from "@/colors/contracts/color-additional";
 
 const LookupAdditionalColor = ({
   name,

@@ -6,8 +6,8 @@ import {
   StorybookUiColorPreviewDetailsValue,
   StorybookUiColorPreviewDisplay,
 } from "./ui-color.style";
-import { useThemeFonts } from "../../hooks/use-theme-fonts";
-import { useThemeColor } from "../../hooks/use-theme-colors";
+import { useThemeFonts } from "@/hooks/use-theme-fonts";
+import { useThemeColor } from "@/hooks/use-theme-colors";
 
 export const StorybookUiColor = ({
   title,

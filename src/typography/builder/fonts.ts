@@ -1,4 +1,7 @@
-import { TypographyFontsConfigI, TypographyFontsI } from "../contracts/fonts";
+import {
+  TypographyFontsConfigI,
+  TypographyFontsI,
+} from "@/typography/contracts/fonts";
 import {
   baseThemeConfigAccentFont,
   baseThemeConfigPrimaryFont,
@@ -16,9 +19,9 @@ import {
   baseThemeConfigScaleXl,
   baseThemeConfigScaleXs,
   baseThemeConfigSupportingFont,
-} from "../../base/theme";
-import { orDefault } from "../../tooling/or-default";
-import { FontBuilder } from "./font";
+} from "@/base/theme";
+import { orDefault } from "@/tooling/or-default";
+import { FontBuilder } from "@/typography/builder/font";
 
 const TypographyFontsBuilder = ({
   base,

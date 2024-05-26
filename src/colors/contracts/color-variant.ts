@@ -1,4 +1,4 @@
-import { HexColor } from "./hex";
+import { HexColor } from "@/colors/contracts/hex";
 
 // Every color in a color scheme will need different tints of the same color.
 // This makes the theme more vibrant and helps us create contrast and depth.

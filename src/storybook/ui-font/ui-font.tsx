@@ -1,6 +1,6 @@
 import React from "react";
 
-import { StorybookUiFontPreview } from "./ui-font.style";
+import { StorybookUiFontPreview } from "@/storybook/ui-font/ui-font.style";
 
 export const StorybookUiFont = ({
   text,
