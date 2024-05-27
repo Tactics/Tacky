@@ -12,7 +12,7 @@ const BuildProvidersTree = (componentsWithProps: any) => {
         );
       };
     },
-    initialComponent
+    initialComponent,
   );
 };
 

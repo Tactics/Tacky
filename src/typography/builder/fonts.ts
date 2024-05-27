@@ -39,13 +39,13 @@ const TypographyFontsBuilder = ({
   const accentFont = orDefault(
     config,
     orDefault(config, baseThemeConfigAccentFont, ["family", "primary"]),
-    ["family", "accent"]
+    ["family", "accent"],
   );
 
   const supportingFont = orDefault(
     config,
     orDefault(config, baseThemeConfigSupportingFont, ["family", "primary"]),
-    ["family", "supporting"]
+    ["family", "supporting"],
   );
 
   const mdScale = orDefault(config, baseThemeConfigScaleMd, ["scale", "md"]);
