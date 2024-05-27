@@ -11,6 +11,7 @@ export interface ColorsI {
   success: ColorVariantI;
   info: ColorVariantI;
   neutrals: ColorVariantI;
+  surfaces: ColorVariantI;
   primary: ColorVariantI;
   accent: ColorVariantI;
   supporting: ColorVariantI;
@@ -23,6 +24,7 @@ export interface ColorsConfigI {
   success?: ColorVariantConfigI;
   info?: ColorVariantConfigI;
   neutrals?: ColorVariantConfigI;
+  surfaces?: ColorVariantConfigI;
   primary?: ColorVariantConfigI;
   accent?: ColorVariantConfigI;
   supporting?: ColorVariantConfigI;
