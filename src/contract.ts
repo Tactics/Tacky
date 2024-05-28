@@ -21,10 +21,16 @@ export type {
   ThemeVariantsConfigI,
 } from "@/theme/contracts/theme-variant";
 export type { TypographyFontsFamilyConfigI } from "@/typography/contracts/family";
-export type { TypographyFontI } from "@/typography/contracts/font";
+export type {
+  TypographyFontI,
+  TypographyFontKeys,
+  TypographyFontKey,
+} from "@/typography/contracts/font";
 export type {
   TypographyFontsI,
   TypographyFontsConfigI,
+  TypographyFontsKeys,
+  TypographyFontsKey,
 } from "@/typography/contracts/fonts";
 export type { TypographyFontsScaleLineHeightConfigI } from "@/typography/contracts/line-height";
 export type { TypographyFontsScaleConfigI } from "@/typography/contracts/scale";

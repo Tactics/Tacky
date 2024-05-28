@@ -17,6 +17,8 @@ interface TypographyFontI {
     "8xl": string;
     "9xl": string;
 }
+declare const TypographyFontKeys: string[];
+type TypographyFontKey = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl";
 
 interface TypographyFontsScaleSizeConfigI {
     xs?: string;
@@ -53,6 +55,8 @@ interface TypographyFontsConfigI {
     family?: TypographyFontsFamilyConfigI;
     scale?: TypographyFontsScaleConfigI;
 }
+declare const TypographyFontsKeys: string[];
+type TypographyFontsKey = "primary" | "supporting" | "accent";
 
 interface TypographyI {
     resources: string[];
@@ -165,4 +169,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export type { ColorsI as C, RadiusI as R, SpacingI as S, ThemeConfigI as T, UtilityI as U, ThemeI as a, TypographyFontsI as b, ColorsConfigI as c, RadiusConfigI as d, TypographyFontsFamilyConfigI as e, TypographyFontI as f, TypographyFontsConfigI as g, TypographyFontsScaleConfigI as h, TypographyFontsScaleSizeConfigI as i, TypographyI as j, TypographyConfigI as k };
+export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type TypographyFontsFamilyConfigI as e, type TypographyFontI as f, TypographyFontKeys as g, type TypographyFontKey as h, type TypographyFontsConfigI as i, TypographyFontsKeys as j, type TypographyFontsKey as k, type TypographyFontsScaleConfigI as l, type TypographyFontsScaleSizeConfigI as m, type TypographyI as n, type TypographyConfigI as o };

@@ -12,3 +12,6 @@ export interface TypographyFontsConfigI {
   family?: TypographyFontsFamilyConfigI;
   scale?: TypographyFontsScaleConfigI;
 }
+
+export const TypographyFontsKeys = ["primary", "supporting", "accent"];
+export type TypographyFontsKey = "primary" | "supporting" | "accent";
