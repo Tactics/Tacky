@@ -7,7 +7,7 @@ const FontBuilder = ({
   scale: string;
   weight: number;
 }): string => {
-  return scale + " " + family + " " + weight;
+  return weight + " " + scale + " " + family;
 };
 
 export { FontBuilder };
