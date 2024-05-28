@@ -169,4 +169,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type TypographyFontsFamilyConfigI as e, type TypographyFontI as f, TypographyFontKeys as g, type TypographyFontKey as h, type TypographyFontsConfigI as i, TypographyFontsKeys as j, type TypographyFontsKey as k, type TypographyFontsScaleConfigI as l, type TypographyFontsScaleSizeConfigI as m, type TypographyI as n, type TypographyConfigI as o };
+export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type TypographyFontsFamilyConfigI as e, type TypographyFontI as f, type TypographyFontKey as g, TypographyFontKeys as h, type TypographyFontsConfigI as i, type TypographyFontsKey as j, TypographyFontsKeys as k, type TypographyFontsScaleConfigI as l, type TypographyFontsScaleSizeConfigI as m, type TypographyI as n, type TypographyConfigI as o };
