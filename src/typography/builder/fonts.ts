@@ -19,6 +19,19 @@ import {
   baseThemeConfigScaleXl,
   baseThemeConfigScaleXs,
   baseThemeConfigSupportingFont,
+  baseThemeConfigWeight2Xl,
+  baseThemeConfigWeight3Xl,
+  baseThemeConfigWeight4Xl,
+  baseThemeConfigWeight5Xl,
+  baseThemeConfigWeight6Xl,
+  baseThemeConfigWeight7Xl,
+  baseThemeConfigWeight8Xl,
+  baseThemeConfigWeight9Xl,
+  baseThemeConfigWeightLg,
+  baseThemeConfigWeightMd,
+  baseThemeConfigWeightSm,
+  baseThemeConfigWeightXl,
+  baseThemeConfigWeightXs,
 } from "@/base/theme";
 import { orDefault } from "@/tooling/or-default";
 import { FontBuilder } from "@/typography/builder/font";
@@ -74,52 +87,52 @@ const TypographyFontsBuilder = ({
 
   const xl9Scale = orDefault(config, baseThemeConfigScale9Xl, ["scale", "9xl"]);
 
-  const mdWeight = orDefault(config, baseThemeConfigScaleMd, ["weight", "md"]);
+  const mdWeight = orDefault(config, baseThemeConfigWeightMd, ["weight", "md"]);
 
-  const smWeight = orDefault(config, baseThemeConfigScaleSm, ["weight", "sm"]);
+  const smWeight = orDefault(config, baseThemeConfigWeightSm, ["weight", "sm"]);
 
-  const xsWeight = orDefault(config, baseThemeConfigScaleXs, ["weight", "xs"]);
+  const xsWeight = orDefault(config, baseThemeConfigWeightXs, ["weight", "xs"]);
 
-  const lgWeight = orDefault(config, baseThemeConfigScaleLg, ["weight", "lg"]);
+  const lgWeight = orDefault(config, baseThemeConfigWeightLg, ["weight", "lg"]);
 
-  const xlWeight = orDefault(config, baseThemeConfigScaleXl, ["weight", "xl"]);
+  const xlWeight = orDefault(config, baseThemeConfigWeightXl, ["weight", "xl"]);
 
-  const xl2Weight = orDefault(config, baseThemeConfigScale2Xl, [
+  const xl2Weight = orDefault(config, baseThemeConfigWeight2Xl, [
     "weight",
     "2xl",
   ]);
 
-  const xl3Weight = orDefault(config, baseThemeConfigScale3Xl, [
+  const xl3Weight = orDefault(config, baseThemeConfigWeight3Xl, [
     "weight",
     "3xl",
   ]);
 
-  const xl4Weight = orDefault(config, baseThemeConfigScale4Xl, [
+  const xl4Weight = orDefault(config, baseThemeConfigWeight4Xl, [
     "weight",
     "4xl",
   ]);
 
-  const xl5Weight = orDefault(config, baseThemeConfigScale5Xl, [
+  const xl5Weight = orDefault(config, baseThemeConfigWeight5Xl, [
     "weight",
     "5xl",
   ]);
 
-  const xl6Weight = orDefault(config, baseThemeConfigScale6Xl, [
+  const xl6Weight = orDefault(config, baseThemeConfigWeight6Xl, [
     "weight",
     "6xl",
   ]);
 
-  const xl7Weight = orDefault(config, baseThemeConfigScale7Xl, [
+  const xl7Weight = orDefault(config, baseThemeConfigWeight7Xl, [
     "weight",
     "7xl",
   ]);
 
-  const xl8Weight = orDefault(config, baseThemeConfigScale8Xl, [
+  const xl8Weight = orDefault(config, baseThemeConfigWeight8Xl, [
     "weight",
     "8xl",
   ]);
 
-  const xl9Weight = orDefault(config, baseThemeConfigScale9Xl, [
+  const xl9Weight = orDefault(config, baseThemeConfigWeight9Xl, [
     "weight",
     "9xl",
   ]);
