@@ -1,6 +1,7 @@
 export { StyleProviderAnimation } from "@/providers/animation";
 export { StyleProviderFontFace } from "@/providers/font-face";
 export { StyleProviderPreFlight } from "@/providers/preflight";
+export { StyleProviderRouter } from "@/providers/router";
 export { ThemeBuilder } from "@/theme/builders/theme";
 export { ThemeMode } from "@/theme/enums/theme-mode";
 export { ThemeCtx } from "@/contexts/theme-context";

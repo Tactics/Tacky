@@ -15,6 +15,8 @@ declare const StyleProviderFontFace: React.NamedExoticComponent<styled_component
 
 declare const StyleProviderPreFlight: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
 
+declare const StyleProviderRouter: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
+
 declare const ThemeBuilder: ({ config }: {
     config: ThemeConfigI;
 }) => ThemeI;
@@ -41,4 +43,4 @@ declare const useThemeRadius: () => RadiusI;
 
 declare const useThemeUtility: () => UtilityI;
 
-export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };
+export { StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, StyleProviderRouter, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };
