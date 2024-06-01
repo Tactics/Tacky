@@ -13,8 +13,15 @@ export type {
 export type {
   ColorVariantI,
   ColorVariantConfigI,
+  ColorVariantKey,
 } from "@/colors/contracts/color-variant";
-export type { RadiusI, RadiusConfigI } from "@/radius/contracts/radius";
+export { ColorVariantKeys } from "@/colors/contracts/color-variant";
+export type {
+  RadiusI,
+  RadiusConfigI,
+  RadiusKey,
+} from "@/radius/contracts/radius";
+export { RadiusKeys } from "@/radius/contracts/radius";
 export type { ThemeI, ThemeConfigI } from "@/theme/contracts/theme";
 export type {
   ThemeVariantsI,
@@ -32,7 +39,6 @@ export type {
   TypographyFontsKey,
 } from "@/typography/contracts/fonts";
 export { TypographyFontsKeys } from "@/typography/contracts/fonts";
-
 export type { TypographyFontsScaleLineHeightConfigI } from "@/typography/contracts/line-height";
 export type { TypographyFontsScaleConfigI } from "@/typography/contracts/scale";
 export type { TypographyFontsScaleSizeConfigI } from "@/typography/contracts/size";
@@ -40,5 +46,6 @@ export type {
   TypographyI,
   TypographyConfigI,
 } from "@/typography/contracts/typography";
-export type { SpacingI } from "@/utility/contracts/spacing";
+export type { SpacingI, SpacingKey } from "@/utility/contracts/spacing";
+export { SpacingKeys } from "@/utility/contracts/spacing";
 export type { UtilityI } from "@/utility/contracts/utility";

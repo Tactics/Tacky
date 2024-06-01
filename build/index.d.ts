@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as styled_components from 'styled-components';
-import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, R as RadiusI, U as UtilityI } from './theme-OJ8CVmUf.js';
+import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, R as RadiusI, U as UtilityI } from './theme-CQQYAilY.js';
 import { A as AlternateItem } from './alternate-j1k3Yp03.js';
-import './color-variant-CC91dWNE.js';
+import './color-variant-Dw-iY7O2.js';
 import './color-additional-_M7QfRi_.js';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {

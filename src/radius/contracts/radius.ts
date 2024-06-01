@@ -21,3 +21,25 @@ export interface RadiusConfigI {
   "2xl": string;
   "3xl": string;
 }
+
+export const RadiusKeys = [
+  "none",
+  "xs",
+  "sm",
+  "md",
+  "lg",
+  "xl",
+  "2xl",
+  "3xl",
+  "full",
+];
+export type RadiusKey =
+  | "none"
+  | "xs"
+  | "sm"
+  | "md"
+  | "lg"
+  | "xl"
+  | "2xl"
+  | "3xl"
+  | "full";

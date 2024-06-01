@@ -1,4 +1,4 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-CC91dWNE.js';
+import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-Dw-iY7O2.js';
 import { A as AdditionalColorItem } from './color-additional-_M7QfRi_.js';
 import { A as AlternateItem } from './alternate-j1k3Yp03.js';
 
@@ -112,6 +112,8 @@ interface RadiusConfigI {
     "2xl": string;
     "3xl": string;
 }
+declare const RadiusKeys: string[];
+type RadiusKey = "none" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";
 
 interface SpacingI {
     0: string;
@@ -150,6 +152,8 @@ interface SpacingI {
     80: string;
     96: string;
 }
+declare const SpacingKeys: string[];
+type SpacingKey = "0" | "px" | "0.5" | " 1" | "1.5" | "2" | "2.5" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "14" | "16" | "20" | "32" | "36" | "40" | "44" | "48" | "52" | "56" | "60" | "64" | "72" | "80" | "96";
 
 interface UtilityI {
     spacing: SpacingI;
@@ -169,4 +173,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type TypographyFontsFamilyConfigI as e, type TypographyFontI as f, type TypographyFontKey as g, TypographyFontKeys as h, type TypographyFontsConfigI as i, type TypographyFontsKey as j, TypographyFontsKeys as k, type TypographyFontsScaleConfigI as l, type TypographyFontsScaleSizeConfigI as m, type TypographyI as n, type TypographyConfigI as o };
+export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type RadiusKey as e, RadiusKeys as f, type TypographyFontsFamilyConfigI as g, type TypographyFontI as h, type TypographyFontKey as i, TypographyFontKeys as j, type TypographyFontsConfigI as k, type TypographyFontsKey as l, TypographyFontsKeys as m, type TypographyFontsScaleConfigI as n, type TypographyFontsScaleSizeConfigI as o, type TypographyI as p, type TypographyConfigI as q, type SpacingKey as r, SpacingKeys as s };

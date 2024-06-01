@@ -29,3 +29,27 @@ export interface ColorVariantConfigI {
   tint_900?: HexColor;
   tint_950?: HexColor;
 }
+
+export const ColorVariantKeys = [
+  "tint_50",
+  "tint_100",
+  "tint_200",
+  "tint_300",
+  "tint_400",
+  "tint_500",
+  "tint_600",
+  "tint_700",
+  "tint_800",
+  "tint_900",
+];
+export type ColorVariantKey =
+  | "tint_50"
+  | "tint_100"
+  | "tint_200"
+  | "tint_300"
+  | "tint_400"
+  | "tint_500"
+  | "tint_600"
+  | "tint_700"
+  | "tint_800"
+  | "tint_900";
