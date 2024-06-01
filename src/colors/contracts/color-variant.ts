@@ -30,26 +30,43 @@ export interface ColorVariantConfigI {
   tint_950?: HexColor;
 }
 
+export enum ColorVariant {
+  TINT_50 = "tint_50",
+  TINT_100 = "tint_100",
+  TINT_200 = "tint_200",
+  TINT_300 = "tint_300",
+  TINT_400 = "tint_400",
+  TINT_500 = "tint_500",
+  TINT_600 = "tint_600",
+  TINT_700 = "tint_700",
+  TINT_800 = "tint_800",
+  TINT_900 = "tint_900",
+  TINT_950 = "tint_950",
+}
+
 export const ColorVariantKeys = [
-  "tint_50",
-  "tint_100",
-  "tint_200",
-  "tint_300",
-  "tint_400",
-  "tint_500",
-  "tint_600",
-  "tint_700",
-  "tint_800",
-  "tint_900",
+  ColorVariant.TINT_50,
+  ColorVariant.TINT_100,
+  ColorVariant.TINT_200,
+  ColorVariant.TINT_300,
+  ColorVariant.TINT_400,
+  ColorVariant.TINT_500,
+  ColorVariant.TINT_600,
+  ColorVariant.TINT_700,
+  ColorVariant.TINT_800,
+  ColorVariant.TINT_900,
+  ColorVariant.TINT_950,
 ];
+
 export type ColorVariantKey =
-  | "tint_50"
-  | "tint_100"
-  | "tint_200"
-  | "tint_300"
-  | "tint_400"
-  | "tint_500"
-  | "tint_600"
-  | "tint_700"
-  | "tint_800"
-  | "tint_900";
+  | ColorVariant.TINT_50
+  | ColorVariant.TINT_100
+  | ColorVariant.TINT_200
+  | ColorVariant.TINT_300
+  | ColorVariant.TINT_400
+  | ColorVariant.TINT_500
+  | ColorVariant.TINT_600
+  | ColorVariant.TINT_700
+  | ColorVariant.TINT_800
+  | ColorVariant.TINT_900
+  | ColorVariant.TINT_950;

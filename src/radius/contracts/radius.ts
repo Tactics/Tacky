@@ -22,24 +22,36 @@ export interface RadiusConfigI {
   "3xl": string;
 }
 
+export enum Radius {
+  NONE = "none",
+  XS = "xs",
+  SM = "sm",
+  MD = "md",
+  LG = "lg",
+  XL = "xl",
+  XL2 = "2xl",
+  XL3 = "3xl",
+  FULL = "full",
+}
+
 export const RadiusKeys = [
-  "none",
-  "xs",
-  "sm",
-  "md",
-  "lg",
-  "xl",
-  "2xl",
-  "3xl",
-  "full",
+  Radius.NONE,
+  Radius.XS,
+  Radius.SM,
+  Radius.MD,
+  Radius.LG,
+  Radius.XL,
+  Radius.XL2,
+  Radius.XL3,
+  Radius.FULL,
 ];
 export type RadiusKey =
-  | "none"
-  | "xs"
-  | "sm"
-  | "md"
-  | "lg"
-  | "xl"
-  | "2xl"
-  | "3xl"
-  | "full";
+  | Radius.NONE
+  | Radius.XS
+  | Radius.SM
+  | Radius.MD
+  | Radius.LG
+  | Radius.XL
+  | Radius.XL2
+  | Radius.XL3
+  | Radius.FULL;

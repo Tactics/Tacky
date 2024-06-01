@@ -36,72 +36,107 @@ interface SpacingI {
   96: string;
 }
 
+export enum Spacing {
+  S0 = "0",
+  PX = "px",
+  S05 = "0.5",
+  S10 = "1",
+  S15 = "1.5",
+  S20 = "2",
+  S25 = "2.5",
+  S30 = "3",
+  S40 = "4",
+  S50 = "5",
+  S60 = "6",
+  S70 = "7",
+  S80 = "8",
+  S90 = "9",
+  S100 = "10",
+  S110 = "11",
+  S120 = "12",
+  S140 = "14",
+  S160 = "16",
+  S200 = "20",
+  S320 = "32",
+  S360 = "36",
+  S400 = "40",
+  S440 = "44",
+  S480 = "48",
+  S520 = "52",
+  S560 = "56",
+  S600 = "60",
+  S640 = "64",
+  S720 = "72",
+  S800 = "80",
+  S960 = "96",
+}
+
 export const SpacingKeys = [
-  "0",
-  "px",
-  "0.5",
-  " 1",
-  "1.5",
-  "2",
-  "2.5",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "14",
-  "16",
-  "20",
-  "32",
-  "36",
-  "40",
-  "44",
-  "48",
-  "52",
-  "56",
-  "60",
-  "64",
-  "72",
-  "80",
-  "96",
+  Spacing.S0,
+  Spacing.PX,
+  Spacing.S05,
+  Spacing.S10,
+  Spacing.S15,
+  Spacing.S20,
+  Spacing.S25,
+  Spacing.S30,
+  Spacing.S40,
+  Spacing.S50,
+  Spacing.S60,
+  Spacing.S70,
+  Spacing.S80,
+  Spacing.S90,
+  Spacing.S100,
+  Spacing.S110,
+  Spacing.S120,
+  Spacing.S140,
+  Spacing.S160,
+  Spacing.S200,
+  Spacing.S320,
+  Spacing.S360,
+  Spacing.S400,
+  Spacing.S440,
+  Spacing.S480,
+  Spacing.S520,
+  Spacing.S560,
+  Spacing.S600,
+  Spacing.S640,
+  Spacing.S720,
+  Spacing.S800,
+  Spacing.S960,
 ];
 export type SpacingKey =
-  | "0"
-  | "px"
-  | "0.5"
-  | " 1"
-  | "1.5"
-  | "2"
-  | "2.5"
-  | "3"
-  | "4"
-  | "5"
-  | "6"
-  | "7"
-  | "8"
-  | "9"
-  | "10"
-  | "11"
-  | "12"
-  | "14"
-  | "16"
-  | "20"
-  | "32"
-  | "36"
-  | "40"
-  | "44"
-  | "48"
-  | "52"
-  | "56"
-  | "60"
-  | "64"
-  | "72"
-  | "80"
-  | "96";
+  | Spacing.S0
+  | Spacing.PX
+  | Spacing.S05
+  | Spacing.S10
+  | Spacing.S15
+  | Spacing.S20
+  | Spacing.S25
+  | Spacing.S30
+  | Spacing.S40
+  | Spacing.S50
+  | Spacing.S60
+  | Spacing.S70
+  | Spacing.S80
+  | Spacing.S90
+  | Spacing.S100
+  | Spacing.S110
+  | Spacing.S120
+  | Spacing.S140
+  | Spacing.S160
+  | Spacing.S200
+  | Spacing.S320
+  | Spacing.S360
+  | Spacing.S400
+  | Spacing.S440
+  | Spacing.S480
+  | Spacing.S520
+  | Spacing.S560
+  | Spacing.S600
+  | Spacing.S640
+  | Spacing.S720
+  | Spacing.S800
+  | Spacing.S960;
 
 export type { SpacingI };
