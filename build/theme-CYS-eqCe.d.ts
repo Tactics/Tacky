@@ -1,6 +1,6 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-C9PDvvb3.mjs';
-import { A as AdditionalColorItem } from './color-additional-_M7QfRi_.mjs';
-import { A as AlternateItem } from './alternate-j1k3Yp03.mjs';
+import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-t9TD4xcL.js';
+import { A as AdditionalColorItem } from './color-additional-_M7QfRi_.js';
+import { A as AlternateItem } from './alternate-j1k3Yp03.js';
 
 interface TypographyFontI {
     xs: string;
@@ -112,8 +112,19 @@ interface RadiusConfigI {
     "2xl": string;
     "3xl": string;
 }
-declare const RadiusKeys: string[];
-type RadiusKey = "none" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";
+declare enum Radius {
+    NONE = "none",
+    XS = "xs",
+    SM = "sm",
+    MD = "md",
+    LG = "lg",
+    XL = "xl",
+    XL2 = "2xl",
+    XL3 = "3xl",
+    FULL = "full"
+}
+declare const RadiusKeys: Radius[];
+type RadiusKey = Radius.NONE | Radius.XS | Radius.SM | Radius.MD | Radius.LG | Radius.XL | Radius.XL2 | Radius.XL3 | Radius.FULL;
 
 interface SpacingI {
     0: string;
@@ -152,8 +163,42 @@ interface SpacingI {
     80: string;
     96: string;
 }
-declare const SpacingKeys: string[];
-type SpacingKey = "0" | "px" | "0.5" | " 1" | "1.5" | "2" | "2.5" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "14" | "16" | "20" | "32" | "36" | "40" | "44" | "48" | "52" | "56" | "60" | "64" | "72" | "80" | "96";
+declare enum Spacing {
+    S0 = "0",
+    PX = "px",
+    S05 = "0.5",
+    S10 = "1",
+    S15 = "1.5",
+    S20 = "2",
+    S25 = "2.5",
+    S30 = "3",
+    S40 = "4",
+    S50 = "5",
+    S60 = "6",
+    S70 = "7",
+    S80 = "8",
+    S90 = "9",
+    S100 = "10",
+    S110 = "11",
+    S120 = "12",
+    S140 = "14",
+    S160 = "16",
+    S200 = "20",
+    S320 = "32",
+    S360 = "36",
+    S400 = "40",
+    S440 = "44",
+    S480 = "48",
+    S520 = "52",
+    S560 = "56",
+    S600 = "60",
+    S640 = "64",
+    S720 = "72",
+    S800 = "80",
+    S960 = "96"
+}
+declare const SpacingKeys: Spacing[];
+type SpacingKey = Spacing.S0 | Spacing.PX | Spacing.S05 | Spacing.S10 | Spacing.S15 | Spacing.S20 | Spacing.S25 | Spacing.S30 | Spacing.S40 | Spacing.S50 | Spacing.S60 | Spacing.S70 | Spacing.S80 | Spacing.S90 | Spacing.S100 | Spacing.S110 | Spacing.S120 | Spacing.S140 | Spacing.S160 | Spacing.S200 | Spacing.S320 | Spacing.S360 | Spacing.S400 | Spacing.S440 | Spacing.S480 | Spacing.S520 | Spacing.S560 | Spacing.S600 | Spacing.S640 | Spacing.S720 | Spacing.S800 | Spacing.S960;
 
 interface UtilityI {
     spacing: SpacingI;
@@ -173,4 +218,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type RadiusKey as e, RadiusKeys as f, type TypographyFontsFamilyConfigI as g, type TypographyFontI as h, type TypographyFontKey as i, TypographyFontKeys as j, type TypographyFontsConfigI as k, type TypographyFontsKey as l, TypographyFontsKeys as m, type TypographyFontsScaleConfigI as n, type TypographyFontsScaleSizeConfigI as o, type TypographyI as p, type TypographyConfigI as q, type SpacingKey as r, SpacingKeys as s };
+export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type RadiusKey as e, Radius as f, RadiusKeys as g, type TypographyFontsFamilyConfigI as h, type TypographyFontI as i, type TypographyFontKey as j, TypographyFontKeys as k, type TypographyFontsConfigI as l, type TypographyFontsKey as m, TypographyFontsKeys as n, type TypographyFontsScaleConfigI as o, type TypographyFontsScaleSizeConfigI as p, type TypographyI as q, type TypographyConfigI as r, type SpacingKey as s, Spacing as t, SpacingKeys as u };
