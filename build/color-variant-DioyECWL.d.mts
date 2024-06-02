@@ -1,4 +1,4 @@
-import { H as HexColor } from './color-additional-_M7QfRi_.js';
+import { H as HexColor } from './color-additional-_M7QfRi_.mjs';
 
 interface ColorVariantI {
     tint_50: HexColor;
@@ -42,4 +42,4 @@ declare enum ColorVariant {
 declare const ColorVariantKeys: ColorVariant[];
 type ColorVariantKey = ColorVariant.TINT_50 | ColorVariant.TINT_100 | ColorVariant.TINT_200 | ColorVariant.TINT_300 | ColorVariant.TINT_400 | ColorVariant.TINT_500 | ColorVariant.TINT_600 | ColorVariant.TINT_700 | ColorVariant.TINT_800 | ColorVariant.TINT_900 | ColorVariant.TINT_950;
 
-export { type ColorVariantI as C, type ColorVariantConfigI as a, type ColorVariantKey as b, ColorVariant as c, ColorVariantKeys as d };
+export { type ColorVariantI as C, type ColorVariantConfigI as a, type ColorVariantKey as b, ColorVariantKeys as c, ColorVariant as d };

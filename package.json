@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "1.1.28",
+  "version": "1.1.29",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
