@@ -22,20 +22,6 @@ export const baseThemeConfigScale7Xl: string = "4.5rem/1";
 export const baseThemeConfigScale8Xl: string = "6rem/1";
 export const baseThemeConfigScale9Xl: string = "8rem/1";
 
-export const baseThemeConfigWeightXs: number = 500;
-export const baseThemeConfigWeightSm: number = 500;
-export const baseThemeConfigWeightMd: number = 500;
-export const baseThemeConfigWeightLg: number = 500;
-export const baseThemeConfigWeightXl: number = 500;
-export const baseThemeConfigWeight2Xl: number = 500;
-export const baseThemeConfigWeight3Xl: number = 500;
-export const baseThemeConfigWeight4Xl: number = 500;
-export const baseThemeConfigWeight5Xl: number = 500;
-export const baseThemeConfigWeight6Xl: number = 500;
-export const baseThemeConfigWeight7Xl: number = 500;
-export const baseThemeConfigWeight8Xl: number = 500;
-export const baseThemeConfigWeight9Xl: number = 500;
-
 export const baseThemeConfigRadiusXs: string = "0.125rem";
 export const baseThemeConfigRadiusSm: string = "0.25rem";
 export const baseThemeConfigRadiusMd: string = "0.375rem";
@@ -50,205 +36,1843 @@ export const BaseTheme: ThemeI = {
     resources: [],
     fonts: {
       primary: {
-        xs: FontBuilder({
-          scale: baseThemeConfigScaleXs,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeightXs,
-        }),
-        sm: FontBuilder({
-          scale: baseThemeConfigScaleSm,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeightSm,
-        }),
-        md: FontBuilder({
-          scale: baseThemeConfigScaleMd,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeightMd,
-        }),
-        lg: FontBuilder({
-          scale: baseThemeConfigScaleLg,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeightLg,
-        }),
-        xl: FontBuilder({
-          scale: baseThemeConfigScaleXl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeightXl,
-        }),
-        "2xl": FontBuilder({
-          scale: baseThemeConfigScale2Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight2Xl,
-        }),
-        "3xl": FontBuilder({
-          scale: baseThemeConfigScale3Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight3Xl,
-        }),
-        "4xl": FontBuilder({
-          scale: baseThemeConfigScale4Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight4Xl,
-        }),
-        "5xl": FontBuilder({
-          scale: baseThemeConfigScale5Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight5Xl,
-        }),
-        "6xl": FontBuilder({
-          scale: baseThemeConfigScale6Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight6Xl,
-        }),
-        "7xl": FontBuilder({
-          scale: baseThemeConfigScale7Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight7Xl,
-        }),
-        "8xl": FontBuilder({
-          scale: baseThemeConfigScale8Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight8Xl,
-        }),
-        "9xl": FontBuilder({
-          scale: baseThemeConfigScale9Xl,
-          family: baseThemeConfigPrimaryFont,
-          weight: baseThemeConfigWeight9Xl,
-        }),
-      },
-      accent: {
-        xs: FontBuilder({
-          scale: baseThemeConfigScaleXs,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeightXs,
-        }),
-        sm: FontBuilder({
-          scale: baseThemeConfigScaleSm,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeightSm,
-        }),
-        md: FontBuilder({
-          scale: baseThemeConfigScaleMd,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeightMd,
-        }),
-        lg: FontBuilder({
-          scale: baseThemeConfigScaleLg,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeightLg,
-        }),
-        xl: FontBuilder({
-          scale: baseThemeConfigScaleXl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeightXl,
-        }),
-        "2xl": FontBuilder({
-          scale: baseThemeConfigScale2Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight2Xl,
-        }),
-        "3xl": FontBuilder({
-          scale: baseThemeConfigScale3Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight3Xl,
-        }),
-        "4xl": FontBuilder({
-          scale: baseThemeConfigScale4Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight4Xl,
-        }),
-        "5xl": FontBuilder({
-          scale: baseThemeConfigScale5Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight5Xl,
-        }),
-        "6xl": FontBuilder({
-          scale: baseThemeConfigScale6Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight6Xl,
-        }),
-        "7xl": FontBuilder({
-          scale: baseThemeConfigScale7Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight7Xl,
-        }),
-        "8xl": FontBuilder({
-          scale: baseThemeConfigScale8Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight8Xl,
-        }),
-        "9xl": FontBuilder({
-          scale: baseThemeConfigScale9Xl,
-          family: baseThemeConfigAccentFont,
-          weight: baseThemeConfigWeight9Xl,
-        }),
+        xs: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        sm: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        md: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        lg: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        xl: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "2xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "3xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "4xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "5xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "6xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "7xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "8xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
+        "9xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigPrimaryFont,
+            weight: 900,
+          }),
+        },
       },
       supporting: {
-        xs: FontBuilder({
-          scale: baseThemeConfigScaleXs,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeightXs,
-        }),
-        sm: FontBuilder({
-          scale: baseThemeConfigScaleSm,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeightSm,
-        }),
-        md: FontBuilder({
-          scale: baseThemeConfigScaleMd,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeightMd,
-        }),
-        lg: FontBuilder({
-          scale: baseThemeConfigScaleLg,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeightLg,
-        }),
-        xl: FontBuilder({
-          scale: baseThemeConfigScaleXl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeightXl,
-        }),
-        "2xl": FontBuilder({
-          scale: baseThemeConfigScale2Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight2Xl,
-        }),
-        "3xl": FontBuilder({
-          scale: baseThemeConfigScale3Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight3Xl,
-        }),
-        "4xl": FontBuilder({
-          scale: baseThemeConfigScale4Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight4Xl,
-        }),
-        "5xl": FontBuilder({
-          scale: baseThemeConfigScale5Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight5Xl,
-        }),
-        "6xl": FontBuilder({
-          scale: baseThemeConfigScale6Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight6Xl,
-        }),
-        "7xl": FontBuilder({
-          scale: baseThemeConfigScale7Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight7Xl,
-        }),
-        "8xl": FontBuilder({
-          scale: baseThemeConfigScale8Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight8Xl,
-        }),
-        "9xl": FontBuilder({
-          scale: baseThemeConfigScale9Xl,
-          family: baseThemeConfigSupportingFont,
-          weight: baseThemeConfigWeight9Xl,
-        }),
+        xs: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        sm: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        md: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        lg: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        xl: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "2xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "3xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "4xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "5xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "6xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "7xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "8xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+        "9xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigSupportingFont,
+            weight: 900,
+          }),
+        },
+      },
+      accent: {
+        xs: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXs,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        sm: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleSm,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        md: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleMd,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        lg: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleLg,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        xl: {
+          thin: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScaleXl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "2xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale2Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "3xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale3Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "4xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale4Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "5xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale5Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "6xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale6Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "7xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale7Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "8xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale8Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
+        "9xl": {
+          thin: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 100,
+          }),
+          xlight: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 200,
+          }),
+          light: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 300,
+          }),
+          normal: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 400,
+          }),
+          medium: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 500,
+          }),
+          semibold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 600,
+          }),
+          bold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 700,
+          }),
+          xbold: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 800,
+          }),
+          black: FontBuilder({
+            scale: baseThemeConfigScale9Xl,
+            family: baseThemeConfigAccentFont,
+            weight: 900,
+          }),
+        },
       },
     },
   },

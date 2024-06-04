@@ -34,8 +34,14 @@ export type { TypographyFontsFamilyConfigI } from "@/typography/contracts/family
 export type {
   TypographyFontI,
   TypographyFontKey,
+  TypographyWeightKey,
 } from "@/typography/contracts/font";
-export { TypographyFontKeys } from "@/typography/contracts/font";
+export {
+  TypographyFontKeys,
+  TypographyFont,
+  TypographyFontWeightKeys,
+  TypographyFontWeight,
+} from "@/typography/contracts/font";
 export type {
   TypographyFontsI,
   TypographyFontsConfigI,
