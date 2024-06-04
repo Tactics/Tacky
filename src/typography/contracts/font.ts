@@ -50,7 +50,7 @@ export const TypographyFontWeightKeys = [
   TypographyFontWeight.BLACK,
 ];
 
-export type TypographyWeightKey =
+export type TypographyFontWeightKey =
   | TypographyFontWeight.THIN
   | TypographyFontWeight.XLIGHT
   | TypographyFontWeight.LIGHT
