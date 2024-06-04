@@ -9,7 +9,7 @@ function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
 var i__default = /*#__PURE__*/_interopDefault(i);
 var e__default = /*#__PURE__*/_interopDefault(e);
 
-var a=e__default.default.div`
+var d=e__default.default.div`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -35,7 +35,7 @@ var a=e__default.default.div`
   margin-top: 0.25rem;
   font: ${o=>o.font};
   color: ${o=>o.color};
-`;var r=({title:o,color:t})=>{let s=chunkYMS53ZVY_js.v(),c=chunkYMS53ZVY_js.u();return i__default.default.createElement(S,null,i__default.default.createElement(b,{color:t}),i__default.default.createElement(U,null,i__default.default.createElement(x,{font:s.primary.sm,color:c.neutrals.tint_800},o),i__default.default.createElement(k,{font:s.primary.xs,color:c.neutrals.tint_800},t)))};var A=({colors:o})=>i__default.default.createElement(i__default.default.Fragment,null,o.map(function(t){return i__default.default.createElement(f,null,i__default.default.createElement(r,{color:t.color,title:t.name}))}));var $=({colors:o})=>i__default.default.createElement(a,null,i__default.default.createElement(r,{color:o.tint_50,title:"50"}),i__default.default.createElement(r,{color:o.tint_100,title:"100"}),i__default.default.createElement(r,{color:o.tint_200,title:"200"}),i__default.default.createElement(r,{color:o.tint_300,title:"300"}),i__default.default.createElement(r,{color:o.tint_400,title:"400"}),i__default.default.createElement(r,{color:o.tint_500,title:"500"}),i__default.default.createElement(r,{color:o.tint_600,title:"600"}),i__default.default.createElement(r,{color:o.tint_700,title:"700"}),i__default.default.createElement(r,{color:o.tint_800,title:"800"}),i__default.default.createElement(r,{color:o.tint_900,title:"900"}),i__default.default.createElement(r,{color:o.tint_950,title:"950"}));var I=e__default.default.div`
+`;var r=({title:o,color:t})=>{let s=chunkYMS53ZVY_js.v(),a=chunkYMS53ZVY_js.u();return i__default.default.createElement(S,null,i__default.default.createElement(b,{color:t}),i__default.default.createElement(U,null,i__default.default.createElement(x,{font:s.primary.sm.normal,color:a.neutrals.tint_800},o),i__default.default.createElement(k,{font:s.primary.xs.normal,color:a.neutrals.tint_800},t)))};var A=({colors:o})=>i__default.default.createElement(i__default.default.Fragment,null,o.map(function(t){return i__default.default.createElement(f,null,i__default.default.createElement(r,{color:t.color,title:t.name}))}));var $=({colors:o})=>i__default.default.createElement(d,null,i__default.default.createElement(r,{color:o.tint_50,title:"50"}),i__default.default.createElement(r,{color:o.tint_100,title:"100"}),i__default.default.createElement(r,{color:o.tint_200,title:"200"}),i__default.default.createElement(r,{color:o.tint_300,title:"300"}),i__default.default.createElement(r,{color:o.tint_400,title:"400"}),i__default.default.createElement(r,{color:o.tint_500,title:"500"}),i__default.default.createElement(r,{color:o.tint_600,title:"600"}),i__default.default.createElement(r,{color:o.tint_700,title:"700"}),i__default.default.createElement(r,{color:o.tint_800,title:"800"}),i__default.default.createElement(r,{color:o.tint_900,title:"900"}),i__default.default.createElement(r,{color:o.tint_950,title:"950"}));var I=e__default.default.div`
   display: flex;
   flex-direction: column;
 `,w=e__default.default.div`

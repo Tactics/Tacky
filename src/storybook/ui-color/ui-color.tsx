@@ -26,13 +26,13 @@ export const StorybookUiColor = ({
       ></StorybookUiColorPreviewDisplay>
       <StorybookUiColorPreviewDetails>
         <StorybookUiColorPreviewDetailsTitle
-          font={typography.primary.sm}
+          font={typography.primary.sm.normal}
           color={colors.neutrals.tint_800}
         >
           {title}
         </StorybookUiColorPreviewDetailsTitle>
         <StorybookUiColorPreviewDetailsValue
-          font={typography.primary.xs}
+          font={typography.primary.xs.normal}
           color={colors.neutrals.tint_800}
         >
           {color}
