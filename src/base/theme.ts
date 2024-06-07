@@ -1994,6 +1994,30 @@ export const BaseTheme: ThemeI = {
       tint_900: "#2d3a8c",
       tint_950: "#19216c",
     },
+    map: {
+      label: {
+        all: "#ffffff",
+        water: "#ffffff",
+        highway: "#ffffff",
+        road: "#ffffff",
+      },
+      border: {
+        country: "#ffffff",
+        highway: "#ffffff",
+        road: "#ffffff",
+      },
+      landscape: {
+        all: "#ffffff",
+        artificial: "#ffffff",
+        terrain: "#ffffff",
+        park: "#ffffff",
+        poi: "#ffffff",
+        water: "#ffffff",
+        transit: "#ffffff",
+        highway: "#ffffff",
+        road: "#ffffff",
+      },
+    },
     additional: [],
   },
   utility: {

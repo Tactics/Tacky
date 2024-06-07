@@ -1,6 +1,6 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-D9WhE53m.js';
-import { A as AdditionalColorItem } from './color-additional-_M7QfRi_.js';
-import { A as AlternateItem } from './alternate-j1k3Yp03.js';
+import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-DioyECWL.mjs';
+import { H as HexColor, A as AdditionalColorItem } from './color-additional-_M7QfRi_.mjs';
+import { A as AlternateItem } from './alternate-j1k3Yp03.mjs';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -106,6 +106,61 @@ interface TypographyConfigI {
     fonts?: TypographyFontsConfigI;
 }
 
+interface ColorMapLabelsI {
+    all: HexColor;
+    water: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapBordersI {
+    country: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapLandscapeI {
+    all: HexColor;
+    artificial: HexColor;
+    terrain: HexColor;
+    park: HexColor;
+    poi: HexColor;
+    water: HexColor;
+    transit: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapLabelsConfigI {
+    all?: HexColor;
+    water?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapBordersConfigI {
+    country?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapLandscapeConfigI {
+    all?: HexColor;
+    artificial?: HexColor;
+    terrain?: HexColor;
+    park?: HexColor;
+    poi?: HexColor;
+    water?: HexColor;
+    transit?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapI {
+    label: ColorMapLabelsI;
+    border: ColorMapBordersI;
+    landscape: ColorMapLandscapeI;
+}
+interface ColorMapConfigI {
+    label?: ColorMapLabelsConfigI;
+    border?: ColorMapBordersConfigI;
+    landscape?: ColorMapLandscapeConfigI;
+}
+
 interface ColorsI {
     danger: ColorVariantI;
     warning: ColorVariantI;
@@ -117,6 +172,7 @@ interface ColorsI {
     accent: ColorVariantI;
     supporting: ColorVariantI;
     additional: AdditionalColorItem[];
+    map: ColorMapI;
 }
 interface ColorsConfigI {
     danger?: ColorVariantConfigI;
@@ -129,6 +185,7 @@ interface ColorsConfigI {
     accent?: ColorVariantConfigI;
     supporting?: ColorVariantConfigI;
     additional?: AdditionalColorItem[];
+    map?: ColorMapConfigI;
 }
 
 interface RadiusI {
@@ -257,4 +314,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type ColorsI as C, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type RadiusConfigI as d, type RadiusKey as e, RadiusKeys as f, Radius as g, type TypographyFontsFamilyConfigI as h, type TypographyFontI as i, type TypographyFontKey as j, type TypographyFontWeightKey as k, TypographyFontKeys as l, TypographyFont as m, TypographyFontWeightKeys as n, TypographyFontWeight as o, type TypographyFontsConfigI as p, type TypographyFontsKey as q, TypographyFontsKeys as r, type TypographyFontsScaleConfigI as s, type TypographyFontsScaleSizeConfigI as t, type TypographyI as u, type TypographyConfigI as v, type SpacingKey as w, SpacingKeys as x, Spacing as y };
+export { type TypographyFontsScaleConfigI as A, type TypographyFontsScaleSizeConfigI as B, type ColorsI as C, type TypographyI as D, type TypographyConfigI as E, type SpacingKey as F, SpacingKeys as G, Spacing as H, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorMapI as d, type ColorMapConfigI as e, type ColorMapLabelsI as f, type ColorMapLabelsConfigI as g, type ColorMapBordersI as h, type ColorMapBordersConfigI as i, type ColorMapLandscapeI as j, type ColorMapLandscapeConfigI as k, type RadiusConfigI as l, type RadiusKey as m, RadiusKeys as n, Radius as o, type TypographyFontsFamilyConfigI as p, type TypographyFontI as q, type TypographyFontKey as r, type TypographyFontWeightKey as s, TypographyFontKeys as t, TypographyFont as u, TypographyFontWeightKeys as v, TypographyFontWeight as w, type TypographyFontsConfigI as x, type TypographyFontsKey as y, TypographyFontsKeys as z };

@@ -3,6 +3,7 @@ import {
   ColorVariantI,
 } from "@/colors/contracts/color-variant";
 import { AdditionalColorItem } from "@/colors/contracts/color-additional";
+import { ColorMapConfigI, ColorMapI } from "@/colors/contracts/color-map";
 
 // A common interface for defining a color scheme for a theme.
 export interface ColorsI {
@@ -16,6 +17,7 @@ export interface ColorsI {
   accent: ColorVariantI;
   supporting: ColorVariantI;
   additional: AdditionalColorItem[];
+  map: ColorMapI;
 }
 
 export interface ColorsConfigI {
@@ -29,4 +31,5 @@ export interface ColorsConfigI {
   accent?: ColorVariantConfigI;
   supporting?: ColorVariantConfigI;
   additional?: AdditionalColorItem[];
+  map?: ColorMapConfigI;
 }

@@ -15,6 +15,16 @@ export type {
   ColorVariantConfigI,
   ColorVariantKey,
 } from "@/colors/contracts/color-variant";
+export type {
+  ColorMapI,
+  ColorMapConfigI,
+  ColorMapLabelsI,
+  ColorMapLabelsConfigI,
+  ColorMapBordersI,
+  ColorMapBordersConfigI,
+  ColorMapLandscapeI,
+  ColorMapLandscapeConfigI,
+} from "@/colors/contracts/color-map";
 export {
   ColorVariantKeys,
   ColorVariant,
@@ -58,3 +68,5 @@ export type {
 export type { SpacingI, SpacingKey } from "@/utility/contracts/spacing";
 export { SpacingKeys, Spacing } from "@/utility/contracts/spacing";
 export type { UtilityI } from "@/utility/contracts/utility";
+export type { ILookupAdditionalColor } from "@/colors/functions/additional";
+export type { ILookupAlternate } from "@/alternate/functions/alternate";
