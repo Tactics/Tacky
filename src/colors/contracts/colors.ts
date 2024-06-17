@@ -42,6 +42,7 @@ export enum Color {
   INFO = "info",
   NEUTRALS = "neutrals",
   SURFACES = "surfaces",
+  PRIMARY = "primary",
   SUPPORTING = "supporting",
   ACCENT = "accent",
 }
@@ -53,6 +54,7 @@ export const ColorKeys = [
   Color.INFO,
   Color.NEUTRALS,
   Color.SURFACES,
+  Color.PRIMARY,
   Color.SUPPORTING,
   Color.ACCENT,
 ];
@@ -64,5 +66,6 @@ export type ColorKey =
   | Color.INFO
   | Color.NEUTRALS
   | Color.SURFACES
+  | Color.PRIMARY
   | Color.SUPPORTING
   | Color.ACCENT;
