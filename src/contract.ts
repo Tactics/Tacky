@@ -62,7 +62,10 @@ export type {
   TypographyFontsConfigI,
   TypographyFontsKey,
 } from "@/typography/contracts/fonts";
-export { TypographyFontsKeys } from "@/typography/contracts/fonts";
+export {
+  TypographyFontsKeys,
+  TypographyFonts,
+} from "@/typography/contracts/fonts";
 export type { TypographyFontsScaleLineHeightConfigI } from "@/typography/contracts/line-height";
 export type { TypographyFontsScaleConfigI } from "@/typography/contracts/scale";
 export type { TypographyFontsScaleSizeConfigI } from "@/typography/contracts/size";

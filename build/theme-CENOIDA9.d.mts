@@ -94,8 +94,13 @@ interface TypographyFontsConfigI {
     family?: TypographyFontsFamilyConfigI;
     scale?: TypographyFontsScaleConfigI;
 }
-declare const TypographyFontsKeys: string[];
-type TypographyFontsKey = "primary" | "supporting" | "accent";
+declare enum TypographyFonts {
+    PRIMARY = "primary",
+    SUPPORTING = "supporting",
+    ACCENT = "accent"
+}
+declare const TypographyFontsKeys: TypographyFonts[];
+type TypographyFontsKey = TypographyFonts.PRIMARY | TypographyFonts.SUPPORTING | TypographyFonts.ACCENT;
 
 interface TypographyI {
     resources: string[];
@@ -336,4 +341,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type TypographyFontsConfigI as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, type TypographyFontsScaleConfigI as E, type TypographyFontsScaleSizeConfigI as F, type TypographyI as G, type TypographyConfigI as H, type SpacingKey as I, SpacingKeys as J, Spacing as K, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorKey as d, ColorKeys as e, Color as f, type ColorMapI as g, type ColorMapConfigI as h, type ColorMapLabelsI as i, type ColorMapLabelsConfigI as j, type ColorMapBordersI as k, type ColorMapBordersConfigI as l, type ColorMapLandscapeI as m, type ColorMapLandscapeConfigI as n, type RadiusConfigI as o, type RadiusKey as p, RadiusKeys as q, Radius as r, type TypographyFontsFamilyConfigI as s, type TypographyFontI as t, type TypographyFontKey as u, type TypographyFontWeightKey as v, TypographyFontKeys as w, TypographyFont as x, TypographyFontWeightKeys as y, TypographyFontWeight as z };
+export { type TypographyFontsConfigI as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, TypographyFonts as E, type TypographyFontsScaleConfigI as F, type TypographyFontsScaleSizeConfigI as G, type TypographyI as H, type TypographyConfigI as I, type SpacingKey as J, SpacingKeys as K, Spacing as L, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorKey as d, ColorKeys as e, Color as f, type ColorMapI as g, type ColorMapConfigI as h, type ColorMapLabelsI as i, type ColorMapLabelsConfigI as j, type ColorMapBordersI as k, type ColorMapBordersConfigI as l, type ColorMapLandscapeI as m, type ColorMapLandscapeConfigI as n, type RadiusConfigI as o, type RadiusKey as p, RadiusKeys as q, Radius as r, type TypographyFontsFamilyConfigI as s, type TypographyFontI as t, type TypographyFontKey as u, type TypographyFontWeightKey as v, TypographyFontKeys as w, TypographyFont as x, TypographyFontWeightKeys as y, TypographyFontWeight as z };

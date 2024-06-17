@@ -13,5 +13,18 @@ export interface TypographyFontsConfigI {
   scale?: TypographyFontsScaleConfigI;
 }
 
-export const TypographyFontsKeys = ["primary", "supporting", "accent"];
-export type TypographyFontsKey = "primary" | "supporting" | "accent";
+export enum TypographyFonts {
+  PRIMARY = "primary",
+  SUPPORTING = "supporting",
+  ACCENT = "accent",
+}
+
+export const TypographyFontsKeys = [
+  TypographyFonts.PRIMARY,
+  TypographyFonts.SUPPORTING,
+  TypographyFonts.ACCENT,
+];
+export type TypographyFontsKey =
+  | TypographyFonts.PRIMARY
+  | TypographyFonts.SUPPORTING
+  | TypographyFonts.ACCENT;
