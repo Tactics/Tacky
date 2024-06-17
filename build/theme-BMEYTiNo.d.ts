@@ -1,6 +1,6 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-DioyECWL.mjs';
-import { H as HexColor, A as AdditionalColorItem } from './color-additional-_M7QfRi_.mjs';
-import { A as AlternateItem } from './alternate-j1k3Yp03.mjs';
+import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-D9WhE53m.js';
+import { H as HexColor, A as AdditionalColorItem } from './color-additional-_M7QfRi_.js';
+import { A as AlternateItem } from './alternate-j1k3Yp03.js';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -187,6 +187,18 @@ interface ColorsConfigI {
     additional?: AdditionalColorItem[];
     map?: ColorMapConfigI;
 }
+declare enum Color {
+    DANGER = "danger",
+    WARNING = "warning",
+    SUCCESS = "success",
+    INFO = "info",
+    NEUTRALS = "neutrals",
+    SURFACES = "surfaces",
+    SUPPORTING = "supporting",
+    ACCENT = "accent"
+}
+declare const ColorKeys: Color[];
+type ColorKey = Color.DANGER | Color.WARNING | Color.SUCCESS | Color.INFO | Color.NEUTRALS | Color.SURFACES | Color.SUPPORTING | Color.ACCENT;
 
 interface RadiusI {
     none: string;
@@ -296,8 +308,17 @@ declare enum Spacing {
 declare const SpacingKeys: Spacing[];
 type SpacingKey = Spacing.S0 | Spacing.PX | Spacing.S05 | Spacing.S10 | Spacing.S15 | Spacing.S20 | Spacing.S25 | Spacing.S30 | Spacing.S40 | Spacing.S50 | Spacing.S60 | Spacing.S70 | Spacing.S80 | Spacing.S90 | Spacing.S100 | Spacing.S110 | Spacing.S120 | Spacing.S140 | Spacing.S160 | Spacing.S200 | Spacing.S320 | Spacing.S360 | Spacing.S400 | Spacing.S440 | Spacing.S480 | Spacing.S520 | Spacing.S560 | Spacing.S600 | Spacing.S640 | Spacing.S720 | Spacing.S800 | Spacing.S960;
 
+interface BreakpointI {
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    "2xl": string;
+}
+
 interface UtilityI {
     spacing: SpacingI;
+    breakpoints: BreakpointI;
 }
 
 interface ThemeI {
@@ -314,4 +335,4 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type TypographyFontsScaleConfigI as A, type TypographyFontsScaleSizeConfigI as B, type ColorsI as C, type TypographyI as D, type TypographyConfigI as E, type SpacingKey as F, SpacingKeys as G, Spacing as H, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorMapI as d, type ColorMapConfigI as e, type ColorMapLabelsI as f, type ColorMapLabelsConfigI as g, type ColorMapBordersI as h, type ColorMapBordersConfigI as i, type ColorMapLandscapeI as j, type ColorMapLandscapeConfigI as k, type RadiusConfigI as l, type RadiusKey as m, RadiusKeys as n, Radius as o, type TypographyFontsFamilyConfigI as p, type TypographyFontI as q, type TypographyFontKey as r, type TypographyFontWeightKey as s, TypographyFontKeys as t, TypographyFont as u, TypographyFontWeightKeys as v, TypographyFontWeight as w, type TypographyFontsConfigI as x, type TypographyFontsKey as y, TypographyFontsKeys as z };
+export { type TypographyFontsConfigI as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, type TypographyFontsScaleConfigI as E, type TypographyFontsScaleSizeConfigI as F, type TypographyI as G, type TypographyConfigI as H, type SpacingKey as I, SpacingKeys as J, Spacing as K, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorKey as d, ColorKeys as e, Color as f, type ColorMapI as g, type ColorMapConfigI as h, type ColorMapLabelsI as i, type ColorMapLabelsConfigI as j, type ColorMapBordersI as k, type ColorMapBordersConfigI as l, type ColorMapLandscapeI as m, type ColorMapLandscapeConfigI as n, type RadiusConfigI as o, type RadiusKey as p, RadiusKeys as q, Radius as r, type TypographyFontsFamilyConfigI as s, type TypographyFontI as t, type TypographyFontKey as u, type TypographyFontWeightKey as v, TypographyFontKeys as w, TypographyFont as x, TypographyFontWeightKeys as y, TypographyFontWeight as z };

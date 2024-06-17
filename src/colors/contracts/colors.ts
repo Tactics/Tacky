@@ -1,4 +1,5 @@
 import {
+  ColorVariant,
   ColorVariantConfigI,
   ColorVariantI,
 } from "@/colors/contracts/color-variant";
@@ -33,3 +34,35 @@ export interface ColorsConfigI {
   additional?: AdditionalColorItem[];
   map?: ColorMapConfigI;
 }
+
+export enum Color {
+  DANGER = "danger",
+  WARNING = "warning",
+  SUCCESS = "success",
+  INFO = "info",
+  NEUTRALS = "neutrals",
+  SURFACES = "surfaces",
+  SUPPORTING = "supporting",
+  ACCENT = "accent",
+}
+
+export const ColorKeys = [
+  Color.DANGER,
+  Color.WARNING,
+  Color.SUCCESS,
+  Color.INFO,
+  Color.NEUTRALS,
+  Color.SURFACES,
+  Color.SUPPORTING,
+  Color.ACCENT,
+];
+
+export type ColorKey =
+  | Color.DANGER
+  | Color.WARNING
+  | Color.SUCCESS
+  | Color.INFO
+  | Color.NEUTRALS
+  | Color.SURFACES
+  | Color.SUPPORTING
+  | Color.ACCENT;

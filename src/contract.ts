@@ -3,7 +3,6 @@ export type {
   AlternateI,
   AlternateConfigI,
 } from "@/alternate/contracts/alternate";
-export type { ColorsI, ColorsConfigI } from "@/colors/contracts/colors";
 export type { HexColor } from "@/colors/contracts/hex";
 export type {
   AdditionalColorItem,
@@ -15,6 +14,12 @@ export type {
   ColorVariantConfigI,
   ColorVariantKey,
 } from "@/colors/contracts/color-variant";
+export type {
+  ColorsI,
+  ColorsConfigI,
+  ColorKey,
+} from "@/colors/contracts/colors";
+export { ColorKeys, Color } from "@/colors/contracts/colors";
 export type {
   ColorMapI,
   ColorMapConfigI,
