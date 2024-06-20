@@ -26,6 +26,10 @@ declare enum ThemeMode {
     INVERTED = "INVERTED",
     CONTRAST = "CONTRAST"
 }
+declare namespace ThemeMode {
+    function from(value: string, fallback: ThemeMode): ThemeMode;
+    function tryFrom(value: string): ThemeMode | null;
+}
 
 declare const ThemeCtx: React.Context<ThemeI>;
 
