@@ -5,11 +5,11 @@ export { c as LookupAdditionalColor, L as LookupAlternate } from './additional-D
 import './color-additional-FqWzzv3w.mjs';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
-    animations?: string[] | undefined;
+    animations?: string[];
 }>;
 
 declare const StyleProviderFontFace: React.NamedExoticComponent<styled_components.ExecutionProps & {
-    resources?: string[] | undefined;
+    resources?: string[];
 }>;
 
 declare const StyleProviderPreFlight: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
