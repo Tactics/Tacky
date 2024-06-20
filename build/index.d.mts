@@ -1,9 +1,8 @@
 import * as React from 'react';
 import * as styled_components from 'styled-components';
-import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, R as RadiusI, U as UtilityI } from './theme-CENOIDA9.mjs';
-import { A as AlternateItem } from './alternate-j1k3Yp03.mjs';
-import './color-variant-DioyECWL.mjs';
-import './color-additional-_M7QfRi_.mjs';
+import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, A as AlternateItem, R as RadiusI, U as UtilityI } from './additional-Da4zoVQh.mjs';
+export { c as LookupAdditionalColor, L as LookupAlternate } from './additional-Da4zoVQh.mjs';
+import './color-additional-FqWzzv3w.mjs';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
     animations?: string[] | undefined;
@@ -65,4 +64,8 @@ declare class BrowserAccessibilityPreferences {
 }
 declare const useBrowserAccessibilityPreferences: () => BrowserAccessibilityPreferences;
 
-export { BrowserAccessibilityPreferences, StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, StyleProviderRouter, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, type invertedColors, type prefersColorSchema, type prefersContrast, type prefersReducedMotion, type prefersReducedTransparency, useBrowserAccessibilityPreferences, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };
+declare const BuildProvidersTree: (componentsWithProps: any) => any;
+
+declare function orDefault(json: any, standard: any, keys: string[]): any;
+
+export { BrowserAccessibilityPreferences, BuildProvidersTree, StyleProviderAnimation, StyleProviderFontFace, StyleProviderPreFlight, StyleProviderRouter, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, type invertedColors, orDefault, type prefersColorSchema, type prefersContrast, type prefersReducedMotion, type prefersReducedTransparency, useBrowserAccessibilityPreferences, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };

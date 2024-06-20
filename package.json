@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -14,11 +14,6 @@
       "require": "./build/storybook.js",
       "import": "./build/storybook.js",
       "types": "./build/storybook.d.ts"
-    },
-    "./tool": {
-      "require": "./build/tool.js",
-      "import": "./build/tool.js",
-      "types": "./build/tool.d.ts"
     },
     "./contract": {
       "require": "./build/contract.js",

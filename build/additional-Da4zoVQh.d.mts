@@ -1,6 +1,4 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-D9WhE53m.js';
-import { H as HexColor, A as AdditionalColorItem } from './color-additional-_M7QfRi_.js';
-import { A as AlternateItem } from './alternate-j1k3Yp03.js';
+import { H as HexColor, C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI } from './color-additional-FqWzzv3w.mjs';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -240,6 +238,17 @@ declare enum Radius {
 declare const RadiusKeys: Radius[];
 type RadiusKey = Radius.NONE | Radius.XS | Radius.SM | Radius.MD | Radius.LG | Radius.XL | Radius.XL2 | Radius.XL3 | Radius.FULL;
 
+interface AlternateItem {
+    name: string;
+    style: object;
+}
+interface AlternateI {
+    components: Array<AlternateItem>;
+}
+interface AlternateConfigI {
+    components?: Array<AlternateItem>;
+}
+
 interface SpacingI {
     0: string;
     px: string;
@@ -341,4 +350,17 @@ interface ThemeConfigI {
     radius?: RadiusConfigI;
 }
 
-export { type TypographyFontsConfigI as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, TypographyFonts as E, type TypographyFontsScaleConfigI as F, type TypographyFontsScaleSizeConfigI as G, type TypographyI as H, type TypographyConfigI as I, type SpacingKey as J, SpacingKeys as K, Spacing as L, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type ColorsConfigI as c, type ColorKey as d, ColorKeys as e, Color as f, type ColorMapI as g, type ColorMapConfigI as h, type ColorMapLabelsI as i, type ColorMapLabelsConfigI as j, type ColorMapBordersI as k, type ColorMapBordersConfigI as l, type ColorMapLandscapeI as m, type ColorMapLandscapeConfigI as n, type RadiusConfigI as o, type RadiusKey as p, RadiusKeys as q, Radius as r, type TypographyFontsFamilyConfigI as s, type TypographyFontI as t, type TypographyFontKey as u, type TypographyFontWeightKey as v, TypographyFontKeys as w, TypographyFont as x, TypographyFontWeightKeys as y, TypographyFontWeight as z };
+interface ILookupAlternate {
+    name: string;
+    alternates: Array<AlternateItem>;
+}
+declare const LookupAlternate: ({ name, alternates, }: ILookupAlternate) => AlternateItem | undefined;
+
+interface ILookupAdditionalColor {
+    name: string;
+    colors: AdditionalColorItem[];
+    fallback: HexColor | "transparent";
+}
+declare const LookupAdditionalColor: ({ name, colors, fallback, }: ILookupAdditionalColor) => HexColor | "transparent";
+
+export { type AlternateItem as A, TypographyFont as B, type ColorsI as C, TypographyFontWeightKeys as D, TypographyFontWeight as E, type TypographyFontsConfigI as F, type TypographyFontsKey as G, TypographyFontsKeys as H, TypographyFonts as I, type TypographyFontsScaleConfigI as J, type TypographyFontsScaleSizeConfigI as K, LookupAlternate as L, type TypographyI as M, type TypographyConfigI as N, type SpacingKey as O, SpacingKeys as P, Spacing as Q, type RadiusI as R, type SpacingI as S, type ThemeConfigI as T, type UtilityI as U, type ILookupAdditionalColor as V, type ILookupAlternate as W, type ThemeI as a, type TypographyFontsI as b, LookupAdditionalColor as c, type AlternateI as d, type AlternateConfigI as e, type ColorsConfigI as f, type ColorKey as g, ColorKeys as h, Color as i, type ColorMapI as j, type ColorMapConfigI as k, type ColorMapLabelsI as l, type ColorMapLabelsConfigI as m, type ColorMapBordersI as n, type ColorMapBordersConfigI as o, type ColorMapLandscapeI as p, type ColorMapLandscapeConfigI as q, type RadiusConfigI as r, type RadiusKey as s, RadiusKeys as t, Radius as u, type TypographyFontsFamilyConfigI as v, type TypographyFontI as w, type TypographyFontKey as x, type TypographyFontWeightKey as y, TypographyFontKeys as z };

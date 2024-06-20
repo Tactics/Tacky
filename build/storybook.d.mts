@@ -1,6 +1,5 @@
 import React__default, { FunctionComponent } from 'react';
-import { A as AdditionalColorItem } from './color-additional-_M7QfRi_.mjs';
-import { C as ColorVariantI } from './color-variant-DioyECWL.mjs';
+import { A as AdditionalColorItem, C as ColorVariantI } from './color-additional-FqWzzv3w.mjs';
 
 declare const StorybookUiColor: ({ title, color, }: {
     title: string;
