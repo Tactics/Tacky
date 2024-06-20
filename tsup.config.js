@@ -13,7 +13,6 @@ export default defineConfig([
         entry: [
             'src/index.ts',
             'src/storybook.ts',
-            'src/tool.ts',
             'src/contract.ts'
         ], // Entry point(s)
         format: ['cjs','esm'], // Output format(s)
