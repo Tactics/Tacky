@@ -13,7 +13,8 @@ export default defineConfig([
         entry: [
             'src/index.ts',
             'src/storybook.ts',
-            'src/contract.ts'
+            'src/contract.ts',
+            'src/monad.ts'
         ], // Entry point(s)
         format: ['cjs','esm'], // Output format(s)
         target: ['chrome91', 'firefox90', 'edge91', 'safari15', 'ios15', 'opera77'],

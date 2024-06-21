@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -19,6 +19,11 @@
       "require": "./build/contract.js",
       "import": "./build/contract.js",
       "types": "./build/contract.d.ts"
+    },
+    "./monad": {
+      "require": "./build/monad.js",
+      "import": "./build/monad.js",
+      "types": "./build/monad.d.ts"
     }
   },
   "repository": {
