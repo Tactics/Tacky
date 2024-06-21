@@ -1,3 +1,1 @@
-export class Awaiting {
-  constructor() {}
-}
+export class Awaiting {}
