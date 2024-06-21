@@ -91,6 +91,7 @@ declare class Some<T> implements Optional<T> {
 }
 
 declare class Awaiting {
+    constructor();
 }
 
 type OptionalResult<T> = None | Some<T>;
