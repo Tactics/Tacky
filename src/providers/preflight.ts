@@ -93,6 +93,7 @@ const StyleProviderPreFlight = createGlobalStyle`
     /* Set core body defaults */
     body {
         min-height: 100vh;
+        margin: 0;
     }
 
     /* Inherit fonts for inputs and buttons */
