@@ -1,5 +1,4 @@
 export { StyleProviderAnimation } from "@/providers/animation";
-export { StyleProviderFontFace } from "@/providers/font-face";
 export { StyleProviderPreFlight } from "@/providers/preflight";
 export { StyleProviderRouter } from "@/providers/router";
 export { ThemeBuilder } from "@/theme/builders/theme";
@@ -26,5 +25,8 @@ export type {
 
 export { BuildProvidersTree } from "@/tooling/build-provider-tree";
 export { orDefault } from "@/tooling/or-default";
+export { ExternalStylesheetLoader } from "@/tooling/external-stylesheet-loader";
+export type { ExternalStylesheetLoaderI } from "@/tooling/external-stylesheet-loader";
+
 export { LookupAlternate } from "@/alternate/functions/alternate";
 export { LookupAdditionalColor } from "@/colors/functions/additional";

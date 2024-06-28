@@ -4,11 +4,11 @@ import {
 } from "@/typography/contracts/fonts";
 
 export interface TypographyI {
-  resources: string[];
+  external_resources: string[];
   fonts: TypographyFontsI;
 }
 
 export interface TypographyConfigI {
-  resources?: string[];
+  external_resources?: string[];
   fonts?: TypographyFontsConfigI;
 }

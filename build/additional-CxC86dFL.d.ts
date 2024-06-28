@@ -101,11 +101,11 @@ declare const TypographyFontsKeys: TypographyFonts[];
 type TypographyFontsKey = TypographyFonts.PRIMARY | TypographyFonts.SUPPORTING | TypographyFonts.ACCENT;
 
 interface TypographyI {
-    resources: string[];
+    external_resources: string[];
     fonts: TypographyFontsI;
 }
 interface TypographyConfigI {
-    resources?: string[];
+    external_resources?: string[];
     fonts?: TypographyFontsConfigI;
 }
 

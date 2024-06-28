@@ -13,12 +13,12 @@ const TypographyBuilder = ({
   config: TypographyConfigI;
 }): TypographyI => {
   return {
-    resources: config?.resources
+    external_resources: config?.external_resources
       ? TypographyResourcesBuilder({
-          base: base.resources,
-          config: config?.resources ?? [],
+          base: base.external_resources,
+          config: config?.external_resources ?? [],
         })
-      : base.resources,
+      : base.external_resources,
     fonts: config?.fonts
       ? TypographyFontsBuilder({
           base: base.fonts,

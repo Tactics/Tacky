@@ -19,19 +19,6 @@ import {
   baseThemeConfigScaleXl,
   baseThemeConfigScaleXs,
   baseThemeConfigSupportingFont,
-  baseThemeConfigWeight2Xl,
-  baseThemeConfigWeight3Xl,
-  baseThemeConfigWeight4Xl,
-  baseThemeConfigWeight5Xl,
-  baseThemeConfigWeight6Xl,
-  baseThemeConfigWeight7Xl,
-  baseThemeConfigWeight8Xl,
-  baseThemeConfigWeight9Xl,
-  baseThemeConfigWeightLg,
-  baseThemeConfigWeightMd,
-  baseThemeConfigWeightSm,
-  baseThemeConfigWeightXl,
-  baseThemeConfigWeightXs,
 } from "@/base/theme";
 import { orDefault } from "@/tooling/or-default";
 import { FontBuilder } from "@/typography/builder/font";

@@ -33,7 +33,7 @@ export const baseThemeConfigRadius3Xl: string = "1.5rem";
 export const BaseTheme: ThemeI = {
   alternate: [],
   typography: {
-    resources: [],
+    external_resources: [],
     fonts: {
       primary: {
         xs: {
