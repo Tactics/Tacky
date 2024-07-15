@@ -324,11 +324,11 @@ declare const SpacingKeys: Spacing[];
 type SpacingKey = Spacing.S0 | Spacing.PX | Spacing.S05 | Spacing.S10 | Spacing.S15 | Spacing.S20 | Spacing.S25 | Spacing.S30 | Spacing.S40 | Spacing.S50 | Spacing.S60 | Spacing.S70 | Spacing.S80 | Spacing.S90 | Spacing.S100 | Spacing.S110 | Spacing.S120 | Spacing.S140 | Spacing.S160 | Spacing.S200 | Spacing.S320 | Spacing.S360 | Spacing.S400 | Spacing.S440 | Spacing.S480 | Spacing.S520 | Spacing.S560 | Spacing.S600 | Spacing.S640 | Spacing.S720 | Spacing.S800 | Spacing.S960;
 
 interface BreakpointI {
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-    "2xl": string;
+    sm: number;
+    md: number;
+    lg: number;
+    xl: number;
+    "2xl": number;
 }
 
 interface UtilityI {

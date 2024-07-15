@@ -11,17 +11,6 @@ export { useThemeFonts } from "@/hooks/use-theme-fonts";
 export { useThemeAlternate } from "@/hooks/use-theme-alternate";
 export { useThemeRadius } from "@/hooks/use-theme-radius";
 export { useThemeUtility } from "@/hooks/use-theme-utility";
-export {
-  useBrowserAccessibilityPreferences,
-  BrowserAccessibilityPreferences,
-} from "@/hooks/use-browser-accessibility-preferences";
-export type {
-  prefersReducedTransparency,
-  prefersColorSchema,
-  invertedColors,
-  prefersContrast,
-  prefersReducedMotion,
-} from "@/hooks/use-browser-accessibility-preferences";
 
 export { BuildProvidersTree } from "@/tooling/build-provider-tree";
 export { orDefault } from "@/tooling/or-default";

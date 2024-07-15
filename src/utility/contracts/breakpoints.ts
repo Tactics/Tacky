@@ -1,9 +1,9 @@
 interface BreakpointI {
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
-  "2xl": string;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
+  "2xl": number;
 }
 
 export enum Breakpoint {
