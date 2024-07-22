@@ -14,12 +14,7 @@ const ThemeBuilder = ({ config }: { config: ThemeConfigI }): ThemeI => {
     typography: config?.typography
       ? TypographyBuilder({
           base: BaseTheme.typography,
-          config: {
-            external_resources: config.typography?.external_resources
-              ? config.typography.external_resources
-              : [],
-            fonts: config.typography?.fonts ? config.typography.fonts : {},
-          },
+          config: config.typography ? config.typography : {},
         })
       : BaseTheme.typography,
     colors: config?.colors

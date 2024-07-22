@@ -16,7 +16,7 @@ const TypographyBuilder = ({
     external_resources: config?.external_resources
       ? TypographyResourcesBuilder({
           base: base.external_resources,
-          config: config?.external_resources ?? [],
+          config: config?.external_resources ? config.external_resources : [],
         })
       : base.external_resources,
     fonts: config?.fonts
