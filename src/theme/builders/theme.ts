@@ -4,6 +4,7 @@ import { TypographyBuilder } from "@/typography/builder/typography";
 import { ColorBuilder } from "@/colors/builders/colors";
 import { RadiusBuilder } from "@/radius/builders/radius";
 import { BaseTheme } from "@/base/theme";
+import { ShadowBuilder } from "@/shadow/builders/shadow";
 
 const ThemeBuilder = ({ config }: { config: ThemeConfigI }): ThemeI => {
   return {
@@ -27,6 +28,10 @@ const ThemeBuilder = ({ config }: { config: ThemeConfigI }): ThemeI => {
     radius: RadiusBuilder({
       base: BaseTheme.radius,
       config: config.radius,
+    }),
+    shadow: ShadowBuilder({
+      base: BaseTheme.shadow,
+      config: config.shadow,
     }),
   };
 };

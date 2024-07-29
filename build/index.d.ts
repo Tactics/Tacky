@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
-import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, A as AlternateItem, R as RadiusI, U as UtilityI } from './additional-BejDVZZ4.js';
-export { c as LookupAdditionalColor, L as LookupAlternate } from './additional-BejDVZZ4.js';
+import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, A as AlternateItem, R as RadiusI, U as UtilityI, S as ShadowI } from './additional-DMOElOGi.js';
+export { c as LookupAdditionalColor, L as LookupAlternate } from './additional-DMOElOGi.js';
 import './color-additional-FqWzzv3w.js';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
@@ -10,8 +10,6 @@ declare const StyleProviderAnimation: React.NamedExoticComponent<styled_componen
 }>;
 
 declare const StyleProviderPreFlight: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
-
-declare const StyleProviderRouter: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
 
 declare const ThemeBuilder: ({ config }: {
     config: ThemeConfigI;
@@ -43,6 +41,8 @@ declare const useThemeRadius: () => RadiusI;
 
 declare const useThemeUtility: () => UtilityI;
 
+declare const useThemeShadow: () => ShadowI;
+
 declare const BuildProvidersTree: (componentsWithProps: any) => any;
 
 declare function orDefault(json: any, standard: any, keys: string[]): any;
@@ -52,4 +52,4 @@ interface ExternalStylesheetLoaderI extends PropsWithChildren {
 }
 declare const ExternalStylesheetLoader: FC<ExternalStylesheetLoaderI>;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderRouter, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeUtility };
+export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useTheme, useThemeAlternate, useThemeColor, useThemeFonts, useThemeRadius, useThemeShadow, useThemeUtility };
