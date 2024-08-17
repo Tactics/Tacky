@@ -1,5 +1,3 @@
-import { useThemeShadow } from "@/hooks/use-theme-shadow";
-
 export { StyleProviderAnimation } from "@/providers/animation";
 export { StyleProviderPreFlight } from "@/providers/preflight";
 export { ThemeBuilder } from "@/theme/builders/theme";

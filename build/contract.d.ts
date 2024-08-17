@@ -1,6 +1,62 @@
-import { a as ThemeI, T as ThemeConfigI } from './additional-DMOElOGi.js';
-export { e as AlternateConfigI, d as AlternateI, A as AlternateItem, i as Color, g as ColorKey, h as ColorKeys, o as ColorMapBordersConfigI, n as ColorMapBordersI, k as ColorMapConfigI, j as ColorMapI, m as ColorMapLabelsConfigI, l as ColorMapLabelsI, q as ColorMapLandscapeConfigI, p as ColorMapLandscapeI, f as ColorsConfigI, C as ColorsI, W as ILookupAdditionalColor, X as ILookupAlternate, u as Radius, r as RadiusConfigI, R as RadiusI, s as RadiusKey, t as RadiusKeys, V as Spacing, O as SpacingI, P as SpacingKey, Q as SpacingKeys, N as TypographyConfigI, B as TypographyFont, w as TypographyFontI, x as TypographyFontKey, z as TypographyFontKeys, E as TypographyFontWeight, y as TypographyFontWeightKey, D as TypographyFontWeightKeys, I as TypographyFonts, F as TypographyFontsConfigI, v as TypographyFontsFamilyConfigI, b as TypographyFontsI, G as TypographyFontsKey, H as TypographyFontsKeys, J as TypographyFontsScaleConfigI, K as TypographyFontsScaleSizeConfigI, M as TypographyI, U as UtilityI } from './additional-DMOElOGi.js';
-export { a as AdditionalColorI, b as AdditionalColorIConfigI, A as AdditionalColorItem, f as ColorVariant, c as ColorVariantConfigI, C as ColorVariantI, d as ColorVariantKey, e as ColorVariantKeys, H as HexColor } from './color-additional-FqWzzv3w.js';
+import { a as ThemeI, T as ThemeConfigI } from './additional-laCC3QZx.js';
+export { e as AlternateConfigI, d as AlternateI, A as AlternateItem, i as Color, g as ColorKey, h as ColorKeys, f as ColorsConfigI, C as ColorsI, J as ILookupAdditionalColor, K as ILookupAlternate, m as Radius, j as RadiusConfigI, R as RadiusI, k as RadiusKey, l as RadiusKeys, I as Spacing, F as SpacingI, G as SpacingKey, H as SpacingKeys, E as TypographyConfigI, s as TypographyFont, o as TypographyFontI, p as TypographyFontKey, r as TypographyFontKeys, u as TypographyFontWeight, q as TypographyFontWeightKey, t as TypographyFontWeightKeys, y as TypographyFonts, v as TypographyFontsConfigI, n as TypographyFontsFamilyConfigI, b as TypographyFontsI, w as TypographyFontsKey, x as TypographyFontsKeys, z as TypographyFontsScaleConfigI, B as TypographyFontsScaleSizeConfigI, D as TypographyI, U as UtilityI } from './additional-laCC3QZx.js';
+import { H as HexColor } from './color-additional-FqWzzv3w.js';
+export { a as AdditionalColorI, b as AdditionalColorIConfigI, A as AdditionalColorItem, f as ColorVariant, c as ColorVariantConfigI, C as ColorVariantI, d as ColorVariantKey, e as ColorVariantKeys } from './color-additional-FqWzzv3w.js';
+
+interface ColorMapLabelsI {
+    all: HexColor;
+    water: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapBordersI {
+    country: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapLandscapeI {
+    all: HexColor;
+    artificial: HexColor;
+    terrain: HexColor;
+    park: HexColor;
+    poi: HexColor;
+    water: HexColor;
+    transit: HexColor;
+    highway: HexColor;
+    road: HexColor;
+}
+interface ColorMapLabelsConfigI {
+    all?: HexColor;
+    water?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapBordersConfigI {
+    country?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapLandscapeConfigI {
+    all?: HexColor;
+    artificial?: HexColor;
+    terrain?: HexColor;
+    park?: HexColor;
+    poi?: HexColor;
+    water?: HexColor;
+    transit?: HexColor;
+    highway?: HexColor;
+    road?: HexColor;
+}
+interface ColorMapI {
+    label: ColorMapLabelsI;
+    border: ColorMapBordersI;
+    landscape: ColorMapLandscapeI;
+}
+interface ColorMapConfigI {
+    label?: ColorMapLabelsConfigI;
+    border?: ColorMapBordersConfigI;
+    landscape?: ColorMapLandscapeConfigI;
+}
 
 interface ThemeVariantsI {
     standard: ThemeI;
@@ -29,4 +85,4 @@ interface TypographyFontsScaleLineHeightConfigI {
     "9xl"?: string | number;
 }
 
-export { ThemeConfigI, ThemeI, type ThemeVariantsConfigI, type ThemeVariantsI, type TypographyFontsScaleLineHeightConfigI };
+export { type ColorMapBordersConfigI, type ColorMapBordersI, type ColorMapConfigI, type ColorMapI, type ColorMapLabelsConfigI, type ColorMapLabelsI, type ColorMapLandscapeConfigI, type ColorMapLandscapeI, HexColor, ThemeConfigI, ThemeI, type ThemeVariantsConfigI, type ThemeVariantsI, type TypographyFontsScaleLineHeightConfigI };

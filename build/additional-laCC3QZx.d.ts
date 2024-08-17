@@ -1,4 +1,4 @@
-import { H as HexColor, C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI } from './color-additional-FqWzzv3w.mjs';
+import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.js';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -109,61 +109,6 @@ interface TypographyConfigI {
     fonts?: TypographyFontsConfigI;
 }
 
-interface ColorMapLabelsI {
-    all: HexColor;
-    water: HexColor;
-    highway: HexColor;
-    road: HexColor;
-}
-interface ColorMapBordersI {
-    country: HexColor;
-    highway: HexColor;
-    road: HexColor;
-}
-interface ColorMapLandscapeI {
-    all: HexColor;
-    artificial: HexColor;
-    terrain: HexColor;
-    park: HexColor;
-    poi: HexColor;
-    water: HexColor;
-    transit: HexColor;
-    highway: HexColor;
-    road: HexColor;
-}
-interface ColorMapLabelsConfigI {
-    all?: HexColor;
-    water?: HexColor;
-    highway?: HexColor;
-    road?: HexColor;
-}
-interface ColorMapBordersConfigI {
-    country?: HexColor;
-    highway?: HexColor;
-    road?: HexColor;
-}
-interface ColorMapLandscapeConfigI {
-    all?: HexColor;
-    artificial?: HexColor;
-    terrain?: HexColor;
-    park?: HexColor;
-    poi?: HexColor;
-    water?: HexColor;
-    transit?: HexColor;
-    highway?: HexColor;
-    road?: HexColor;
-}
-interface ColorMapI {
-    label: ColorMapLabelsI;
-    border: ColorMapBordersI;
-    landscape: ColorMapLandscapeI;
-}
-interface ColorMapConfigI {
-    label?: ColorMapLabelsConfigI;
-    border?: ColorMapBordersConfigI;
-    landscape?: ColorMapLandscapeConfigI;
-}
-
 interface ColorsI {
     danger: ColorVariantI;
     warning: ColorVariantI;
@@ -173,9 +118,12 @@ interface ColorsI {
     surfaces: ColorVariantI;
     primary: ColorVariantI;
     accent: ColorVariantI;
+    accent2: ColorVariantI;
+    accent3: ColorVariantI;
+    accent4: ColorVariantI;
+    accent5: ColorVariantI;
     supporting: ColorVariantI;
     additional: AdditionalColorItem[];
-    map: ColorMapI;
 }
 interface ColorsConfigI {
     danger?: ColorVariantConfigI;
@@ -186,9 +134,12 @@ interface ColorsConfigI {
     surfaces?: ColorVariantConfigI;
     primary?: ColorVariantConfigI;
     accent?: ColorVariantConfigI;
+    accent2?: ColorVariantConfigI;
+    accent3?: ColorVariantConfigI;
+    accent4?: ColorVariantConfigI;
+    accent5?: ColorVariantConfigI;
     supporting?: ColorVariantConfigI;
     additional?: AdditionalColorItem[];
-    map?: ColorMapConfigI;
 }
 declare enum Color {
     DANGER = "danger",
@@ -383,4 +334,4 @@ interface ILookupAdditionalColor {
 }
 declare const LookupAdditionalColor: ({ name, colors, fallback, }: ILookupAdditionalColor) => HexColor | "transparent";
 
-export { type AlternateItem as A, TypographyFont as B, type ColorsI as C, TypographyFontWeightKeys as D, TypographyFontWeight as E, type TypographyFontsConfigI as F, type TypographyFontsKey as G, TypographyFontsKeys as H, TypographyFonts as I, type TypographyFontsScaleConfigI as J, type TypographyFontsScaleSizeConfigI as K, LookupAlternate as L, type TypographyI as M, type TypographyConfigI as N, type SpacingI as O, type SpacingKey as P, SpacingKeys as Q, type RadiusI as R, type ShadowI as S, type ThemeConfigI as T, type UtilityI as U, Spacing as V, type ILookupAdditionalColor as W, type ILookupAlternate as X, type ThemeI as a, type TypographyFontsI as b, LookupAdditionalColor as c, type AlternateI as d, type AlternateConfigI as e, type ColorsConfigI as f, type ColorKey as g, ColorKeys as h, Color as i, type ColorMapI as j, type ColorMapConfigI as k, type ColorMapLabelsI as l, type ColorMapLabelsConfigI as m, type ColorMapBordersI as n, type ColorMapBordersConfigI as o, type ColorMapLandscapeI as p, type ColorMapLandscapeConfigI as q, type RadiusConfigI as r, type RadiusKey as s, RadiusKeys as t, Radius as u, type TypographyFontsFamilyConfigI as v, type TypographyFontI as w, type TypographyFontKey as x, type TypographyFontWeightKey as y, TypographyFontKeys as z };
+export { type AlternateItem as A, type TypographyFontsScaleSizeConfigI as B, type ColorsI as C, type TypographyI as D, type TypographyConfigI as E, type SpacingI as F, type SpacingKey as G, SpacingKeys as H, Spacing as I, type ILookupAdditionalColor as J, type ILookupAlternate as K, LookupAlternate as L, type RadiusI as R, type ShadowI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, LookupAdditionalColor as c, type AlternateI as d, type AlternateConfigI as e, type ColorsConfigI as f, type ColorKey as g, ColorKeys as h, Color as i, type RadiusConfigI as j, type RadiusKey as k, RadiusKeys as l, Radius as m, type TypographyFontsFamilyConfigI as n, type TypographyFontI as o, type TypographyFontKey as p, type TypographyFontWeightKey as q, TypographyFontKeys as r, TypographyFont as s, TypographyFontWeightKeys as t, TypographyFontWeight as u, type TypographyFontsConfigI as v, type TypographyFontsKey as w, TypographyFontsKeys as x, TypographyFonts as y, type TypographyFontsScaleConfigI as z };

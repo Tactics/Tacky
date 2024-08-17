@@ -1,10 +1,8 @@
 import {
-  ColorVariant,
   ColorVariantConfigI,
   ColorVariantI,
 } from "@/colors/contracts/color-variant";
 import { AdditionalColorItem } from "@/colors/contracts/color-additional";
-import { ColorMapConfigI, ColorMapI } from "@/colors/contracts/color-map";
 
 // A common interface for defining a color scheme for a theme.
 export interface ColorsI {
@@ -16,9 +14,12 @@ export interface ColorsI {
   surfaces: ColorVariantI;
   primary: ColorVariantI;
   accent: ColorVariantI;
+  accent2: ColorVariantI;
+  accent3: ColorVariantI;
+  accent4: ColorVariantI;
+  accent5: ColorVariantI;
   supporting: ColorVariantI;
   additional: AdditionalColorItem[];
-  map: ColorMapI;
 }
 
 export interface ColorsConfigI {
@@ -30,9 +31,12 @@ export interface ColorsConfigI {
   surfaces?: ColorVariantConfigI;
   primary?: ColorVariantConfigI;
   accent?: ColorVariantConfigI;
+  accent2?: ColorVariantConfigI;
+  accent3?: ColorVariantConfigI;
+  accent4?: ColorVariantConfigI;
+  accent5?: ColorVariantConfigI;
   supporting?: ColorVariantConfigI;
   additional?: AdditionalColorItem[];
-  map?: ColorMapConfigI;
 }
 
 export enum Color {

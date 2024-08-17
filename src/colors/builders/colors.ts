@@ -42,64 +42,42 @@ const ColorBuilder = ({
       base: base.accent,
       config: config.accent ? config.accent : {},
     }),
+    accent2: ColorVariantBuilder({
+      base: base.accent2,
+      config: config.accent2
+        ? config.accent2
+        : config.accent
+          ? config.accent
+          : {},
+    }),
+    accent3: ColorVariantBuilder({
+      base: base.accent3,
+      config: config.accent3
+        ? config.accent3
+        : config.accent
+          ? config.accent
+          : {},
+    }),
+    accent4: ColorVariantBuilder({
+      base: base.accent4,
+      config: config.accent4
+        ? config.accent4
+        : config.accent
+          ? config.accent
+          : {},
+    }),
+    accent5: ColorVariantBuilder({
+      base: base.accent5,
+      config: config.accent5
+        ? config.accent5
+        : config.accent
+          ? config.accent
+          : {},
+    }),
     supporting: ColorVariantBuilder({
       base: base.supporting,
       config: config.supporting ? config.supporting : {},
     }),
-    map: {
-      label: {
-        all: config.map?.label?.all ? config.map.label.all : base.map.label.all,
-        water: config.map?.label?.water
-          ? config.map.label.water
-          : base.map.label.water,
-        highway: config.map?.label?.highway
-          ? config.map.label.highway
-          : base.map.label.highway,
-        road: config.map?.label?.road
-          ? config.map.label.road
-          : base.map.label.road,
-      },
-      border: {
-        country: config.map?.border?.country
-          ? config.map.border.country
-          : base.map.border.country,
-        highway: config.map?.border?.highway
-          ? config.map.border.highway
-          : base.map.border.highway,
-        road: config.map?.border?.road
-          ? config.map.border.road
-          : base.map.border.road,
-      },
-      landscape: {
-        all: config.map?.landscape?.all
-          ? config.map.landscape.all
-          : base.map.landscape.all,
-        artificial: config.map?.landscape?.artificial
-          ? config.map.landscape.artificial
-          : base.map.landscape.artificial,
-        terrain: config.map?.landscape?.terrain
-          ? config.map.landscape.terrain
-          : base.map.landscape.terrain,
-        park: config.map?.landscape?.park
-          ? config.map.landscape.park
-          : base.map.landscape.park,
-        poi: config.map?.landscape?.poi
-          ? config.map.landscape.poi
-          : base.map.landscape.poi,
-        water: config.map?.landscape?.water
-          ? config.map.landscape.water
-          : base.map.landscape.water,
-        transit: config.map?.landscape?.transit
-          ? config.map.landscape.transit
-          : base.map.landscape.transit,
-        highway: config.map?.landscape?.highway
-          ? config.map.landscape.highway
-          : base.map.landscape.highway,
-        road: config.map?.landscape?.road
-          ? config.map.landscape.road
-          : base.map.landscape.road,
-      },
-    },
     additional: AdditionalColorBuilder({
       base: base.additional,
       config: config?.additional ? config.additional : [],
