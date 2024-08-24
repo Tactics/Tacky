@@ -7,7 +7,9 @@ export { ThemeModeCtx } from "@/contexts/theme-mode-context";
 export { useTheme } from "@/hooks/use-theme";
 export { useThemeColor } from "@/hooks/use-theme-colors";
 export { useThemeFonts } from "@/hooks/use-theme-fonts";
-export { useThemeAlternate } from "@/hooks/use-theme-alternate";
+
+export { useAlternateTheme } from "@/hooks/use-theme-alternate";
+
 export { useThemeRadius } from "@/hooks/use-theme-radius";
 export { useThemeUtility } from "@/hooks/use-theme-utility";
 export { useThemeShadow } from "@/hooks/use-theme-shadow";
@@ -18,5 +20,5 @@ export { orDefault } from "@/tooling/or-default";
 export { ExternalStylesheetLoader } from "@/tooling/external-stylesheet-loader";
 export type { ExternalStylesheetLoaderI } from "@/tooling/external-stylesheet-loader";
 
-export { LookupAlternate } from "@/alternate/functions/alternate";
+export { LookupAlternateTheme } from "@/alternate/functions/alternate";
 export { LookupAdditionalColor } from "@/colors/functions/additional";

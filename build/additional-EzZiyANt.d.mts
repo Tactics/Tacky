@@ -1,4 +1,4 @@
-import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.js';
+import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.mjs';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -191,13 +191,31 @@ type RadiusKey = Radius.NONE | Radius.XS | Radius.SM | Radius.MD | Radius.LG | R
 
 interface AlternateItem {
     name: string;
-    style: object;
+    theme: AlternateThemableStatesConfig;
 }
 interface AlternateI {
     components: Array<AlternateItem>;
 }
 interface AlternateConfigI {
     components?: Array<AlternateItem>;
+}
+interface AlternateThemableStates {
+    Init: AlternateThemable;
+    Hover: AlternateThemable;
+}
+interface AlternateThemable {
+    Color: string;
+    BackgroundColor: string;
+    BorderColor: string;
+}
+interface AlternateThemableStatesConfig {
+    Init?: AlternateThemableConfig;
+    Hover?: AlternateThemableConfig;
+}
+interface AlternateThemableConfig {
+    Color?: string;
+    BackgroundColor?: string;
+    BorderColor?: string;
 }
 
 interface SpacingI {
@@ -321,11 +339,11 @@ interface ThemeConfigI {
     shadow?: ShadowConfigI;
 }
 
-interface ILookupAlternate {
+interface ILookupAlternateTheme {
     name: string;
     alternates: Array<AlternateItem>;
 }
-declare const LookupAlternate: ({ name, alternates, }: ILookupAlternate) => AlternateItem | undefined;
+declare const LookupAlternateTheme: ({ name, alternates, }: ILookupAlternateTheme) => AlternateThemableStatesConfig | undefined;
 
 interface ILookupAdditionalColor {
     name: string;
@@ -334,4 +352,4 @@ interface ILookupAdditionalColor {
 }
 declare const LookupAdditionalColor: ({ name, colors, fallback, }: ILookupAdditionalColor) => HexColor | "transparent";
 
-export { type AlternateItem as A, type TypographyFontsScaleSizeConfigI as B, type ColorsI as C, type TypographyI as D, type TypographyConfigI as E, type SpacingI as F, type SpacingKey as G, SpacingKeys as H, Spacing as I, type ILookupAdditionalColor as J, type ILookupAlternate as K, LookupAlternate as L, type RadiusI as R, type ShadowI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, LookupAdditionalColor as c, type AlternateI as d, type AlternateConfigI as e, type ColorsConfigI as f, type ColorKey as g, ColorKeys as h, Color as i, type RadiusConfigI as j, type RadiusKey as k, RadiusKeys as l, Radius as m, type TypographyFontsFamilyConfigI as n, type TypographyFontI as o, type TypographyFontKey as p, type TypographyFontWeightKey as q, TypographyFontKeys as r, TypographyFont as s, TypographyFontWeightKeys as t, TypographyFontWeight as u, type TypographyFontsConfigI as v, type TypographyFontsKey as w, TypographyFontsKeys as x, TypographyFonts as y, type TypographyFontsScaleConfigI as z };
+export { type AlternateThemableStatesConfig as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, TypographyFonts as E, type TypographyFontsScaleConfigI as F, type TypographyFontsScaleSizeConfigI as G, type TypographyI as H, type TypographyConfigI as I, type SpacingI as J, type SpacingKey as K, LookupAlternateTheme as L, SpacingKeys as M, Spacing as N, type ILookupAdditionalColor as O, type ILookupAlternateTheme as P, type RadiusI as R, type ShadowI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type AlternateThemableStates as c, LookupAdditionalColor as d, type AlternateItem as e, type AlternateI as f, type AlternateConfigI as g, type AlternateThemable as h, type AlternateThemableConfig as i, type ColorsConfigI as j, type ColorKey as k, ColorKeys as l, Color as m, type RadiusConfigI as n, type RadiusKey as o, RadiusKeys as p, Radius as q, type TypographyFontsFamilyConfigI as r, type TypographyFontI as s, type TypographyFontKey as t, type TypographyFontWeightKey as u, TypographyFontKeys as v, TypographyFont as w, TypographyFontWeightKeys as x, TypographyFontWeight as y, type TypographyFontsConfigI as z };

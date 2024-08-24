@@ -1,16 +1,22 @@
-import { AlternateItem } from "@/alternate/contracts/alternate";
+import {
+  AlternateItem,
+  AlternateThemable,
+  AlternateThemableStates,
+  AlternateThemableStatesConfig,
+} from "@/alternate/contracts/alternate";
 
-interface ILookupAlternate {
+interface ILookupAlternateTheme {
   name: string;
   alternates: Array<AlternateItem>;
 }
 
-const LookupAlternate = ({
+const LookupAlternateTheme = ({
   name,
   alternates,
-}: ILookupAlternate): AlternateItem | undefined => {
-  return alternates.find((item) => item.name === name);
+}: ILookupAlternateTheme): AlternateThemableStatesConfig | undefined => {
+  const lookup = alternates.find((item) => item.name === name);
+  return lookup ? lookup.theme : lookup;
 };
 
-export { LookupAlternate };
-export type { ILookupAlternate };
+export { LookupAlternateTheme };
+export type { ILookupAlternateTheme };

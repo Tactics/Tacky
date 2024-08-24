@@ -1,6 +1,6 @@
 export interface AlternateItem {
   name: string;
-  style: object;
+  theme: AlternateThemableStatesConfig;
 }
 
 export interface AlternateI {
@@ -9,4 +9,26 @@ export interface AlternateI {
 
 export interface AlternateConfigI {
   components?: Array<AlternateItem>;
+}
+
+export interface AlternateThemableStates {
+  Init: AlternateThemable;
+  Hover: AlternateThemable;
+}
+
+export interface AlternateThemable {
+  Color: string;
+  BackgroundColor: string;
+  BorderColor: string;
+}
+
+export interface AlternateThemableStatesConfig {
+  Init?: AlternateThemableConfig;
+  Hover?: AlternateThemableConfig;
+}
+
+export interface AlternateThemableConfig {
+  Color?: string;
+  BackgroundColor?: string;
+  BorderColor?: string;
 }

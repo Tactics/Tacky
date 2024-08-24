@@ -2,6 +2,10 @@ export type {
   AlternateItem,
   AlternateI,
   AlternateConfigI,
+  AlternateThemable,
+  AlternateThemableStates,
+  AlternateThemableStatesConfig,
+  AlternateThemableConfig,
 } from "@/alternate/contracts/alternate";
 export type { HexColor } from "@/colors/contracts/hex";
 export type {
@@ -77,4 +81,4 @@ export type { SpacingI, SpacingKey } from "@/utility/contracts/spacing";
 export { SpacingKeys, Spacing } from "@/utility/contracts/spacing";
 export type { UtilityI } from "@/utility/contracts/utility";
 export type { ILookupAdditionalColor } from "@/colors/functions/additional";
-export type { ILookupAlternate } from "@/alternate/functions/alternate";
+export type { ILookupAlternateTheme } from "@/alternate/functions/alternate";
