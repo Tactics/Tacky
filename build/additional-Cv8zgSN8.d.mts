@@ -1,4 +1,4 @@
-import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.js';
+import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.mjs';
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -202,6 +202,7 @@ interface AlternateConfigI {
 interface AlternateThemableStates {
     Init: AlternateThemable;
     Hover: AlternateThemable;
+    Skeleton: AlternateThemable;
 }
 interface AlternateThemable {
     Color: string;
@@ -211,6 +212,7 @@ interface AlternateThemable {
 interface AlternateThemableStatesConfig {
     Init?: AlternateThemableConfig;
     Hover?: AlternateThemableConfig;
+    Skeleton?: AlternateThemableConfig;
 }
 interface AlternateThemableConfig {
     Color?: string;

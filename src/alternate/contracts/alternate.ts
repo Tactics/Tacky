@@ -14,6 +14,7 @@ export interface AlternateConfigI {
 export interface AlternateThemableStates {
   Init: AlternateThemable;
   Hover: AlternateThemable;
+  Skeleton: AlternateThemable;
 }
 
 export interface AlternateThemable {
@@ -25,6 +26,7 @@ export interface AlternateThemable {
 export interface AlternateThemableStatesConfig {
   Init?: AlternateThemableConfig;
   Hover?: AlternateThemableConfig;
+  Skeleton?: AlternateThemableConfig;
 }
 
 export interface AlternateThemableConfig {

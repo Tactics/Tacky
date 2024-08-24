@@ -46,5 +46,9 @@ export const useAlternateTheme = ({
   return {
     Init: mergeThemable(defaultThemable?.Init, AlternateTheme?.Init),
     Hover: mergeThemable(defaultThemable?.Hover, AlternateTheme?.Hover),
+    Skeleton: mergeThemable(
+      defaultThemable?.Skeleton,
+      AlternateTheme?.Skeleton,
+    ),
   };
 };
