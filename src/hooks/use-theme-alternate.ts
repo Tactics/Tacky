@@ -43,12 +43,16 @@ export const useAlternateTheme = ({
       defaultCSSValues.BorderColor,
   });
 
+  const mergedInit = mergeThemable(defaultThemable?.Init, AlternateTheme?.Init);
+  const mergedHover = mergeThemable(
+    defaultThemable?.Hover === undefined && defaultThemable?.Init
+      ? defaultThemable?.Init // If Hover is undefined and Init is set, use Init for Hover
+      : defaultThemable?.Hover,
+    AlternateTheme?.Hover,
+  );
+
   return {
-    Init: mergeThemable(defaultThemable?.Init, AlternateTheme?.Init),
-    Hover: mergeThemable(defaultThemable?.Hover, AlternateTheme?.Hover),
-    Skeleton: mergeThemable(
-      defaultThemable?.Skeleton,
-      AlternateTheme?.Skeleton,
-    ),
+    Init: mergedInit,
+    Hover: mergedHover,
   };
 };

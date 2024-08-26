@@ -10,6 +10,7 @@ export interface ColorsI {
   warning: ColorVariantI;
   success: ColorVariantI;
   info: ColorVariantI;
+  skeletons: ColorVariantI;
   neutrals: ColorVariantI;
   surfaces: ColorVariantI;
   primary: ColorVariantI;
@@ -27,6 +28,7 @@ export interface ColorsConfigI {
   warning?: ColorVariantConfigI;
   success?: ColorVariantConfigI;
   info?: ColorVariantConfigI;
+  skeletons?: ColorVariantConfigI;
   neutrals?: ColorVariantConfigI;
   surfaces?: ColorVariantConfigI;
   primary?: ColorVariantConfigI;

@@ -1,6 +1,6 @@
 'use strict';
 
-var chunkFCUG4YN5_js = require('./chunk-FCUG4YN5.js');
+var chunkDGWAZXSI_js = require('./chunk-DGWAZXSI.js');
 var i = require('react');
 var e = require('styled-components');
 
@@ -35,17 +35,17 @@ var d=e__default.default.div`
   margin-top: 0.25rem;
   font: ${o=>o.font};
   color: ${o=>o.color};
-`;var r=({title:o,color:t})=>{let s=chunkFCUG4YN5_js.v(),a=chunkFCUG4YN5_js.u();return i__default.default.createElement(S,null,i__default.default.createElement(b,{color:t}),i__default.default.createElement(U,null,i__default.default.createElement(x,{font:s.primary.sm.normal,color:a.neutrals.tint_800},o),i__default.default.createElement(k,{font:s.primary.xs.normal,color:a.neutrals.tint_800},t)))};var A=({colors:o})=>i__default.default.createElement(i__default.default.Fragment,null,o.map(function(t){return i__default.default.createElement(f,null,i__default.default.createElement(r,{color:t.color,title:t.name}))}));var $=({colors:o})=>i__default.default.createElement(d,null,i__default.default.createElement(r,{color:o.tint_50,title:"50"}),i__default.default.createElement(r,{color:o.tint_100,title:"100"}),i__default.default.createElement(r,{color:o.tint_200,title:"200"}),i__default.default.createElement(r,{color:o.tint_300,title:"300"}),i__default.default.createElement(r,{color:o.tint_400,title:"400"}),i__default.default.createElement(r,{color:o.tint_500,title:"500"}),i__default.default.createElement(r,{color:o.tint_600,title:"600"}),i__default.default.createElement(r,{color:o.tint_700,title:"700"}),i__default.default.createElement(r,{color:o.tint_800,title:"800"}),i__default.default.createElement(r,{color:o.tint_900,title:"900"}),i__default.default.createElement(r,{color:o.tint_950,title:"950"}));var I=e__default.default.div`
+`;var r=({title:o,color:t})=>{let s=chunkDGWAZXSI_js.v(),a=chunkDGWAZXSI_js.u();return i__default.default.createElement(S,null,i__default.default.createElement(b,{color:t}),i__default.default.createElement(U,null,i__default.default.createElement(x,{font:s.primary.sm.normal,color:a.neutrals.tint_800},o),i__default.default.createElement(k,{font:s.primary.xs.normal,color:a.neutrals.tint_800},t)))};var A=({colors:o})=>i__default.default.createElement(i__default.default.Fragment,null,o.map(function(t){return i__default.default.createElement(f,null,i__default.default.createElement(r,{color:t.color,title:t.name}))}));var $=({colors:o})=>i__default.default.createElement(d,null,i__default.default.createElement(r,{color:o.tint_50,title:"50"}),i__default.default.createElement(r,{color:o.tint_100,title:"100"}),i__default.default.createElement(r,{color:o.tint_200,title:"200"}),i__default.default.createElement(r,{color:o.tint_300,title:"300"}),i__default.default.createElement(r,{color:o.tint_400,title:"400"}),i__default.default.createElement(r,{color:o.tint_500,title:"500"}),i__default.default.createElement(r,{color:o.tint_600,title:"600"}),i__default.default.createElement(r,{color:o.tint_700,title:"700"}),i__default.default.createElement(r,{color:o.tint_800,title:"800"}),i__default.default.createElement(r,{color:o.tint_900,title:"900"}),i__default.default.createElement(r,{color:o.tint_950,title:"950"}));var I=e__default.default.div`
   display: flex;
   flex-direction: column;
 `,w=e__default.default.div`
   margin-bottom: 5rem;
-`;var N=({title:o,children:t})=>{chunkFCUG4YN5_js.v();chunkFCUG4YN5_js.u();return i__default.default.createElement(I,null,i__default.default.createElement(w,null,t))};var u=e__default.default.div`
+`;var N=({title:o,children:t})=>{chunkDGWAZXSI_js.v();chunkDGWAZXSI_js.u();return i__default.default.createElement(I,null,i__default.default.createElement(w,null,t))};var u=e__default.default.div`
   display: flex;
   flex-direction: column;
 `,P=e__default.default.div`
   margin-bottom: 1rem;
-`;var V=({caption:o,children:t})=>{chunkFCUG4YN5_js.v();chunkFCUG4YN5_js.u();return i__default.default.createElement(u,null,i__default.default.createElement(P,null,t))};var G=e__default.default.div`
+`;var V=({caption:o,children:t})=>{chunkDGWAZXSI_js.v();chunkDGWAZXSI_js.u();return i__default.default.createElement(u,null,i__default.default.createElement(P,null,t))};var G=e__default.default.div`
   font: ${o=>o.font};
 `;var q=({text:o,font:t})=>i__default.default.createElement(G,{font:t},o);var L=e__default.default.div`
   display: flex;

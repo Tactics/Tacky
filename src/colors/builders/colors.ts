@@ -34,6 +34,10 @@ const ColorBuilder = ({
       base: base.surfaces,
       config: config.surfaces ? config.surfaces : {},
     }),
+    skeletons: ColorVariantBuilder({
+      base: base.skeletons,
+      config: config.skeletons ? config.skeletons : {},
+    }),
     primary: ColorVariantBuilder({
       base: base.primary,
       config: config.primary ? config.primary : {},

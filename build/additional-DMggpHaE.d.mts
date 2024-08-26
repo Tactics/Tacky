@@ -114,6 +114,7 @@ interface ColorsI {
     warning: ColorVariantI;
     success: ColorVariantI;
     info: ColorVariantI;
+    skeletons: ColorVariantI;
     neutrals: ColorVariantI;
     surfaces: ColorVariantI;
     primary: ColorVariantI;
@@ -130,6 +131,7 @@ interface ColorsConfigI {
     warning?: ColorVariantConfigI;
     success?: ColorVariantConfigI;
     info?: ColorVariantConfigI;
+    skeletons?: ColorVariantConfigI;
     neutrals?: ColorVariantConfigI;
     surfaces?: ColorVariantConfigI;
     primary?: ColorVariantConfigI;
@@ -202,7 +204,6 @@ interface AlternateConfigI {
 interface AlternateThemableStates {
     Init: AlternateThemable;
     Hover: AlternateThemable;
-    Skeleton: AlternateThemable;
 }
 interface AlternateThemable {
     Color: string;
@@ -212,7 +213,6 @@ interface AlternateThemable {
 interface AlternateThemableStatesConfig {
     Init?: AlternateThemableConfig;
     Hover?: AlternateThemableConfig;
-    Skeleton?: AlternateThemableConfig;
 }
 interface AlternateThemableConfig {
     Color?: string;
