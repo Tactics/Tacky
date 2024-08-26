@@ -14,7 +14,6 @@ export interface AlternateConfigI {
 export interface AlternateThemableStates {
   Init: AlternateThemable;
   Hover: AlternateThemable;
-  Loading: AlternateThemable;
 }
 
 export interface AlternateThemable {
@@ -26,7 +25,6 @@ export interface AlternateThemable {
 export interface AlternateThemableStatesConfig {
   Init?: AlternateThemableConfig;
   Hover?: AlternateThemableConfig;
-  Loading?: AlternateThemableConfig;
 }
 
 export interface AlternateThemableConfig {
