@@ -1,7 +1,5 @@
 import {
   AlternateItem,
-  AlternateThemable,
-  AlternateThemableStates,
   AlternateThemableStatesConfig,
 } from "@/alternate/contracts/alternate";
 

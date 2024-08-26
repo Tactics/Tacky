@@ -51,8 +51,16 @@ export const useAlternateTheme = ({
     AlternateTheme?.Hover,
   );
 
+  const mergedLoading = mergeThemable(
+    defaultThemable?.Loading === undefined && defaultThemable?.Init
+      ? defaultThemable?.Init // If Loading is undefined and Init is set, use Init for Loading
+      : defaultThemable?.Loading,
+    AlternateTheme?.Loading,
+  );
+
   return {
     Init: mergedInit,
     Hover: mergedHover,
+    Loading: mergedLoading,
   };
 };
