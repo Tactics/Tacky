@@ -14,21 +14,50 @@ export interface AlternateConfigI {
 export interface AlternateThemableStates {
   Init: AlternateThemable;
   Hover: AlternateThemable;
+  Active: AlternateThemable;
 }
 
 export interface AlternateThemable {
   Color: string;
   BackgroundColor: string;
-  BorderColor: string;
+  Border: string;
+  Font: string;
+}
+
+export interface AlternateThemableDefaultConfig {
+  Color: string;
+  BackgroundColor: string;
+  Border: AlternateThemableBorder;
+  FontWeightAdjustment: number;
+}
+
+export interface AlternateThemableBorder {
+  Color: string;
+  Style: string;
+  Width: number;
+}
+
+export interface AlternateThemableBorderConfig {
+  Color?: string;
+  Style?: string;
+  Width?: number;
 }
 
 export interface AlternateThemableStatesConfig {
   Init?: AlternateThemableConfig;
   Hover?: AlternateThemableConfig;
+  Active?: AlternateThemableConfig;
 }
 
 export interface AlternateThemableConfig {
   Color?: string;
   BackgroundColor?: string;
-  BorderColor?: string;
+  Border?: AlternateThemableBorderConfig;
+  FontWeightAdjustment?: number;
+}
+
+export interface AlternateThemableBorderConfig {
+  Color?: string;
+  Style?: string;
+  Width?: number;
 }

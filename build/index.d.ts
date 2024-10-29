@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
-import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, A as AlternateThemableStatesConfig, c as AlternateThemableStates, R as RadiusI, U as UtilityI, S as ShadowI } from './additional-CmUjF1SK.js';
-export { d as LookupAdditionalColor, L as LookupAlternateTheme } from './additional-CmUjF1SK.js';
+import { T as ThemeConfigI, a as ThemeI, C as ColorsI, b as TypographyFontsI, A as AlternateThemableStatesConfig, c as AlternateThemableStates, R as RadiusI, U as UtilityI, S as ShadowI } from './additional-OabtOnzp.js';
+export { d as LookupAdditionalColor, L as LookupAlternateTheme } from './additional-OabtOnzp.js';
 import './color-additional-FqWzzv3w.js';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
@@ -35,8 +35,9 @@ declare const useThemeColor: () => ColorsI;
 
 declare const useThemeFonts: () => TypographyFontsI;
 
-declare const useAlternateTheme: ({ component, default: defaultThemable, }: {
+declare const useAlternateTheme: ({ component, font, default: defaultThemable, }: {
     component: string;
+    font: string;
     default?: AlternateThemableStatesConfig;
 }) => AlternateThemableStates;
 
