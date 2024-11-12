@@ -41,6 +41,8 @@ declare const useAlternateTheme: ({ component, font, default: defaultThemable, }
     default?: AlternateThemableStatesConfig;
 }) => AlternateThemableStates;
 
+declare const useIcons: () => string;
+
 declare const useThemeRadius: () => RadiusI;
 
 declare const useThemeUtility: () => UtilityI;
@@ -56,4 +58,4 @@ interface ExternalStylesheetLoaderI extends PropsWithChildren {
 }
 declare const ExternalStylesheetLoader: FC<ExternalStylesheetLoaderI>;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeShadow, useThemeUtility };
+export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useIcons, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeShadow, useThemeUtility };

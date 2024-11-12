@@ -9,6 +9,7 @@ export { useThemeColor } from "@/hooks/use-theme-colors";
 export { useThemeFonts } from "@/hooks/use-theme-fonts";
 
 export { useAlternateTheme } from "@/hooks/use-theme-alternate";
+export { useIcons } from "@/hooks/use-icons";
 
 export { useThemeRadius } from "@/hooks/use-theme-radius";
 export { useThemeUtility } from "@/hooks/use-theme-utility";
