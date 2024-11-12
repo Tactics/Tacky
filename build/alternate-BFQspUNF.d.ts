@@ -1,4 +1,129 @@
-import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-additional-FqWzzv3w.js';
+import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-variant-uYRwhhZI.js';
+
+interface AlternateItem {
+    name: string;
+    theme: AlternateThemableStatesConfig;
+}
+interface AlternateI {
+    components: Array<AlternateItem>;
+}
+interface AlternateConfigI {
+    components?: Array<AlternateItem>;
+}
+interface AlternateThemableStates {
+    Init: AlternateThemable;
+    Hover: AlternateThemable;
+    Active: AlternateThemable;
+}
+interface AlternateThemable {
+    Color: string;
+    BackgroundColor: string;
+    Border: string;
+    Font: string;
+}
+interface AlternateThemableStatesConfig {
+    Init?: AlternateThemableConfig;
+    Hover?: AlternateThemableConfig;
+    Active?: AlternateThemableConfig;
+}
+interface AlternateThemableConfig {
+    Color?: string;
+    BackgroundColor?: string;
+    Border?: AlternateThemableBorderConfig;
+    FontWeightAdjustment?: number;
+}
+interface AlternateThemableBorderConfig {
+    Color?: string;
+    Style?: string;
+    Width?: number;
+}
+interface AlternateThemableBorderConfig {
+    Color?: string;
+    Style?: string;
+    Width?: number;
+}
+
+interface ColorsI {
+    danger: ColorVariantI;
+    warning: ColorVariantI;
+    success: ColorVariantI;
+    info: ColorVariantI;
+    skeletons: ColorVariantI;
+    neutrals: ColorVariantI;
+    surfaces: ColorVariantI;
+    primary: ColorVariantI;
+    accent: ColorVariantI;
+    accent2: ColorVariantI;
+    accent3: ColorVariantI;
+    accent4: ColorVariantI;
+    accent5: ColorVariantI;
+    supporting: ColorVariantI;
+    additional: AdditionalColorItem[];
+}
+interface ColorsConfigI {
+    danger?: ColorVariantConfigI;
+    warning?: ColorVariantConfigI;
+    success?: ColorVariantConfigI;
+    info?: ColorVariantConfigI;
+    skeletons?: ColorVariantConfigI;
+    neutrals?: ColorVariantConfigI;
+    surfaces?: ColorVariantConfigI;
+    primary?: ColorVariantConfigI;
+    accent?: ColorVariantConfigI;
+    accent2?: ColorVariantConfigI;
+    accent3?: ColorVariantConfigI;
+    accent4?: ColorVariantConfigI;
+    accent5?: ColorVariantConfigI;
+    supporting?: ColorVariantConfigI;
+    additional?: AdditionalColorItem[];
+}
+declare enum Color {
+    DANGER = "danger",
+    WARNING = "warning",
+    SUCCESS = "success",
+    INFO = "info",
+    NEUTRALS = "neutrals",
+    SURFACES = "surfaces",
+    PRIMARY = "primary",
+    SUPPORTING = "supporting",
+    ACCENT = "accent"
+}
+declare const ColorKeys: Color[];
+type ColorKey = Color.DANGER | Color.WARNING | Color.SUCCESS | Color.INFO | Color.NEUTRALS | Color.SURFACES | Color.PRIMARY | Color.SUPPORTING | Color.ACCENT;
+
+interface RadiusI {
+    none: string;
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    "2xl": string;
+    "3xl": string;
+    full: string;
+}
+interface RadiusConfigI {
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
+    xl: string;
+    "2xl": string;
+    "3xl": string;
+}
+declare enum Radius {
+    NONE = "none",
+    XS = "xs",
+    SM = "sm",
+    MD = "md",
+    LG = "lg",
+    XL = "xl",
+    XL2 = "2xl",
+    XL3 = "3xl",
+    FULL = "full"
+}
+declare const RadiusKeys: Radius[];
+type RadiusKey = Radius.NONE | Radius.XS | Radius.SM | Radius.MD | Radius.LG | Radius.XL | Radius.XL2 | Radius.XL3 | Radius.FULL;
 
 interface TypographyFontI {
     xs: TypographyFontWeightI;
@@ -107,131 +232,6 @@ interface TypographyI {
 interface TypographyConfigI {
     external_resources?: string[];
     fonts?: TypographyFontsConfigI;
-}
-
-interface ColorsI {
-    danger: ColorVariantI;
-    warning: ColorVariantI;
-    success: ColorVariantI;
-    info: ColorVariantI;
-    skeletons: ColorVariantI;
-    neutrals: ColorVariantI;
-    surfaces: ColorVariantI;
-    primary: ColorVariantI;
-    accent: ColorVariantI;
-    accent2: ColorVariantI;
-    accent3: ColorVariantI;
-    accent4: ColorVariantI;
-    accent5: ColorVariantI;
-    supporting: ColorVariantI;
-    additional: AdditionalColorItem[];
-}
-interface ColorsConfigI {
-    danger?: ColorVariantConfigI;
-    warning?: ColorVariantConfigI;
-    success?: ColorVariantConfigI;
-    info?: ColorVariantConfigI;
-    skeletons?: ColorVariantConfigI;
-    neutrals?: ColorVariantConfigI;
-    surfaces?: ColorVariantConfigI;
-    primary?: ColorVariantConfigI;
-    accent?: ColorVariantConfigI;
-    accent2?: ColorVariantConfigI;
-    accent3?: ColorVariantConfigI;
-    accent4?: ColorVariantConfigI;
-    accent5?: ColorVariantConfigI;
-    supporting?: ColorVariantConfigI;
-    additional?: AdditionalColorItem[];
-}
-declare enum Color {
-    DANGER = "danger",
-    WARNING = "warning",
-    SUCCESS = "success",
-    INFO = "info",
-    NEUTRALS = "neutrals",
-    SURFACES = "surfaces",
-    PRIMARY = "primary",
-    SUPPORTING = "supporting",
-    ACCENT = "accent"
-}
-declare const ColorKeys: Color[];
-type ColorKey = Color.DANGER | Color.WARNING | Color.SUCCESS | Color.INFO | Color.NEUTRALS | Color.SURFACES | Color.PRIMARY | Color.SUPPORTING | Color.ACCENT;
-
-interface RadiusI {
-    none: string;
-    xs: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-    "2xl": string;
-    "3xl": string;
-    full: string;
-}
-interface RadiusConfigI {
-    xs: string;
-    sm: string;
-    md: string;
-    lg: string;
-    xl: string;
-    "2xl": string;
-    "3xl": string;
-}
-declare enum Radius {
-    NONE = "none",
-    XS = "xs",
-    SM = "sm",
-    MD = "md",
-    LG = "lg",
-    XL = "xl",
-    XL2 = "2xl",
-    XL3 = "3xl",
-    FULL = "full"
-}
-declare const RadiusKeys: Radius[];
-type RadiusKey = Radius.NONE | Radius.XS | Radius.SM | Radius.MD | Radius.LG | Radius.XL | Radius.XL2 | Radius.XL3 | Radius.FULL;
-
-interface AlternateItem {
-    name: string;
-    theme: AlternateThemableStatesConfig;
-}
-interface AlternateI {
-    components: Array<AlternateItem>;
-}
-interface AlternateConfigI {
-    components?: Array<AlternateItem>;
-}
-interface AlternateThemableStates {
-    Init: AlternateThemable;
-    Hover: AlternateThemable;
-    Active: AlternateThemable;
-}
-interface AlternateThemable {
-    Color: string;
-    BackgroundColor: string;
-    Border: string;
-    Font: string;
-}
-interface AlternateThemableStatesConfig {
-    Init?: AlternateThemableConfig;
-    Hover?: AlternateThemableConfig;
-    Active?: AlternateThemableConfig;
-}
-interface AlternateThemableConfig {
-    Color?: string;
-    BackgroundColor?: string;
-    Border?: AlternateThemableBorderConfig;
-    FontWeightAdjustment?: number;
-}
-interface AlternateThemableBorderConfig {
-    Color?: string;
-    Style?: string;
-    Width?: number;
-}
-interface AlternateThemableBorderConfig {
-    Color?: string;
-    Style?: string;
-    Width?: number;
 }
 
 interface SpacingI {
@@ -357,12 +357,6 @@ interface ThemeConfigI {
     shadow?: ShadowConfigI;
 }
 
-interface ILookupAlternateTheme {
-    name: string;
-    alternates: Array<AlternateItem>;
-}
-declare const LookupAlternateTheme: ({ name, alternates, }: ILookupAlternateTheme) => AlternateThemableStatesConfig | undefined;
-
 interface ILookupAdditionalColor {
     name: string;
     colors: AdditionalColorItem[];
@@ -370,4 +364,10 @@ interface ILookupAdditionalColor {
 }
 declare const LookupAdditionalColor: ({ name, colors, fallback, }: ILookupAdditionalColor) => HexColor | "transparent";
 
-export { type AlternateThemableStatesConfig as A, type TypographyFontsKey as B, type ColorsI as C, TypographyFontsKeys as D, TypographyFonts as E, type TypographyFontsScaleConfigI as F, type TypographyFontsScaleSizeConfigI as G, type TypographyI as H, type TypographyConfigI as I, type SpacingI as J, type SpacingKey as K, LookupAlternateTheme as L, SpacingKeys as M, Spacing as N, type ILookupAdditionalColor as O, type ILookupAlternateTheme as P, type RadiusI as R, type ShadowI as S, type ThemeConfigI as T, type UtilityI as U, type ThemeI as a, type TypographyFontsI as b, type AlternateThemableStates as c, LookupAdditionalColor as d, type AlternateItem as e, type AlternateI as f, type AlternateConfigI as g, type AlternateThemable as h, type AlternateThemableConfig as i, type ColorsConfigI as j, type ColorKey as k, ColorKeys as l, Color as m, type RadiusConfigI as n, type RadiusKey as o, RadiusKeys as p, Radius as q, type TypographyFontsFamilyConfigI as r, type TypographyFontI as s, type TypographyFontKey as t, type TypographyFontWeightKey as u, TypographyFontKeys as v, TypographyFont as w, TypographyFontWeightKeys as x, TypographyFontWeight as y, type TypographyFontsConfigI as z };
+interface ILookupAlternateTheme {
+    name: string;
+    alternates: Array<AlternateItem>;
+}
+declare const LookupAlternateTheme: ({ name, alternates, }: ILookupAlternateTheme) => AlternateThemableStatesConfig | undefined;
+
+export { type AlternateItem as A, TypographyFontsKeys as B, type ColorsI as C, TypographyFonts as D, type TypographyFontsScaleConfigI as E, type TypographyFontsScaleSizeConfigI as F, type TypographyI as G, type TypographyConfigI as H, type SpacingKey as I, SpacingKeys as J, Spacing as K, type ILookupAdditionalColor as L, type ILookupAlternateTheme as M, type ShadowI as N, LookupAlternateTheme as O, LookupAdditionalColor as P, type RadiusI as R, type SpacingI as S, type ThemeI as T, type UtilityI as U, type ThemeConfigI as a, type AlternateI as b, type AlternateConfigI as c, type AlternateThemable as d, type AlternateThemableStates as e, type AlternateThemableStatesConfig as f, type AlternateThemableConfig as g, type ColorsConfigI as h, type ColorKey as i, ColorKeys as j, Color as k, type RadiusConfigI as l, type RadiusKey as m, RadiusKeys as n, Radius as o, type TypographyFontsFamilyConfigI as p, type TypographyFontI as q, type TypographyFontKey as r, type TypographyFontWeightKey as s, TypographyFontKeys as t, TypographyFont as u, TypographyFontWeightKeys as v, TypographyFontWeight as w, type TypographyFontsI as x, type TypographyFontsConfigI as y, type TypographyFontsKey as z };

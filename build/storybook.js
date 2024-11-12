@@ -1,15 +1,4 @@
-'use strict';
-
-var chunkF6OY2BIW_js = require('./chunk-F6OY2BIW.js');
-var i = require('react');
-var e = require('styled-components');
-
-function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
-
-var i__default = /*#__PURE__*/_interopDefault(i);
-var e__default = /*#__PURE__*/_interopDefault(e);
-
-var d=e__default.default.div`
+'use strict';var chunkF6OY2BIW_js=require('./chunk-F6OY2BIW.js'),i=require('react'),e=require('styled-components');function _interopDefault(e){return e&&e.__esModule?e:{default:e}}var i__default=/*#__PURE__*/_interopDefault(i);var e__default=/*#__PURE__*/_interopDefault(e);var d=e__default.default.div`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -76,15 +65,5 @@ var d=e__default.default.div`
   line-height: 1.2;
   text-transform: lowercase;
   color: #2e3438;
-`;var z=({children:o,...t})=>i__default.default.createElement(L,null,i__default.default.createElement(_,{...t,className:"docblock-icongallery sb-unstyled"},o)),B=({name:o,children:t})=>i__default.default.createElement(D,null,i__default.default.createElement(F,null,t),i__default.default.createElement(T,null,o));
-
-exports.StorybookUiAdditionalColorList = A;
-exports.StorybookUiColor = r;
-exports.StorybookUiElement = N;
-exports.StorybookUiFont = q;
-exports.StorybookUiIconGallery = z;
-exports.StorybookUiIconGalleryItem = B;
-exports.StorybookUiItem = V;
-exports.StorybookUiThemeColorList = $;
-//# sourceMappingURL=out.js.map
+`;var z=({children:o,...t})=>i__default.default.createElement(L,null,i__default.default.createElement(_,{...t,className:"docblock-icongallery sb-unstyled"},o)),B=({name:o,children:t})=>i__default.default.createElement(D,null,i__default.default.createElement(F,null,t),i__default.default.createElement(T,null,o));exports.StorybookUiAdditionalColorList=A;exports.StorybookUiColor=r;exports.StorybookUiElement=N;exports.StorybookUiFont=q;exports.StorybookUiIconGallery=z;exports.StorybookUiIconGalleryItem=B;exports.StorybookUiItem=V;exports.StorybookUiThemeColorList=$;//# sourceMappingURL=storybook.js.map
 //# sourceMappingURL=storybook.js.map

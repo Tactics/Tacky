@@ -1,8 +1,4 @@
-import { v, u as u$1 } from './chunk-LEVVTJ5A.mjs';
-import i from 'react';
-import e from 'styled-components';
-
-var d=e.div`
+import {v,u as u$1}from'./chunk-LEVVTJ5A.mjs';import i from'react';import e from'styled-components';var d=e.div`
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -69,8 +65,5 @@ var d=e.div`
   line-height: 1.2;
   text-transform: lowercase;
   color: #2e3438;
-`;var z=({children:o,...t})=>i.createElement(L,null,i.createElement(_,{...t,className:"docblock-icongallery sb-unstyled"},o)),B=({name:o,children:t})=>i.createElement(D,null,i.createElement(F,null,t),i.createElement(T,null,o));
-
-export { A as StorybookUiAdditionalColorList, r as StorybookUiColor, N as StorybookUiElement, q as StorybookUiFont, z as StorybookUiIconGallery, B as StorybookUiIconGalleryItem, V as StorybookUiItem, $ as StorybookUiThemeColorList };
-//# sourceMappingURL=out.js.map
+`;var z=({children:o,...t})=>i.createElement(L,null,i.createElement(_,{...t,className:"docblock-icongallery sb-unstyled"},o)),B=({name:o,children:t})=>i.createElement(D,null,i.createElement(F,null,t),i.createElement(T,null,o));export{A as StorybookUiAdditionalColorList,r as StorybookUiColor,N as StorybookUiElement,q as StorybookUiFont,z as StorybookUiIconGallery,B as StorybookUiIconGalleryItem,V as StorybookUiItem,$ as StorybookUiThemeColorList};//# sourceMappingURL=storybook.mjs.map
 //# sourceMappingURL=storybook.mjs.map

@@ -1,5 +1,16 @@
 type HexColor = `#${string}`;
 
+interface AdditionalColorItem {
+    name: string;
+    color: HexColor;
+}
+interface AdditionalColorI {
+    list: AdditionalColorItem[];
+}
+interface AdditionalColorIConfigI {
+    list?: AdditionalColorItem[];
+}
+
 interface ColorVariantI {
     tint_50: HexColor;
     tint_100: HexColor;
@@ -41,16 +52,5 @@ declare enum ColorVariant {
 }
 declare const ColorVariantKeys: ColorVariant[];
 type ColorVariantKey = ColorVariant.TINT_50 | ColorVariant.TINT_100 | ColorVariant.TINT_200 | ColorVariant.TINT_300 | ColorVariant.TINT_400 | ColorVariant.TINT_500 | ColorVariant.TINT_600 | ColorVariant.TINT_700 | ColorVariant.TINT_800 | ColorVariant.TINT_900 | ColorVariant.TINT_950;
-
-interface AdditionalColorItem {
-    name: string;
-    color: HexColor;
-}
-interface AdditionalColorI {
-    list: AdditionalColorItem[];
-}
-interface AdditionalColorIConfigI {
-    list?: AdditionalColorItem[];
-}
 
 export { type AdditionalColorItem as A, type ColorVariantI as C, type HexColor as H, type AdditionalColorI as a, type AdditionalColorIConfigI as b, type ColorVariantConfigI as c, type ColorVariantKey as d, ColorVariantKeys as e, ColorVariant as f };

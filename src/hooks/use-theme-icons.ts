@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeCtx } from "@/contexts/theme-context";
 import { BaseTheme } from "@/base/theme";
 
-const useIcons = (): string => {
+const useThemeIcons = (): string => {
   try {
     const context = useContext(ThemeCtx);
     return context.icons;
@@ -12,4 +12,4 @@ const useIcons = (): string => {
   }
 };
 
-export { useIcons };
+export { useThemeIcons };
