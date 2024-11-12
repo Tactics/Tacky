@@ -31,6 +31,7 @@ export const baseThemeConfigRadius2Xl: string = "1rem";
 export const baseThemeConfigRadius3Xl: string = "1.5rem";
 
 export const BaseTheme: ThemeI = {
+  icons: "default",
   alternate: [],
   typography: {
     external_resources: [],

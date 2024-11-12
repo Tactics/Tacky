@@ -340,6 +340,7 @@ interface ShadowConfigI {
 }
 
 interface ThemeI {
+    icons: string;
     alternate: Array<AlternateItem>;
     colors: ColorsI;
     typography: TypographyI;
@@ -348,6 +349,7 @@ interface ThemeI {
     shadow: ShadowI;
 }
 interface ThemeConfigI {
+    icons?: string;
     alternate?: Array<AlternateItem>;
     colors?: ColorsConfigI;
     typography?: TypographyConfigI;

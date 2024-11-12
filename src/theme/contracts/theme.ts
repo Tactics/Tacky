@@ -9,6 +9,7 @@ import { UtilityI } from "@/utility/contracts/utility";
 import { ShadowConfigI, ShadowI } from "@/shadow/contracts/shadow";
 
 export interface ThemeI {
+  icons: string;
   alternate: Array<AlternateItem>;
   colors: ColorsI;
   typography: TypographyI;
@@ -18,6 +19,7 @@ export interface ThemeI {
 }
 
 export interface ThemeConfigI {
+  icons?: string;
   alternate?: Array<AlternateItem>;
   colors?: ColorsConfigI;
   typography?: TypographyConfigI;
