@@ -8,7 +8,7 @@ import { ShadowBuilder } from "@/shadow/builders/shadow";
 
 const ThemeBuilder = ({ config }: { config: ThemeConfigI }): ThemeI => {
   return {
-    icons: config?.icons ? config.icons : BaseTheme.icons,
+    settings: config?.settings ? config.settings : BaseTheme.settings,
     alternate: AlternateBuilder({
       base: BaseTheme.alternate,
       config: config?.alternate ? config.alternate : [],

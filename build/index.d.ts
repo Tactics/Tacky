@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
-import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, N as ShadowI } from './alternate-BFQspUNF.js';
-export { P as LookupAdditionalColor, O as LookupAlternateTheme } from './alternate-BFQspUNF.js';
+import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, N as ShadowI } from './alternate-CYlNkS7_.js';
+export { P as LookupAdditionalColor, O as LookupAlternateTheme } from './alternate-CYlNkS7_.js';
 import './color-variant-uYRwhhZI.js';
 
 declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
@@ -41,7 +41,7 @@ declare const useAlternateTheme: ({ component, font, default: defaultThemable, }
     default?: AlternateThemableStatesConfig;
 }) => AlternateThemableStates;
 
-declare const useThemeIcons: () => string;
+declare const useThemeSetting: (setting: string) => string | null;
 
 declare const useThemeRadius: () => RadiusI;
 
@@ -58,4 +58,4 @@ interface ExternalStylesheetLoaderI extends PropsWithChildren {
 }
 declare const ExternalStylesheetLoader: FC<ExternalStylesheetLoaderI>;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeIcons, useThemeRadius, useThemeShadow, useThemeUtility };
+export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
