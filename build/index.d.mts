@@ -1,15 +1,15 @@
-import * as React from 'react';
+import * as react from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
 import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, N as ShadowI } from './alternate-CrbmnIH2.mjs';
 export { P as LookupAdditionalColor, O as LookupAlternateTheme } from './alternate-CrbmnIH2.mjs';
 import './color-variant-uYRwhhZI.mjs';
 
-declare const StyleProviderAnimation: React.NamedExoticComponent<styled_components.ExecutionProps & {
+declare const StyleProviderAnimation: react.NamedExoticComponent<styled_components.ExecutionProps & {
     animations?: string[];
 }>;
 
-declare const StyleProviderPreFlight: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
+declare const StyleProviderPreFlight: react.NamedExoticComponent<styled_components.ExecutionProps & object>;
 
 declare const ThemeBuilder: ({ config }: {
     config: ThemeConfigI;
@@ -25,9 +25,9 @@ declare namespace ThemeMode {
     function tryFrom(value: string): ThemeMode | null;
 }
 
-declare const ThemeCtx: React.Context<ThemeI>;
+declare const ThemeCtx: react.Context<ThemeI>;
 
-declare const ThemeModeCtx: React.Context<ThemeMode>;
+declare const ThemeModeCtx: react.Context<ThemeMode>;
 
 declare const useTheme: () => ThemeI;
 

@@ -1,41 +1,42 @@
-import React__default, { FunctionComponent } from 'react';
+import * as react_jsx_runtime from 'react/jsx-runtime';
 import { A as AdditionalColorItem, C as ColorVariantI } from './color-variant-uYRwhhZI.js';
+import react__default, { FunctionComponent } from 'react';
 
 declare const StorybookUiColor: ({ title, color, }: {
     title: string;
     color: string;
-}) => React__default.JSX.Element;
+}) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiAdditionalColorList: ({ colors, }: {
     colors: AdditionalColorItem[];
-}) => React__default.JSX.Element;
+}) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiThemeColorList: ({ colors, }: {
     colors: ColorVariantI;
-}) => React__default.JSX.Element;
+}) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiElement: ({ title, children, }: {
     title: string;
-    children: React__default.ReactNode;
-}) => React__default.JSX.Element;
+    children: react__default.ReactNode;
+}) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiItem: ({ caption, children, }: {
     caption: string;
-    children: React__default.ReactNode;
-}) => React__default.JSX.Element;
+    children: react__default.ReactNode;
+}) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiFont: ({ text, font, }: {
     text: string;
     font: string;
-}) => React__default.JSX.Element;
+}) => react_jsx_runtime.JSX.Element;
 
 interface StorybookIconGalleryProps {
-    children?: React__default.ReactNode;
+    children?: react__default.ReactNode;
 }
 declare const StorybookUiIconGallery: FunctionComponent<StorybookIconGalleryProps>;
 interface StorybookIconItemProps {
     name: string;
-    children?: React__default.ReactNode;
+    children?: react__default.ReactNode;
 }
 /**
  * An individual icon with a caption and an example (passed as `children`).
