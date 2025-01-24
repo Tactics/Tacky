@@ -83,6 +83,21 @@ const StyleProviderPreFlight = createGlobalStyle`
         -webkit-text-size-adjust: none;
         text-size-adjust: none;
     }
+    
+    /* For WebKit-based browsers (Chrome, Edge, Safari) */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* For Firefox */
+    * {
+        scrollbar-width: none; /* Hides the scrollbar */
+    }
+
+    /* General reset (optional) */
+    html, body {
+        overflow: auto; /* Ensure scrolling still works */
+    }
 
     /* Remove default margin in favour of better control in authored CSS */
     body, h1, h2, h3, h4, p,

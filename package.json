@@ -1,6 +1,6 @@
 {
   "name": "@tactics/tacky",
-  "version": "2.0.34",
+  "version": "2.0.35",
   "description": "Tooling library for all styling related projects",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -34,8 +34,13 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "format": "pnpm exec prettier . --write",
-    "build": "pnpm run format && pnpm exec tsup"
+    "prettify": "pnpm exec prettier --write src/.",
+    "build-github": "pnpm run prettify && pnpm run test && pnpm exec tsc --noEmit && pnpm run build",
+    "build": "pnpm run prettify && pnpm run test && pnpm exec tsup",
+    "release:patch": "pnpm run build && pnpm version patch --git-tag-version=false",
+    "release:minor": "pnpm run build && pnpm version minor --git-tag-version=false",
+    "release:major": "pnpm run build && pnpm version major --git-tag-version=false",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
@@ -45,6 +50,10 @@
   },
   "dependencies": {
     "@types/react-dom": "^19.0.0",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.13",
