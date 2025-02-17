@@ -1,5 +1,7 @@
 export { StyleProviderAnimation } from "@/providers/animation";
 export { StyleProviderPreFlight } from "@/providers/preflight";
+export { StyleProviderScrollbar } from "@/providers/scrollbar";
+
 export { ThemeBuilder } from "@/theme/builders/theme";
 export { ThemeMode } from "@/theme/enums/theme-mode";
 export { ThemeCtx } from "@/contexts/theme-context";

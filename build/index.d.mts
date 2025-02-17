@@ -11,6 +11,8 @@ declare const StyleProviderAnimation: react.NamedExoticComponent<styled_componen
 
 declare const StyleProviderPreFlight: react.NamedExoticComponent<styled_components.ExecutionProps & object>;
 
+declare const StyleProviderScrollbar: react.NamedExoticComponent<styled_components.ExecutionProps & object>;
+
 declare const ThemeBuilder: ({ config }: {
     config: ThemeConfigI;
 }) => ThemeI;
@@ -58,4 +60,4 @@ interface ExternalStylesheetLoaderI extends PropsWithChildren {
 }
 declare const ExternalStylesheetLoader: FC<ExternalStylesheetLoaderI>;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
+export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderScrollbar, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
