@@ -30,6 +30,14 @@ const ColorBuilder = ({
       base: base.neutrals,
       config: config.neutrals ? config.neutrals : {},
     }),
+    border: ColorVariantBuilder({
+      base: base.neutrals,
+      config: config.border ? config.border : {},
+    }),
+    text: ColorVariantBuilder({
+      base: base.neutrals,
+      config: config.text ? config.text : {},
+    }),
     surfaces: ColorVariantBuilder({
       base: base.surfaces,
       config: config.surfaces ? config.surfaces : {},

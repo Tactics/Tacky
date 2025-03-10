@@ -55,6 +55,20 @@ export const useAlternateTheme = ({
         defaultState?.Border?.Style ||
         defaultCSSValues.Border.Style,
     ),
+    BorderRaw: {
+      Width:
+        configState?.Border?.Width ||
+        defaultState?.Border?.Width ||
+        defaultCSSValues.Border.Width,
+      Style:
+        configState?.Border?.Style ||
+        defaultState?.Border?.Style ||
+        defaultCSSValues.Border.Style,
+      Color:
+        configState?.Border?.Color ||
+        defaultState?.Border?.Color ||
+        defaultCSSValues.Border.Color,
+    },
     Font: toCssFont(
       font,
       configState?.FontWeightAdjustment ||

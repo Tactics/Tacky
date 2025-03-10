@@ -21,6 +21,7 @@ export interface AlternateThemable {
   Color: string;
   BackgroundColor: string;
   Border: string;
+  BorderRaw: AlternateThemableBorder;
   Font: string;
 }
 

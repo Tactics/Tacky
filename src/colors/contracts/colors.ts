@@ -12,6 +12,8 @@ export interface ColorsI {
   info: ColorVariantI;
   skeletons: ColorVariantI;
   neutrals: ColorVariantI;
+  border: ColorVariantI;
+  text: ColorVariantI;
   surfaces: ColorVariantI;
   primary: ColorVariantI;
   accent: ColorVariantI;
@@ -30,6 +32,8 @@ export interface ColorsConfigI {
   info?: ColorVariantConfigI;
   skeletons?: ColorVariantConfigI;
   neutrals?: ColorVariantConfigI;
+  border?: ColorVariantConfigI;
+  text?: ColorVariantConfigI;
   surfaces?: ColorVariantConfigI;
   primary?: ColorVariantConfigI;
   accent?: ColorVariantConfigI;

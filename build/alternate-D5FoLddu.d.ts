@@ -1,4 +1,4 @@
-import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-variant-uYRwhhZI.mjs';
+import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-variant-uYRwhhZI.js';
 
 interface AlternateItem {
     name: string;
@@ -19,7 +19,13 @@ interface AlternateThemable {
     Color: string;
     BackgroundColor: string;
     Border: string;
+    BorderRaw: AlternateThemableBorder;
     Font: string;
+}
+interface AlternateThemableBorder {
+    Color: string;
+    Style: string;
+    Width: number;
 }
 interface AlternateThemableStatesConfig {
     Init?: AlternateThemableConfig;
@@ -50,6 +56,8 @@ interface ColorsI {
     info: ColorVariantI;
     skeletons: ColorVariantI;
     neutrals: ColorVariantI;
+    border: ColorVariantI;
+    text: ColorVariantI;
     surfaces: ColorVariantI;
     primary: ColorVariantI;
     accent: ColorVariantI;
@@ -67,6 +75,8 @@ interface ColorsConfigI {
     info?: ColorVariantConfigI;
     skeletons?: ColorVariantConfigI;
     neutrals?: ColorVariantConfigI;
+    border?: ColorVariantConfigI;
+    text?: ColorVariantConfigI;
     surfaces?: ColorVariantConfigI;
     primary?: ColorVariantConfigI;
     accent?: ColorVariantConfigI;
