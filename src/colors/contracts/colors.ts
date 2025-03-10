@@ -2,7 +2,6 @@ import {
   ColorVariantConfigI,
   ColorVariantI,
 } from "@/colors/contracts/color-variant";
-import { AdditionalColorItem } from "@/colors/contracts/color-additional";
 
 // A common interface for defining a color scheme for a theme.
 export interface ColorsI {
@@ -22,7 +21,6 @@ export interface ColorsI {
   accent4: ColorVariantI;
   accent5: ColorVariantI;
   supporting: ColorVariantI;
-  additional: AdditionalColorItem[];
 }
 
 export interface ColorsConfigI {
@@ -42,7 +40,6 @@ export interface ColorsConfigI {
   accent4?: ColorVariantConfigI;
   accent5?: ColorVariantConfigI;
   supporting?: ColorVariantConfigI;
-  additional?: AdditionalColorItem[];
 }
 
 export enum Color {

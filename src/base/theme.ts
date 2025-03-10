@@ -2060,7 +2060,6 @@ export const BaseTheme: ThemeI = {
       tint_900: "#2d3a8c",
       tint_950: "#19216c",
     },
-    additional: [],
   },
   utility: {
     spacing: {

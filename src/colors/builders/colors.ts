@@ -1,6 +1,5 @@
 import { ColorsConfigI, ColorsI } from "@/colors/contracts/colors";
 import { ColorVariantBuilder } from "@/colors/builders/variant";
-import { AdditionalColorBuilder } from "@/colors/builders/additional";
 
 const ColorBuilder = ({
   base,
@@ -89,10 +88,6 @@ const ColorBuilder = ({
     supporting: ColorVariantBuilder({
       base: base.supporting,
       config: config.supporting ? config.supporting : {},
-    }),
-    additional: AdditionalColorBuilder({
-      base: base.additional,
-      config: config?.additional ? config.additional : [],
     }),
   };
 };
