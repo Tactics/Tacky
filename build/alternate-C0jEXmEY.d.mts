@@ -1,4 +1,4 @@
-import { C as ColorVariantI, A as AdditionalColorItem, c as ColorVariantConfigI, H as HexColor } from './color-variant-uYRwhhZI.mjs';
+import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-Dkz8HCHn.mjs';
 
 interface AlternateItem {
     name: string;
@@ -66,7 +66,6 @@ interface ColorsI {
     accent4: ColorVariantI;
     accent5: ColorVariantI;
     supporting: ColorVariantI;
-    additional: AdditionalColorItem[];
 }
 interface ColorsConfigI {
     danger?: ColorVariantConfigI;
@@ -85,7 +84,6 @@ interface ColorsConfigI {
     accent4?: ColorVariantConfigI;
     accent5?: ColorVariantConfigI;
     supporting?: ColorVariantConfigI;
-    additional?: AdditionalColorItem[];
 }
 declare enum Color {
     DANGER = "danger",
@@ -413,17 +411,10 @@ interface ThemeConfigI {
     shadow?: ShadowConfigI;
 }
 
-interface ILookupAdditionalColor {
-    name: string;
-    colors: AdditionalColorItem[];
-    fallback: HexColor | "transparent";
-}
-declare const LookupAdditionalColor: ({ name, colors, fallback, }: ILookupAdditionalColor) => HexColor | "transparent";
-
 interface ILookupAlternateTheme {
     name: string;
     alternates: Array<AlternateItem>;
 }
 declare const LookupAlternateTheme: ({ name, alternates, }: ILookupAlternateTheme) => AlternateThemableStatesConfig | undefined;
 
-export { type AlternateItem as A, TypographyFontsKeys as B, type ColorsI as C, TypographyFonts as D, type TypographyFontsScaleConfigI as E, type TypographyFontsScaleSizeConfigI as F, type TypographyI as G, type TypographyConfigI as H, type SpacingKey as I, SpacingKeys as J, Spacing as K, type ILookupAdditionalColor as L, type ILookupAlternateTheme as M, type ShadowI as N, LookupAlternateTheme as O, LookupAdditionalColor as P, type RadiusI as R, type SpacingI as S, type ThemeI as T, type UtilityI as U, type ThemeConfigI as a, type AlternateI as b, type AlternateConfigI as c, type AlternateThemable as d, type AlternateThemableStates as e, type AlternateThemableStatesConfig as f, type AlternateThemableConfig as g, type ColorsConfigI as h, type ColorKey as i, ColorKeys as j, Color as k, type RadiusConfigI as l, type RadiusKey as m, RadiusKeys as n, Radius as o, type TypographyFontsFamilyConfigI as p, type TypographyFontI as q, type TypographyFontKey as r, type TypographyFontWeightKey as s, TypographyFontKeys as t, TypographyFont as u, TypographyFontWeightKeys as v, TypographyFontWeight as w, type TypographyFontsI as x, type TypographyFontsConfigI as y, type TypographyFontsKey as z };
+export { type AlternateItem as A, TypographyFontsKeys as B, type ColorsI as C, TypographyFonts as D, type TypographyFontsScaleConfigI as E, type TypographyFontsScaleSizeConfigI as F, type TypographyI as G, type TypographyConfigI as H, type SpacingKey as I, SpacingKeys as J, Spacing as K, type ILookupAlternateTheme as L, type ShadowI as M, LookupAlternateTheme as N, type RadiusI as R, type SpacingI as S, type ThemeI as T, type UtilityI as U, type ThemeConfigI as a, type AlternateI as b, type AlternateConfigI as c, type AlternateThemable as d, type AlternateThemableStates as e, type AlternateThemableStatesConfig as f, type AlternateThemableConfig as g, type ColorsConfigI as h, type ColorKey as i, ColorKeys as j, Color as k, type RadiusConfigI as l, type RadiusKey as m, RadiusKeys as n, Radius as o, type TypographyFontsFamilyConfigI as p, type TypographyFontI as q, type TypographyFontKey as r, type TypographyFontWeightKey as s, TypographyFontKeys as t, TypographyFont as u, TypographyFontWeightKeys as v, TypographyFontWeight as w, type TypographyFontsI as x, type TypographyFontsConfigI as y, type TypographyFontsKey as z };

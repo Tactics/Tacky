@@ -24,3 +24,5 @@ export { ExternalStylesheetLoader } from "@/tooling/external-stylesheet-loader";
 export type { ExternalStylesheetLoaderI } from "@/tooling/external-stylesheet-loader";
 
 export { LookupAlternateTheme } from "@/alternate/functions/alternate";
+
+export { Opacity } from "@/colors/functions/opacity";

@@ -1,14 +1,10 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import { A as AdditionalColorItem, C as ColorVariantI } from './color-variant-uYRwhhZI.mjs';
+import { C as ColorVariantI } from './color-variant-Dkz8HCHn.mjs';
 import react__default, { FunctionComponent } from 'react';
 
 declare const StorybookUiColor: ({ title, color, }: {
     title: string;
     color: string;
-}) => react_jsx_runtime.JSX.Element;
-
-declare const StorybookUiAdditionalColorList: ({ colors, }: {
-    colors: AdditionalColorItem[];
 }) => react_jsx_runtime.JSX.Element;
 
 declare const StorybookUiThemeColorList: ({ colors, }: {
@@ -43,4 +39,4 @@ interface StorybookIconItemProps {
  */
 declare const StorybookUiIconGalleryItem: FunctionComponent<StorybookIconItemProps>;
 
-export { StorybookUiAdditionalColorList, StorybookUiColor, StorybookUiElement, StorybookUiFont, StorybookUiIconGallery, StorybookUiIconGalleryItem, StorybookUiItem, StorybookUiThemeColorList };
+export { StorybookUiColor, StorybookUiElement, StorybookUiFont, StorybookUiIconGallery, StorybookUiIconGalleryItem, StorybookUiItem, StorybookUiThemeColorList };

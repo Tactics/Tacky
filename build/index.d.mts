@@ -1,9 +1,9 @@
 import * as react from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
-import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, N as ShadowI } from './alternate-DU6jQWvs.mjs';
-export { P as LookupAdditionalColor, O as LookupAlternateTheme } from './alternate-DU6jQWvs.mjs';
-import './color-variant-uYRwhhZI.mjs';
+import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, M as ShadowI } from './alternate-C0jEXmEY.mjs';
+export { N as LookupAlternateTheme } from './alternate-C0jEXmEY.mjs';
+import './color-variant-Dkz8HCHn.mjs';
 
 declare const StyleProviderAnimation: react.NamedExoticComponent<styled_components.ExecutionProps & {
     animations?: string[];
@@ -60,4 +60,10 @@ interface ExternalStylesheetLoaderI extends PropsWithChildren {
 }
 declare const ExternalStylesheetLoader: FC<ExternalStylesheetLoaderI>;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderScrollbar, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
+declare function Opacity(hex: string, a: number, backgroundColor?: {
+    r: number;
+    g: number;
+    b: number;
+}): string;
+
+export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, Opacity, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderScrollbar, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
