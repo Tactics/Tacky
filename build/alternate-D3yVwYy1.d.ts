@@ -1,4 +1,4 @@
-import { a as ColorVariantConfigI, C as ColorVariantI } from './color-variant-Dkz8HCHn.cjs';
+import { a as ColorVariantConfigI, C as ColorVariantI } from './color-variant-Dkz8HCHn.js';
 
 interface AlternateItem {
     name: string;
@@ -68,8 +68,8 @@ interface BrandingColorsConfigI {
     supporting?: ColorVariantConfigI;
 }
 interface UtilityColorsI {
-    border: ColorVariantI;
-    text: ColorVariantI;
+    border?: ColorVariantI;
+    text?: ColorVariantI;
     surfaces: ColorVariantI;
     skeletons: ColorVariantI;
 }

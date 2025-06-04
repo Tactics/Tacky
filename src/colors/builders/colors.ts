@@ -44,7 +44,6 @@ const ColorBuilder = ({
   const scoped = Object.entries(scopedConfig).reduce(
     (acc, [key, value]) => {
       acc[key] = {
-        // Add semantic colors
         danger: ColorVariantBuilder({
           base: base.danger,
           config: config.danger ? config.danger : {},
@@ -61,18 +60,16 @@ const ColorBuilder = ({
           base: base.info,
           config: config.info ? config.info : {},
         }),
-        // Add neutrals
         neutrals: ColorVariantBuilder({
           base: base.neutrals,
           config: config.neutrals ? config.neutrals : {},
         }),
-        // Add utility colors
         border: ColorVariantBuilder({
-          base: base.border,
+          base: base.border ?? base.surfaces, // Fallback to surfaces for borders
           config: value.border ?? (config.border ? config.border : {}),
         }),
         text: ColorVariantBuilder({
-          base: base.text,
+          base: base.text ?? base.neutrals, // Fallback to neutrals for text
           config: value.text ?? (config.text ? config.text : {}),
         }),
         surfaces: ColorVariantBuilder({
