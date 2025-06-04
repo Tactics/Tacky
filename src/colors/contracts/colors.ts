@@ -24,8 +24,8 @@ export interface BrandingColorsConfigI {
 }
 
 export interface UtilityColorsI {
-  border?: ColorVariantI; // tmp optional, until neutrals are removed
-  text?: ColorVariantI; // tmp optional, until neutrals are removed
+  border: ColorVariantI;
+  text: ColorVariantI;
   surfaces: ColorVariantI;
   skeletons: ColorVariantI;
 }
