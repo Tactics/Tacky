@@ -1,4 +1,4 @@
-import { C as ColorVariantI, a as ColorVariantConfigI } from './color-variant-Dkz8HCHn.mjs';
+import { a as ColorVariantConfigI, C as ColorVariantI } from './color-variant-Dkz8HCHn.cjs';
 
 interface AlternateItem {
     name: string;
@@ -49,34 +49,16 @@ interface AlternateThemableBorderConfig {
     Width?: number;
 }
 
-interface ColorsI {
-    danger: ColorVariantI;
-    warning: ColorVariantI;
-    success: ColorVariantI;
-    info: ColorVariantI;
-    skeletons: ColorVariantI;
-    neutrals: ColorVariantI;
-    border: ColorVariantI;
-    text: ColorVariantI;
-    surfaces: ColorVariantI;
+interface BrandingColorsI {
     primary: ColorVariantI;
+    supporting: ColorVariantI;
     accent: ColorVariantI;
     accent2: ColorVariantI;
     accent3: ColorVariantI;
     accent4: ColorVariantI;
     accent5: ColorVariantI;
-    supporting: ColorVariantI;
 }
-interface ColorsConfigI {
-    danger?: ColorVariantConfigI;
-    warning?: ColorVariantConfigI;
-    success?: ColorVariantConfigI;
-    info?: ColorVariantConfigI;
-    skeletons?: ColorVariantConfigI;
-    neutrals?: ColorVariantConfigI;
-    border?: ColorVariantConfigI;
-    text?: ColorVariantConfigI;
-    surfaces?: ColorVariantConfigI;
+interface BrandingColorsConfigI {
     primary?: ColorVariantConfigI;
     accent?: ColorVariantConfigI;
     accent2?: ColorVariantConfigI;
@@ -84,6 +66,42 @@ interface ColorsConfigI {
     accent4?: ColorVariantConfigI;
     accent5?: ColorVariantConfigI;
     supporting?: ColorVariantConfigI;
+}
+interface UtilityColorsI {
+    border: ColorVariantI;
+    text: ColorVariantI;
+    surfaces: ColorVariantI;
+    skeletons: ColorVariantI;
+}
+interface UtilityColorsConfigI {
+    skeletons?: ColorVariantConfigI;
+    border?: ColorVariantConfigI;
+    text?: ColorVariantConfigI;
+    surfaces?: ColorVariantConfigI;
+}
+interface SemanticColorsI {
+    danger: ColorVariantI;
+    warning: ColorVariantI;
+    success: ColorVariantI;
+    info: ColorVariantI;
+}
+interface SemanticColorsConfigI {
+    danger?: ColorVariantConfigI;
+    warning?: ColorVariantConfigI;
+    success?: ColorVariantConfigI;
+    info?: ColorVariantConfigI;
+}
+interface ScopeColorsConfigI extends UtilityColorsConfigI, BrandingColorsConfigI {
+}
+interface AllColorsI extends UtilityColorsI, SemanticColorsI, BrandingColorsI {
+    neutrals: ColorVariantI;
+}
+interface ColorsI extends AllColorsI {
+    scoped?: Record<string, AllColorsI>;
+}
+interface ColorsConfigI extends UtilityColorsConfigI, SemanticColorsConfigI, BrandingColorsConfigI {
+    neutrals?: ColorVariantConfigI;
+    scoped?: Record<string, ScopeColorsConfigI>;
 }
 declare enum Color {
     DANGER = "danger",

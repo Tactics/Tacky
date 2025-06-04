@@ -26,3 +26,7 @@ export type { ExternalStylesheetLoaderI } from "@/tooling/external-stylesheet-lo
 export { LookupAlternateTheme } from "@/alternate/functions/alternate";
 
 export { Opacity } from "@/colors/functions/opacity";
+
+// Scope
+export { RootScope } from "@/contexts/theme-scope-context";
+export { ContextProviderThemeScope } from "@/contexts/theme-scope-context";

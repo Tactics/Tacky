@@ -3,36 +3,17 @@ import {
   ColorVariantI,
 } from "@/colors/contracts/color-variant";
 
-// A common interface for defining a color scheme for a theme.
-export interface ColorsI {
-  danger: ColorVariantI;
-  warning: ColorVariantI;
-  success: ColorVariantI;
-  info: ColorVariantI;
-  skeletons: ColorVariantI;
-  neutrals: ColorVariantI;
-  border: ColorVariantI;
-  text: ColorVariantI;
-  surfaces: ColorVariantI;
+export interface BrandingColorsI {
   primary: ColorVariantI;
+  supporting: ColorVariantI;
   accent: ColorVariantI;
   accent2: ColorVariantI;
   accent3: ColorVariantI;
   accent4: ColorVariantI;
   accent5: ColorVariantI;
-  supporting: ColorVariantI;
 }
 
-export interface ColorsConfigI {
-  danger?: ColorVariantConfigI;
-  warning?: ColorVariantConfigI;
-  success?: ColorVariantConfigI;
-  info?: ColorVariantConfigI;
-  skeletons?: ColorVariantConfigI;
-  neutrals?: ColorVariantConfigI;
-  border?: ColorVariantConfigI;
-  text?: ColorVariantConfigI;
-  surfaces?: ColorVariantConfigI;
+export interface BrandingColorsConfigI {
   primary?: ColorVariantConfigI;
   accent?: ColorVariantConfigI;
   accent2?: ColorVariantConfigI;
@@ -40,6 +21,59 @@ export interface ColorsConfigI {
   accent4?: ColorVariantConfigI;
   accent5?: ColorVariantConfigI;
   supporting?: ColorVariantConfigI;
+}
+
+export interface UtilityColorsI {
+  border: ColorVariantI;
+  text: ColorVariantI;
+  surfaces: ColorVariantI;
+  skeletons: ColorVariantI;
+}
+
+export interface UtilityColorsConfigI {
+  skeletons?: ColorVariantConfigI;
+  border?: ColorVariantConfigI;
+  text?: ColorVariantConfigI;
+  surfaces?: ColorVariantConfigI;
+}
+
+export interface SemanticColorsI {
+  danger: ColorVariantI;
+  warning: ColorVariantI;
+  success: ColorVariantI;
+  info: ColorVariantI;
+}
+
+export interface SemanticColorsConfigI {
+  danger?: ColorVariantConfigI;
+  warning?: ColorVariantConfigI;
+  success?: ColorVariantConfigI;
+  info?: ColorVariantConfigI;
+}
+
+export interface ScopeColorsI extends UtilityColorsConfigI, BrandingColorsI {}
+export interface ScopeColorsConfigI
+  extends UtilityColorsConfigI,
+    BrandingColorsConfigI {}
+
+export interface AllColorsI
+  extends UtilityColorsI,
+    SemanticColorsI,
+    BrandingColorsI {
+  neutrals: ColorVariantI; // Deprecated
+}
+
+// A common interface for defining a color scheme for a theme.
+export interface ColorsI extends AllColorsI {
+  scoped?: Record<string, AllColorsI>; // scoped needs to be optional
+}
+
+export interface ColorsConfigI
+  extends UtilityColorsConfigI,
+    SemanticColorsConfigI,
+    BrandingColorsConfigI {
+  neutrals?: ColorVariantConfigI; // Deprecated
+  scoped?: Record<string, ScopeColorsConfigI>;
 }
 
 export enum Color {

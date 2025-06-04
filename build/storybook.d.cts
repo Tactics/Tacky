@@ -1,5 +1,5 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
-import { C as ColorVariantI } from './color-variant-Dkz8HCHn.mjs';
+import { C as ColorVariantI } from './color-variant-Dkz8HCHn.cjs';
 import react__default, { FunctionComponent } from 'react';
 
 declare const StorybookUiColor: ({ title, color, }: {

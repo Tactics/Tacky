@@ -1,8 +1,9 @@
 import * as react from 'react';
 import { PropsWithChildren, FC } from 'react';
 import * as styled_components from 'styled-components';
-import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, M as ShadowI } from './alternate-DTqDYqS_.js';
-export { N as LookupAlternateTheme } from './alternate-DTqDYqS_.js';
+import { a as ThemeConfigI, T as ThemeI, C as ColorsI, x as TypographyFontsI, f as AlternateThemableStatesConfig, e as AlternateThemableStates, R as RadiusI, U as UtilityI, M as ShadowI } from './alternate-KcwBNIN_.js';
+export { N as LookupAlternateTheme } from './alternate-KcwBNIN_.js';
+import * as react_jsx_runtime from 'react/jsx-runtime';
 import './color-variant-Dkz8HCHn.js';
 
 declare const StyleProviderAnimation: react.NamedExoticComponent<styled_components.ExecutionProps & {
@@ -66,4 +67,13 @@ declare function Opacity(hex: string, a: number, backgroundColor?: {
     b: number;
 }): string;
 
-export { BuildProvidersTree, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, Opacity, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderScrollbar, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
+declare const RootScope = "root";
+interface IContextProviderThemeScope {
+    scope: string;
+}
+interface IContextProviderThemeScope extends PropsWithChildren {
+    scope: string;
+}
+declare const ContextProviderThemeScope: (props: IContextProviderThemeScope) => react_jsx_runtime.JSX.Element;
+
+export { BuildProvidersTree, ContextProviderThemeScope, ExternalStylesheetLoader, type ExternalStylesheetLoaderI, Opacity, RootScope, StyleProviderAnimation, StyleProviderPreFlight, StyleProviderScrollbar, ThemeBuilder, ThemeCtx, ThemeMode, ThemeModeCtx, orDefault, useAlternateTheme, useTheme, useThemeColor, useThemeFonts, useThemeRadius, useThemeSetting, useThemeShadow, useThemeUtility };
